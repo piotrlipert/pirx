@@ -4920,6 +4920,8 @@ MAIN CONTENT
   background: #4f4f4f; }
   #footer h3 {
     margin-top: 50px; }
+  #footer p {
+    color: #fff; }
   #footer ul li {
     list-style: none; }
   #footer input {
@@ -4935,6 +4937,15 @@ MAIN CONTENT
     float: left;
     font: normal normal normal 14px "Avenir-Light", sans-serif;
     margin-left: 10px; }
+  #footer .address h3, #footer .address address {
+    text-align: right; }
+  #footer .social {
+    margin-top: 40px;
+    border-top: 1px solid #5f5f5f; }
+    #footer .social ul.social-icons li {
+      display: inline;
+      list-style: none;
+      padding: 0 12px; }
 
 #copyright {
   min-height: 65px;

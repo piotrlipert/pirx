@@ -331,6 +331,10 @@ MAIN CONTENT
 		margin-top: 50px;
 	}
 
+	p {
+		color: #fff;
+	}
+
 	ul {
 		li {
 			list-style: none;
@@ -352,6 +356,27 @@ MAIN CONTENT
 		float: left;
 		font: normal normal normal 14px "Avenir-Light", sans-serif;
 		margin-left: 10px;
+	}
+
+	.address {
+
+		h3, address {
+			text-align: right;
+		}
+	}
+
+	.social {
+		margin-top: 40px;
+		border-top: 1px solid #5f5f5f;
+
+		ul.social-icons {
+
+			li {
+				display: inline;
+				list-style: none;
+				padding: 0 12px;
+			}
+		}
 	}
 }
 
