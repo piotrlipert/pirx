@@ -197,7 +197,72 @@ MAIN CONTENT
 }
 
 #specification {
-	height: 700px;
+	min-height: 700px;
+
+	span {
+
+		&.icon {
+			display: block;
+			float: left;
+
+			&.icon1 {
+				background: url('../images/icon1.png');
+				height: 30px;
+				width: 29px;
+				margin-left: -46px;
+			}
+
+			&.icon2 {
+				background: url('../images/icon2.png');
+				height: 32px;
+				width: 16px;
+				margin-left: -38px;
+			}
+
+			&.icon3 {
+				background: url('../images/icon3.png');
+				height: 32px;
+				width: 16px;
+				margin-left: -38px;
+			}
+
+			&.icon4 {
+				background: url('../images/icon4.png');
+				height: 26px;
+				width: 22px;
+				margin-left: -42px;
+				margin-top: 1px;
+			}
+
+			&.icon5 {
+				background: url('../images/icon5.png');
+				height: 23px;
+				width: 29px;
+				margin-left: -46px;
+				margin-top: 3px;
+			}
+		}
+	}
+
+	h2 {
+		margin-top: 60px;
+	}
+
+	h3 {
+		color: #4f4f4f;
+		margin-top: 40px;
+	}
+
+	p {
+		font-size: 16px;
+		color: #999999;
+		margin-bottom: 6px;
+
+		span {
+			font-size: 14px;
+			color: #ff7200;
+		}
+	}
 }
 
 #faq {

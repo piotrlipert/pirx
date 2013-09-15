@@ -4834,7 +4834,49 @@ MAIN CONTENT
   height: 900px; }
 
 #specification {
-  height: 700px; }
+  min-height: 700px; }
+  #specification span.icon {
+    display: block;
+    float: left; }
+    #specification span.icon.icon1 {
+      background: url("../images/icon1.png");
+      height: 30px;
+      width: 29px;
+      margin-left: -46px; }
+    #specification span.icon.icon2 {
+      background: url("../images/icon2.png");
+      height: 32px;
+      width: 16px;
+      margin-left: -38px; }
+    #specification span.icon.icon3 {
+      background: url("../images/icon3.png");
+      height: 32px;
+      width: 16px;
+      margin-left: -38px; }
+    #specification span.icon.icon4 {
+      background: url("../images/icon4.png");
+      height: 26px;
+      width: 22px;
+      margin-left: -42px;
+      margin-top: 1px; }
+    #specification span.icon.icon5 {
+      background: url("../images/icon5.png");
+      height: 23px;
+      width: 29px;
+      margin-left: -46px;
+      margin-top: 3px; }
+  #specification h2 {
+    margin-top: 60px; }
+  #specification h3 {
+    color: #4f4f4f;
+    margin-top: 40px; }
+  #specification p {
+    font-size: 16px;
+    color: #999999;
+    margin-bottom: 6px; }
+    #specification p span {
+      font-size: 14px;
+      color: #ff7200; }
 
 #faq {
   height: 700px;
@@ -4914,4 +4956,20 @@ MAIN CONTENT
 
   #welcome {
     background: url("../images/bg-welcome@2x.jpg");
-    background-size: 100%; } }
+    background-size: 100%; }
+
+  #specification span.icon.icon1 {
+    background: url("../images/icon1@2x.png");
+    background-size: 29px 30px; }
+  #specification span.icon.icon2 {
+    background: url("../images/icon2@2x.png");
+    background-size: 16px 32px; }
+  #specification span.icon.icon3 {
+    background: url("../images/icon3@2x.png");
+    background-size: 16px 32px; }
+  #specification span.icon.icon4 {
+    background: url("../images/icon4@2x.png");
+    background-size: 22px 26px; }
+  #specification span.icon.icon5 {
+    background: url("../images/icon5@2x.png");
+    background-size: 29px 23px; } }

@@ -40,4 +40,36 @@
 		background-size: 100%;
 	}
 
+
+	#specification {
+		span {
+			&.icon {
+				&.icon1 {
+					background: url('../images/icon1@2x.png');
+					background-size: 29px 30px;
+				}
+
+				&.icon2 {
+					background: url('../images/icon2@2x.png');
+					background-size: 16px 32px;
+				}
+
+				&.icon3 {
+					background: url('../images/icon3@2x.png');
+					background-size: 16px 32px;
+				}
+
+				&.icon4 {
+					background: url('../images/icon4@2x.png');
+					background-size: 22px 26px;
+				}
+
+				&.icon5 {
+					background: url('../images/icon5@2x.png');
+					background-size: 29px 23px;
+				}
+			}
+		}
+	}
+
 }
