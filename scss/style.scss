@@ -277,6 +277,37 @@ MAIN CONTENT
 
 #team {
 	height: 700px;
+
+	h2 {
+		margin-top: 60px;
+	}
+
+	h3 {
+		color: #4f4f4f;
+		margin: 8px auto 4px;
+	}
+
+	img {
+		display: block;
+		margin: 20px auto 0;
+	}
+
+	img:first-child {
+		margin-top: 40px;
+	}
+	
+	h3, p {
+		text-align: center;
+	}
+
+	p {
+		font-size: 16px;
+		color: #999999;
+
+		span {
+			color: #ff7200;
+		}
+	}
 }
 
 #quote {

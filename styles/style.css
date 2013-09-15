@@ -4888,6 +4888,23 @@ MAIN CONTENT
 
 #team {
   height: 700px; }
+  #team h2 {
+    margin-top: 60px; }
+  #team h3 {
+    color: #4f4f4f;
+    margin: 8px auto 4px; }
+  #team img {
+    display: block;
+    margin: 20px auto 0; }
+  #team img:first-child {
+    margin-top: 40px; }
+  #team h3, #team p {
+    text-align: center; }
+  #team p {
+    font-size: 16px;
+    color: #999999; }
+    #team p span {
+      color: #ff7200; }
 
 #quote {
   height: 215px; }
