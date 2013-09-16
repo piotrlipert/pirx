@@ -4706,6 +4706,10 @@ h3 {
   font: normal normal normal 22px "Avenir-Roman", sans-serif;
   color: #999999; }
 
+h4 {
+  font: normal normal normal 16px "Avenir-Light", sans-serif;
+  color: #4f4f4f; }
+
 p {
   font: normal normal normal 16px/24px "Avenir-Light", sans-serif; }
 
@@ -4719,13 +4723,22 @@ ul li, address {
   border: none;
   -webkit-box-shadow: 0px 2px 0px #e86800;
   -moz-box-shadow: 0px 2px 0px #e86800;
-  box-shadow: 0px 2px 0px #e86800; }
+  box-shadow: 0px 2px 0px #e86800;
+  color: #fff; }
+  .btn:hover {
+    color: #fff;
+    background: #e86800;
+    -webkit-box-shadow: 0px -2px 0px #ff7200;
+    -moz-box-shadow: 0px -2px 0px #ff7200;
+    box-shadow: 0px -2px 0px #ff7200;
+    position: relative;
+    top: 2px; }
 
 .btn-small {
   padding: 10px 20px 8px; }
 
 .btn-big {
-  padding: 20px 50px 18px; }
+  padding: 16px 50px 14px; }
 
 .btn-order {
   font-size: 18px;
@@ -4776,7 +4789,7 @@ MAIN CONTENT
     #header ul.nav li a {
       color: #999999; }
       #header ul.nav li a:hover {
-        opacity: .5; }
+        color: #5f5f5f; }
       #header ul.nav li a.btn-order {
         color: #fff;
         font-size: 14px; }
@@ -4908,12 +4921,18 @@ MAIN CONTENT
 
 #quote {
   height: 215px; }
+  #quote img {
+    margin-top: 40px; }
   #quote h3 {
-    font-style: italic; }
+    font-style: italic;
+    margin: 26px 0 10px; }
 
 #sumup {
   height: 260px;
   background: #f5f5f5; }
+  #sumup h3 {
+    color: #4f4f4f;
+    margin: 70px 0 50px; }
 
 #footer {
   min-height: 375px;
@@ -4942,10 +4961,29 @@ MAIN CONTENT
   #footer .social {
     margin-top: 40px;
     border-top: 1px solid #5f5f5f; }
-    #footer .social ul.social-icons li {
-      display: inline;
-      list-style: none;
-      padding: 0 12px; }
+    #footer .social ul.social-icons {
+      width: 336px;
+      margin: 38px auto 0; }
+      #footer .social ul.social-icons li {
+        display: inline-block;
+        list-style: none;
+        padding: 0 13px; }
+        #footer .social ul.social-icons li a {
+          display: block;
+          height: 38px;
+          width: 38px;
+          background: url("../images/social.png") no-repeat top left; }
+          #footer .social ul.social-icons li a.tw {
+            background-position: -38px top; }
+          #footer .social ul.social-icons li a.gp {
+            background-position: -76px top; }
+          #footer .social ul.social-icons li a.yt {
+            background-position: -114px top; }
+          #footer .social ul.social-icons li a.vi {
+            background-position: -152px top; }
+          #footer .social ul.social-icons li a:hover {
+            width: 38px;
+            opacity: .5; }
 
 #copyright {
   min-height: 65px;
@@ -5000,4 +5038,8 @@ MAIN CONTENT
     background-size: 22px 26px; }
   #specification span.icon.icon5 {
     background: url("../images/icon5@2x.png");
-    background-size: 29px 23px; } }
+    background-size: 29px 23px; }
+
+  #footer .social ul.social-icons li a {
+    background: url("../images/social@2x.png");
+    background-size: 190px 38px; } }
