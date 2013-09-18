@@ -4775,7 +4775,7 @@ MAIN CONTENT
   #header .logo {
     background: url("../images/logo.png");
     height: 41px;
-    width: 181px;
+    width: 117px;
     margin-top: 20px; }
   #header ul.nav li {
     font-family: "Avenir-Roman", sans-serif;
@@ -5037,7 +5037,7 @@ MAIN CONTENT
 
   #header .logo {
     background: url("../images/logo@2x.png");
-    background-size: 181px 41px; }
+    background-size: 117px 41px; }
 
   #welcome {
     background: url("../images/bg-welcome@2x.jpg");
