@@ -4691,29 +4691,29 @@ a.th {
 /* 2. MIXINS */
 /* 3. GENERIC */
 html, body {
-  font: normal normal normal 16px/24px "Avenir-Roman", sans-serif; }
+  font: normal normal normal 16px/24px "Avenir-Roman", "Open Sans", sans-serif; }
 
 h1 {
-  font: normal normal normal 44px "Avenir-Medium", sans-serif;
+  font: normal normal normal 44px "Avenir-Medium", "Open Sans", sans-serif;
   color: #fff; }
 
 h2 {
-  font: normal normal normal 36px "Avenir-Medium", sans-serif;
+  font: normal normal normal 36px "Avenir-Medium", "Open Sans", sans-serif;
   color: #ff7200; }
 
 h3 {
-  font: normal normal normal 22px "Avenir-Roman", sans-serif;
+  font: normal normal normal 22px "Avenir-Roman", "Open Sans", sans-serif;
   color: #999999; }
 
 h4 {
-  font: normal normal normal 16px "Avenir-Light", sans-serif;
+  font: normal normal normal 16px "Avenir-Light", "Open Sans", sans-serif;
   color: #4f4f4f; }
 
 p {
-  font: normal normal normal 16px/24px "Avenir-Light", sans-serif; }
+  font: normal normal normal 16px/24px "Avenir-Light", "Open Sans", sans-serif; }
 
 ul li, address {
-  font: normal normal normal 16px/27px "Avenir-Light", sans-serif;
+  font: normal normal normal 16px/27px "Avenir-Light", "Open Sans", sans-serif;
   color: #fff; }
 
 .btn {
