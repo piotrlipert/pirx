@@ -4691,6 +4691,7 @@ a.th {
 /* 2. MIXINS */
 /* 3. GENERIC */
 html, body {
+  height: 100%;
   font: normal normal normal 16px/24px "Avenir-Roman", "Open Sans", sans-serif; }
 
 h1 {
@@ -4800,6 +4801,8 @@ MAIN CONTENT
   height: 500px; }
   #welcome h1 {
     margin-top: 110px; }
+  #welcome h2 {
+    margin-top: 60px; }
   #welcome p {
     color: #fff;
     margin-bottom: 60px; }
@@ -4836,7 +4839,16 @@ MAIN CONTENT
 
 #about {
   height: 1000px;
-  text-align: center; }
+  text-align: center;
+  position: relative; }
+  #about .printer {
+    width: 455px;
+    height: 528px;
+    position: absolute;
+    background: url("../images/printer.png") no-repeat;
+    bottom: 120px;
+    left: 50%;
+    margin-left: -223px; }
 
 #process {
   height: 700px;
@@ -4863,7 +4875,11 @@ MAIN CONTENT
     margin-top: 100px; }
 
 #examples {
-  height: 900px; }
+  min-height: 800px; }
+  #examples h2 {
+    margin-top: 60px; }
+  #examples p {
+    margin-bottom: 60px; }
 
 #specification {
   min-height: 700px; }
@@ -5042,6 +5058,10 @@ MAIN CONTENT
   #welcome {
     background: url("../images/bg-welcome@2x.jpg");
     background-size: 100%; }
+
+  #about .printer {
+    background: url("../images/printer@2x.png") no-repeat;
+    background-size: 455px 528px; }
 
   #specification span.icon.icon1 {
     background: url("../images/icon1@2x.png");

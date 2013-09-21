@@ -26,6 +26,7 @@ Main Content:
 
 /* 3. GENERIC */
 html, body {
+	height: 100%;
 	font: normal normal normal 16px/24px "Avenir-Roman", "Open Sans", sans-serif;
 }
 
@@ -177,6 +178,10 @@ MAIN CONTENT
 		margin-top: 110px;
 	}
 
+	h2 {
+		margin-top: 60px;
+	}
+
 	p {
 		color: #fff;
 		margin-bottom: 60px;
@@ -201,6 +206,17 @@ MAIN CONTENT
 #about {
 	height: 1000px;
 	text-align: center;
+	position: relative;
+
+	.printer {
+		width: 455px;
+		height: 528px;
+		position: absolute;
+		background: url('../images/printer.png') no-repeat;
+		bottom: 120px;
+		left: 50%;
+		margin-left: -223px;
+	}
 }
 
 #process {
@@ -243,7 +259,15 @@ MAIN CONTENT
 }
 
 #examples {
-	height: 900px;
+	min-height: 800px;
+
+	h2 {
+		margin-top: 60px;
+	}
+
+	p {
+		margin-bottom: 60px;
+	}
 }
 
 #specification {
