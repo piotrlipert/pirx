@@ -4990,7 +4990,7 @@ MAIN CONTENT
     font-size: 14px;
     color: #999; }
   #faq .faq-content .faq1, #faq .faq-content .faq2, #faq .faq-content .faq3, #faq .faq-content .faq4 {
-    padding: 60px;
+    padding: 60px 60px 40px;
     background: #fff;
     border-radius: 5px;
     margin-top: 60px; }
