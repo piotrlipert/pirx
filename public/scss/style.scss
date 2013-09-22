@@ -146,6 +146,19 @@ MAIN CONTENT
 		border-radius: 5px;
 		padding: 60px 90px 40px;
 		margin-top: 40px;
+		position: relative;
+
+		.triangle {
+			width: 0; 
+			height: 0; 
+			border-left: 20px solid transparent;
+			border-right: 20px solid transparent;
+			border-top: 20px solid #fff;
+
+			position: absolute;
+			bottom: -20px;
+			left: 149px;
+		}
 
 		p {
 			font-size: 14px;
@@ -164,16 +177,21 @@ MAIN CONTENT
 		}
 
 		h3 {
+			color: #4f4f4f;
 			padding-top: 8px;
 		}
 
 		p {
 			font-size: 16px;
-			color: #999999;
+			color: #999;
 			line-height: 0;
 
-			span {
+			a {
 				color: #ff7200;
+
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 		}
 	}

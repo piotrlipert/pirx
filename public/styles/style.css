@@ -4842,7 +4842,17 @@ MAIN CONTENT
     background: #fff;
     border-radius: 5px;
     padding: 60px 90px 40px;
-    margin-top: 40px; }
+    margin-top: 40px;
+    position: relative; }
+    #proof .proof-text .triangle {
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid #fff;
+      position: absolute;
+      bottom: -20px;
+      left: 149px; }
     #proof .proof-text p {
       font-size: 14px;
       color: #999; }
@@ -4854,13 +4864,16 @@ MAIN CONTENT
       float: left;
       margin-right: 16px; }
     #proof .proof-person h3 {
+      color: #4f4f4f;
       padding-top: 8px; }
     #proof .proof-person p {
       font-size: 16px;
-      color: #999999;
+      color: #999;
       line-height: 0; }
-      #proof .proof-person p span {
+      #proof .proof-person p a {
         color: #ff7200; }
+        #proof .proof-person p a:hover {
+          text-decoration: underline; }
 
 #about {
   min-height: 1000px;
