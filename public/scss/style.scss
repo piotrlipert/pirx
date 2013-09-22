@@ -204,7 +204,7 @@ MAIN CONTENT
 }
 
 #about {
-	height: 1000px;
+	min-height: 1000px;
 	text-align: center;
 	position: relative;
 
@@ -236,7 +236,7 @@ MAIN CONTENT
 }
 
 #process {
-	height: 700px;
+	min-height: 700px;
 	background: #f5f5f5;
 
 	h2 {
@@ -391,7 +391,7 @@ MAIN CONTENT
 }
 
 #faq {
-	height: 700px;
+	min-height: 700px;
 	background: #f5f5f5;
 
 	h2 {
@@ -448,7 +448,7 @@ MAIN CONTENT
 }
 
 #contact {
-	height: 800px;
+	min-height: 800px;
 	background: #f5f5f5;
 
 	h2 {
@@ -500,7 +500,7 @@ MAIN CONTENT
 }
 
 #team {
-	height: 700px;
+	min-height: 700px;
 
 	h2 {
 		margin-top: 60px;

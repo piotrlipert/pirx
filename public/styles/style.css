@@ -4838,7 +4838,7 @@ MAIN CONTENT
         clear: both; }
 
 #about {
-  height: 1000px;
+  min-height: 1000px;
   text-align: center;
   position: relative; }
   #about h2 {
@@ -4861,7 +4861,7 @@ MAIN CONTENT
     margin-left: -223px; }
 
 #process {
-  height: 700px;
+  min-height: 700px;
   background: #f5f5f5; }
   #process h2 {
     margin-top: 60px; }
@@ -4956,7 +4956,7 @@ MAIN CONTENT
       color: #ff7200; }
 
 #faq {
-  height: 700px;
+  min-height: 700px;
   background: #f5f5f5; }
   #faq h2 {
     margin-top: 60px; }
@@ -4992,7 +4992,7 @@ MAIN CONTENT
     border-radius: 5px; }
 
 #contact {
-  height: 800px;
+  min-height: 800px;
   background: #f5f5f5; }
   #contact h2 {
     margin-top: 60px; }
@@ -5027,7 +5027,7 @@ MAIN CONTENT
       margin: 0 auto 30px; }
 
 #team {
-  height: 700px; }
+  min-height: 700px; }
   #team h2 {
     margin-top: 60px; }
   #team h3 {
