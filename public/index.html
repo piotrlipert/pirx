@@ -24,6 +24,7 @@
     <script type="text/javascript" src="js/jquery.stellar.js"></script>
     <script type="text/javascript" src="js/retina.js"></script>
     <script type="text/javascript" src="js/lightbox-2.6.min.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
 
 		<!-- FAVICON -->
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -85,7 +86,7 @@
           <h2>Imagine you could create any object<br>
           you want - right at home.</h2>
           <p><span>- Need a stylish case for your electronics? - A unique toy for your child? - Maybe a cup or a cool lampshade?</span><br>
-          Whatever you fancy - here’s the first step - a machine that transforms digital designs into real objects. Pirx is a high quality 3D printer that is both affordable and reliable.A perfect tool to bring your ideas into material world.</p>
+          Whatever you fancy - here’s the first step - a machine that transforms digital designs into real objects.<br>Pirx is a high quality 3D printer that is both affordable and reliable.<br>A perfect tool to bring your ideas into material world.</p>
         </div>
       </div>
       <div class="row">
@@ -197,14 +198,41 @@
       <div class="row">
         <div class="large-4 large-offset-1 columns">
           <ul>
-            <li><a href="">What material does your printer use?</a></li>
-            <li><a href="">Oh my. How do I print anything?</a></li>
-            <li><a href="">What are your plans for the future?</a></li>
-            <li><a href="">Why so cheap?</a></li>
+            <li><span></span><a href="#" class="faq-1">What material does your printer use?</a></li>
+            <li><span></span><a href="#" class="faq-2">Oh my. How do I print anything?</a></li>
+            <li><span></span><a href="#" class="faq-3">What are your plans for the future?</a></li>
+            <li><span></span><a href="#" class="faq-4">Why so cheap?</a></li>
           </ul>
           <p>Something else? Use our contact form and send us a message!</p>
         </div>
-        <div class="large-7 columns">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, voluptatum.</div>
+        <div class="large-7 columns faq-content">
+          <div class="faq1">
+            <p>
+              We have put our hearts into the 3D printing movement. Sure, we want to make money but we also want to be fair to our customers. Most of the 3D printers out there are horribly overpriced and there is nothing innovative or great about them.
+            </p>
+          </div>
+          <div class="faq2">
+            <p>
+              We sincerely want to build the best machine ever - and we want everyone to be able to use it. Progress is expected only when technology is widely applied. We like progress. A lot.
+            </p>
+          </div>
+          <div class="faq3">
+            <p>
+              Keep in mind that improvements in manufacturing technology open many doors for future inventions. We love when imaginary technologies from sci-fi movies come true. That’s why.
+            </p>
+          </div>
+          <div class="faq4">
+            <p>
+              We have put our hearts into the 3D printing movement. Sure, we want to make money but we also want to be fair to our customers. Most of the 3D printers out there are horribly overpriced and there is nothing innovative or great about them.
+            </p>
+            <p>
+              We sincerely want to build the best machine ever - and we want everyone to be able to use it. Progress is expected only when technology is widely applied. We like progress. A lot.
+            </p>
+            <p>
+              Keep in mind that improvements in manufacturing technology open many doors for future inventions. We love when imaginary technologies from sci-fi movies come true. That’s why.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -212,10 +240,25 @@
 
     <section id="contact">
       <div class="row">
-        <div class="large-12 columns text-center"><h2>Any questions?</h2></div>
+        <div class="large-12 columns text-center">
+          <h2>Any questions?</h2>
+          <p>Just send us a message. We’ll be happy to assist you.</p>
+        </div>
       </div>
       <div class="row">
-        <div class="large-8 columns large-centered">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, consectetur.</div>
+        <div class="large-6 columns large-centered">
+          <form>
+            <fieldset>
+              <label>Name:</label>
+              <input type="text" placeholder="type in here...">
+              <label>Email:</label>
+              <input type="text" placeholder="type in here...">
+              <label>Message:</label>
+              <textarea type="text" placeholder="type in here..."></textarea>
+              <a href="#" class="btn btn-small btn-order">SEND</a>
+            </fieldset>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -255,7 +298,7 @@
 
     <section id="quote">
       <div class="row">
-        <div class="large-6 columns large-centered text-center">
+        <div class="large-7 columns large-centered text-center">
           <img src="images/drucker.png" alt="">
           <h3>“The best way to predict the future is to create it”</h3>
           <h4>- Peter Drucker</h4>

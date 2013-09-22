@@ -81,6 +81,17 @@
 		}
 	}
 
+	#faq {
+		ul {
+			li {
+				span {
+					background: url('../images/faq@2x.png');
+					background-size: 25px 25px;
+				}
+			}
+		}
+	}
+
 	#footer {
 		.social {
 			ul.social-icons {
