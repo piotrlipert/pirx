@@ -267,11 +267,46 @@ MAIN CONTENT
 
 	p {
 		margin-bottom: 60px;
+		color: #999999;
+	}
+
+	.gallery {
+		ul {
+			li {
+				position: relative;
+
+				a {
+					span {
+						display: none;
+					}
+
+					&:hover {
+						background: #ff7200;
+						display: block;
+
+						img {
+							opacity: .4;
+						}
+
+						span {
+							display: inline;
+							position: absolute;
+							width: auto;
+							text-align: center;
+							top: 70%;
+							opacity: 1;
+							z-index: 4;
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
 #specification {
-	min-height: 700px;
+	min-height: 740px;
 
 	span {
 
