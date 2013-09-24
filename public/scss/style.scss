@@ -413,7 +413,7 @@ MAIN CONTENT
 				font-size: 19px;
 				color: #4f4f4f;
 
-				&:hover, &.active {
+				&:hover {
 					color: #999;
 					text-decoration: underline;
 				}
@@ -592,6 +592,7 @@ MAIN CONTENT
 	  width: 175px;
 	  height: 39px;
 	  float: left;
+	  box-shadow: none;
 	}
 
 	button {

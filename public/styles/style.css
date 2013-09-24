@@ -5014,7 +5014,7 @@ MAIN CONTENT
       #faq ul li a {
         font-size: 19px;
         color: #4f4f4f; }
-        #faq ul li a:hover, #faq ul li a.active {
+        #faq ul li a:hover {
           color: #999;
           text-decoration: underline; }
   #faq p {
@@ -5123,7 +5123,8 @@ MAIN CONTENT
     background-color: white;
     width: 175px;
     height: 39px;
-    float: left; }
+    float: left;
+    box-shadow: none; }
   #footer button {
     float: left;
     font: normal normal normal 14px "Avenir-Light", sans-serif;
