@@ -327,6 +327,7 @@ MAIN CONTENT
 				position: relative;
 
 				a {
+					display: block;
 					span {
 						display: none;
 					}
@@ -337,17 +338,6 @@ MAIN CONTENT
 
 						img {
 							opacity: .4;
-						}
-
-						span {
-							display: inline;
-							position: absolute;
-							width: auto;
-							text-align: center;
-							top: 70%;
-							opacity: 1;
-							z-index: 4;
-							color: #fff;
 						}
 					}
 				}

@@ -4960,22 +4960,15 @@ MAIN CONTENT
     color: #999999; }
   #examples .gallery ul li {
     position: relative; }
-    #examples .gallery ul li a span {
-      display: none; }
-    #examples .gallery ul li a:hover {
-      background: #ff7200;
+    #examples .gallery ul li a {
       display: block; }
-      #examples .gallery ul li a:hover img {
-        opacity: .4; }
-      #examples .gallery ul li a:hover span {
-        display: inline;
-        position: absolute;
-        width: auto;
-        text-align: center;
-        top: 70%;
-        opacity: 1;
-        z-index: 4;
-        color: #fff; }
+      #examples .gallery ul li a span {
+        display: none; }
+      #examples .gallery ul li a:hover {
+        background: #ff7200;
+        display: block; }
+        #examples .gallery ul li a:hover img {
+          opacity: .4; }
 
 #specification {
   min-height: 740px; }
