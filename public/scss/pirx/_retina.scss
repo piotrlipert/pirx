@@ -59,6 +59,30 @@
 		}
 	}
 
+	#process {
+		.print {
+			.process-1 {
+				span {
+					background: url('../images/process1@2x.png');
+					background-size: 150px 100px;
+				}
+			}
+
+			.process-2 {
+				span {
+					background: url('../images/process2@2x.png');
+					background-size: 150px 100px;
+				}
+			}
+			
+			.process-3 {
+				span {
+					background: url('../images/process3@2x.png');
+					background-size: 150px 100px;
+				}
+			}
+		}
+	}
 
 	#specification {
 		span {

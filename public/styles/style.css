@@ -4928,7 +4928,28 @@ MAIN CONTENT
     #process .video:hover {
       opacity: .6; }
   #process .print {
-    margin-top: 100px; }
+    margin-top: 10px; }
+    #process .print h3 {
+      font-size: 18px;
+      color: #4f4f4f;
+      margin-top: 30px; }
+    #process .print p {
+      font-size: 16px;
+      color: #999; }
+    #process .print .process-1 span, #process .print .process-2 span, #process .print .process-3 span {
+      display: inline-block;
+      float: left;
+      width: 150px;
+      height: 100px;
+      position: relative;
+      left: -30px;
+      margin-top: 16px; }
+    #process .print .process-1 span {
+      background: url("../images/process1.png"); }
+    #process .print .process-2 span {
+      background: url("../images/process2.png"); }
+    #process .print .process-3 span {
+      background: url("../images/process3.png"); }
 
 #examples {
   min-height: 800px; }
@@ -5216,6 +5237,16 @@ MAIN CONTENT
   #about .printer {
     background: url("../../images/printer@2x.png") no-repeat;
     background-size: 455px 528px; }
+
+  #process .print .process-1 span {
+    background: url("../images/process1@2x.png");
+    background-size: 150px 100px; }
+  #process .print .process-2 span {
+    background: url("../images/process2@2x.png");
+    background-size: 150px 100px; }
+  #process .print .process-3 span {
+    background: url("../images/process3@2x.png");
+    background-size: 150px 100px; }
 
   #specification span.icon.icon1 {
     background: url("../../images/icon1@2x.png");
