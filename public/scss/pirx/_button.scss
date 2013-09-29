@@ -10,9 +10,9 @@
 	&:hover {
 		color: #fff;
 		background: #e86800;
-		-webkit-box-shadow: 0px -2px 0px rgba(255, 114, 0, 1);
-		-moz-box-shadow:    0px -2px 0px rgba(255, 114, 0, 1);
-		box-shadow:         0px -2px 0px rgba(255, 114, 0, 1);
+		-webkit-box-shadow: 0px -2px 0px rgba(199, 90, 1, 1);
+		-moz-box-shadow:    0px -2px 0px rgba(199, 90, 1, 1);
+		box-shadow:         0px -2px 0px rgba(199, 90, 1, 1);
 		position: relative;
 		top: 2px;
 	}
@@ -23,7 +23,7 @@
 }
 
 .btn-big {
-	padding: 16px 50px 14px;
+	padding: 16px 8% 14px;
 }
 
 .btn-order {
