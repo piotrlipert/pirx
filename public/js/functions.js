@@ -30,4 +30,16 @@ $(document).ready(function() {
 			scrollTop: $("#contact h2").offset().top
 		}, 500);
 	});
+
+
+
+	$('.printer-1, .printer-2, .printer-3, .printer-4').hide();
+	$(document).scroll(function () {	
+	    var y = $(this).scrollTop();
+	    if (y > 1300) {
+	        $('.printer-1, .printer-2, .printer-3, .printer-4').fadeIn();
+	    }
+
+	});
+
 });
