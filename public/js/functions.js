@@ -21,4 +21,13 @@ $(document).ready(function() {
 		$('.faq4').show().addClass('active');
 		$('.faq-4').addClass('active');
 	});
+
+
+
+
+	$('a#contact-us').click(function(){
+		$('html, body').animate({
+			scrollTop: $("#contact h2").offset().top
+		}, 500);
+	});
 });

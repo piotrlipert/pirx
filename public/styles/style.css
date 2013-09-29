@@ -4898,7 +4898,7 @@ MAIN CONTENT
       color: #4f4f4f;
       font-style: italic;
       line-height: 70px; }
-  #about .printer {
+  #about .printer .printer-img {
     width: 455px;
     height: 528px;
     position: absolute;
@@ -4906,6 +4906,65 @@ MAIN CONTENT
     bottom: 120px;
     left: 50%;
     margin-left: -223px; }
+  #about .printer h3 {
+    font-size: 18px;
+    color: #4f4f4f; }
+  #about .printer p {
+    font-size: 14px; }
+  #about .printer .printer-1, #about .printer .printer-2 {
+    text-align: right;
+    width: 150px;
+    float: left; }
+  #about .printer .printer-3, #about .printer .printer-4 {
+    text-align: left;
+    width: 150px;
+    float: right; }
+  #about .printer .printer-1 {
+    margin-top: 170px; }
+    #about .printer .printer-1 span {
+      width: 275px;
+      height: 177px;
+      background: url("../images/printer-1.png") no-repeat;
+      position: absolute;
+      top: 250px;
+      left: 190px; }
+  #about .printer .printer-2 {
+    margin-top: 60px; }
+    #about .printer .printer-2 span {
+      width: 200px;
+      height: 129px;
+      background: url("../images/printer-2.png") no-repeat;
+      position: absolute;
+      top: 110px;
+      left: 190px; }
+  #about .printer .printer-3 {
+    margin-top: 90px; }
+    #about .printer .printer-3 span {
+      width: 325px;
+      height: 166px;
+      background: url("../images/printer-3.png") no-repeat;
+      position: absolute;
+      top: 152px;
+      right: 190px; }
+      @media screen and (max-width: 1024px) {
+        #about .printer .printer-3 span {
+          width: 250px;
+          height: 166px;
+          background: url("../images/printer-3b.png") no-repeat; } }
+  #about .printer .printer-4 {
+    margin-top: 0; }
+    #about .printer .printer-4 span {
+      width: 315px;
+      height: 118px;
+      background: url("../images/printer-4.png") no-repeat;
+      position: absolute;
+      top: 60px;
+      right: 190px; }
+      @media screen and (max-width: 1024px) {
+        #about .printer .printer-4 span {
+          width: 240px;
+          height: 118px;
+          background: url("../images/printer-4b.png") no-repeat; } }
 
 #process {
   min-height: 700px;
@@ -4953,7 +5012,8 @@ MAIN CONTENT
       background: url("../images/process3.png"); }
 
 #examples {
-  min-height: 760px; }
+  min-height: 700px;
+  padding-bottom: 80px; }
   #examples h2 {
     margin-top: 60px; }
   #examples p {
@@ -5228,10 +5288,21 @@ MAIN CONTENT
     background: url("../../images/bg-welcome@2x.jpg");
     background-size: 100%; }
 
-  #about .printer {
+  #about .printer .printer-img {
     background: url("../../images/printer@2x.png") no-repeat;
     background-size: 455px 528px; }
-
+  #about .printer .printer-1 span {
+    background: url("../images/printer-1@2x.png") no-repeat;
+    background-size: 275px 177px; }
+  #about .printer .printer-2 span {
+    background: url("../images/printer-2@2x.png") no-repeat;
+    background-size: 200px 129px; }
+  #about .printer .printer-3 span {
+    background: url("../images/printer-3@2x.png") no-repeat;
+    background-size: 325px 166px; }
+  #about .printer .printer-4 span {
+    background: url("../images/printer-4@2x.png") no-repeat;
+    background-size: 315px 118px; }
   #process .print .process-1 span {
     background: url("../images/process1@2x.png");
     background-size: 150px 100px; }
@@ -5265,6 +5336,15 @@ MAIN CONTENT
   #footer .social ul.social-icons li a {
     background: url("../../images/social@2x.png");
     background-size: 190px 38px; } }
+  @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), screen and (min-resolution: 192dpi) and (max-width: 1024px) {
+    #about .printer .printer-3 span {
+      background: url("../images/printer-3b@2x.png") no-repeat;
+      background-size: 250px 166px; } }
+  @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), screen and (min-resolution: 192dpi) and (max-width: 1024px) {
+    #about .printer .printer-4 span {
+      background: url("../images/printer-4b@2x.png") no-repeat;
+      background-size: 240px 118px; } }
+
 @media only screen and (max-width: 1024px) {
   .separator {
     max-width: 100%;

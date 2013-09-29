@@ -221,13 +221,100 @@ MAIN CONTENT
 	}
 
 	.printer {
-		width: 455px;
-		height: 528px;
-		position: absolute;
-		background: url('../images/printer.png') no-repeat;
-		bottom: 120px;
-		left: 50%;
-		margin-left: -223px;
+		.printer-img {
+			width: 455px;
+			height: 528px;
+			position: absolute;
+			background: url('../images/printer.png') no-repeat;
+			bottom: 120px;
+			left: 50%;
+			margin-left: -223px;
+		}
+
+		h3 {
+			font-size: 18px;
+			color: #4f4f4f;
+		}
+
+		p {
+			font-size: 14px;
+		}
+
+		.printer-1, .printer-2 {
+			text-align: right;
+			width: 150px;
+			float: left;
+		}
+
+		.printer-3, .printer-4 {
+			text-align: left;
+			width: 150px;
+			float: right;
+		}
+
+		.printer-1 {
+			margin-top: 170px;
+
+			span {
+				width: 275px;
+				height: 177px;
+				background: url('../images/printer-1.png') no-repeat;
+				position: absolute;
+				top: 250px;
+				left: 190px;
+			}
+		}
+
+		.printer-2 {
+			margin-top: 60px;
+
+			span {
+				width: 200px;
+				height: 129px;
+				background: url('../images/printer-2.png') no-repeat;
+				position: absolute;
+				top: 110px;
+				left: 190px;
+			}
+		}
+
+		.printer-3 {
+			margin-top: 90px;
+
+			span {
+				width: 325px;
+				height: 166px;
+				background: url('../images/printer-3.png') no-repeat;
+				position: absolute;
+				top: 152px;
+				right: 190px;
+
+				@media screen and (max-width: 1024px) {
+					width: 250px;
+					height: 166px;
+					background: url('../images/printer-3b.png') no-repeat;
+			    }
+			}
+		}
+
+		.printer-4 {
+			margin-top: 0;
+
+			span {
+				width: 315px;
+				height: 118px;
+				background: url('../images/printer-4.png') no-repeat;
+				position: absolute;
+				top: 60px;
+				right: 190px;
+
+				@media screen and (max-width: 1024px) {
+					width: 240px;
+					height: 118px;
+					background: url('../images/printer-4b.png') no-repeat;
+			    }
+			}
+		}
 	}
 }
 
@@ -312,7 +399,8 @@ MAIN CONTENT
 }
 
 #examples {
-	min-height: 760px;
+	min-height: 700px;
+	padding-bottom: 80px;
 
 	h2 {
 		margin-top: 60px;
