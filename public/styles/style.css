@@ -5143,6 +5143,8 @@ MAIN CONTENT
       border: 1px solid #e8e8e8;
       height: 40px;
       box-shadow: none; }
+      #contact fieldset input:focus, #contact fieldset textarea:focus {
+        border: 1px solid #ff7200; }
     #contact fieldset textarea {
       height: 110px;
       margin-bottom: 30px; }
