@@ -875,7 +875,6 @@ MAIN CONTENT
 	}
 
 	.contact-us {
-
 		h2 {
 			margin-top: 0;
 		}
@@ -918,6 +917,30 @@ MAIN CONTENT
 				padding: 8px 0 6px;
 				text-align: center;
 				margin: 0 auto 30px;
+			}
+		}
+	}
+
+	.press {
+		h2 {
+			&:nth-of-type(1){
+				margin-top: 0;
+			}
+		}
+
+		.row {
+			a {
+				color: #ff7200;
+				font-family: "Avenir-Light";
+				font-size: 18px;
+				display: inline-block;
+				margin: 10px 0 30px;
+			}
+
+			.logotype {
+				img {
+					border: 2px solid #f5f5f5;
+				}
 			}
 		}
 	}
