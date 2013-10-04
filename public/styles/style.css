@@ -5259,13 +5259,14 @@ MAIN CONTENT
     margin-top: 36px; }
 
 #about {
-  margin-top: 60px; }
+  margin: 60px auto 40px; }
   #about .sidebar-nav li {
     font-family: "Avenir-Roman", sans-serif;
     list-style: none;
     text-transform: uppercase;
     font-size: 16px;
-    text-align: left; }
+    text-align: left;
+    padding-bottom: 10px; }
     #about .sidebar-nav li a {
       color: #999999; }
       #about .sidebar-nav li a:hover {
@@ -5273,6 +5274,8 @@ MAIN CONTENT
       #about .sidebar-nav li a.btn-order {
         color: #fff;
         font-size: 14px; }
+  #about .sidebar-nav .active {
+    color: #ff7200; }
   #about h2 {
     text-align: left;
     color: #4f4f4f;

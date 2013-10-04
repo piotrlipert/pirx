@@ -793,7 +793,7 @@ MAIN CONTENT
 }
 
 #about {
-	margin-top: 60px;
+	margin: 60px auto 40px;
 
 	.sidebar-nav {
 		li {
@@ -802,6 +802,7 @@ MAIN CONTENT
 			text-transform: uppercase;
 			font-size: 16px;
 			text-align: left;
+			padding-bottom: 10px;
 
 			a {
 				color: #999999;
@@ -815,6 +816,10 @@ MAIN CONTENT
 					font-size: 14px;
 				}
 			}
+		}
+
+		.active {
+			color: #ff7200;
 		}
 	}
 
