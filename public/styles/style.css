@@ -5258,20 +5258,20 @@ MAIN CONTENT
   #caption .caption h2 {
     margin-top: 36px; }
 
-#about {
+#about-us {
   margin: 60px auto 40px; }
-  #about .sidebar-nav li {
+  #about-us .sidebar-nav li {
     font-family: "Avenir-Roman", sans-serif;
     list-style: none;
     text-transform: uppercase;
     font-size: 16px;
     text-align: left;
     padding-bottom: 10px; }
-    #about .sidebar-nav li a {
+    #about-us .sidebar-nav li a {
       color: #999999;
       display: inline-block;
       width: 100%; }
-      #about .sidebar-nav li a span {
+      #about-us .sidebar-nav li a span {
         position: relative;
         float: right;
         width: 6px;
@@ -5285,29 +5285,29 @@ MAIN CONTENT
         -o-transform: rotate(-135deg);
         -ms-transform: rotate(-135deg);
         transform: rotate(-135deg); }
-      #about .sidebar-nav li a:hover {
+      #about-us .sidebar-nav li a:hover {
         color: #5f5f5f; }
-        #about .sidebar-nav li a:hover span {
+        #about-us .sidebar-nav li a:hover span {
           border-color: #5f5f5f; }
-      #about .sidebar-nav li a.btn-order {
+      #about-us .sidebar-nav li a.btn-order {
         color: #fff;
         font-size: 14px; }
-  #about .sidebar-nav .active {
+  #about-us .sidebar-nav .active {
     color: #ff7200; }
-    #about .sidebar-nav .active span {
+    #about-us .sidebar-nav .active span {
       border-color: #ff7200; }
-    #about .sidebar-nav .active:hover {
+    #about-us .sidebar-nav .active:hover {
       color: #ff7200; }
-      #about .sidebar-nav .active:hover span {
+      #about-us .sidebar-nav .active:hover span {
         border-color: #ff7200; }
-  #about h2 {
+  #about-us h2 {
     text-align: left;
     color: #4f4f4f;
     font-family: "Avenir-Light";
     margin-bottom: 30px;
     padding-bottom: 10px;
     border-bottom: 2px solid #f5f5f5; }
-  #about p {
+  #about-us p {
     text-align: left;
     line-height: 28px; }
 
