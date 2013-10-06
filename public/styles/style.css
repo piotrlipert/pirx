@@ -5200,6 +5200,10 @@ MAIN CONTENT
     color: #fff; }
   #footer ul li {
     list-style: none; }
+    #footer ul li a {
+      color: #fff; }
+      #footer ul li a:hover {
+        opacity: .6; }
   #footer input {
     border-style: solid;
     border-width: 1px;
