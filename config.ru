@@ -1,13 +1,12 @@
 use Rack::Static, 
   :urls => ["/images", "/js", "/styles"],
   :root => "public"
-
 # This is the root of our app
 @root = File.expand_path(File.dirname(__FILE__))
 
 run Proc.new { |env|
   # Extract the requested path from the request
-  path = Rack::Utils.unescape(env['PATH_INFO'])
+  path = Rack::Utils.unescape(env['PATH_INFO']+"/public")
   index_file = @root + "#{path}/index.html"
 
   if File.exists?(index_file)
