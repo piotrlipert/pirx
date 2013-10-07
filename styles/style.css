@@ -5487,7 +5487,7 @@ MAIN CONTENT
     max-width: 100%;
     height: 200px; }
 
-  #about .printer .printer-img {
+  #about .printer {
     display: none; }
 
   #process {
