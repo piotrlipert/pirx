@@ -1,0 +1,21 @@
+@media only screen and (max-width: 768px) {
+
+	.separator {
+		max-width: 100%;
+		height: 200px;
+	}
+
+	#process {
+		text-align: center;
+	}
+
+	#examples {
+		a {
+			&:hover {
+				background-color: none;
+			}
+		}
+	}
+
+
+}
