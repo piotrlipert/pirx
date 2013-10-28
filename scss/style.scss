@@ -209,15 +209,15 @@ MAIN CONTENT
 		line-height: 36px;
 	}
 
+	span {
+		font-size: 18px;
+		color: #4f4f4f;
+		font-style: italic;
+		line-height: 70px;
+	}
+
 	p {
 		color: #999;
-
-		span {
-			font-size: 18px;
-			color: #4f4f4f;
-			font-style: italic;
-			line-height: 70px;
-		}
 	}
 
 	.printer {
@@ -747,7 +747,7 @@ MAIN CONTENT
 
 		ul.social-icons {
 			width: 336px;
-			margin: 38px auto 0;
+			margin: 40px auto;
 
 			li {
 				display: inline-block;

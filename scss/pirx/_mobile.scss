@@ -1,11 +1,37 @@
 @media only screen and (max-width: 768px) {
 
+	h1 {
+		font-size: 36px;
+	}
+
 	.separator {
 		max-width: 100%;
 		height: 200px;
 	}
 
+	#proof {
+		.triangle {
+			display: none;
+		}
+	}
+
 	#about {
+
+		min-height: 400px;
+
+		h2 {
+			margin-bottom: 40px;
+			font-size: 28px;
+		}
+
+		span {
+			line-height: 24px;
+		}
+
+		p {
+			margin-top: 24px;
+		}
+
 		.printer {
 			display: none;
 		}
@@ -13,6 +39,21 @@
 
 	#process {
 		text-align: center;
+
+		h3 {
+			margin-top: 40px; 
+		}
+
+		.print  {
+			margin: 80px auto;
+			.process-1, .process-2, .process-3 {
+				span {
+					float: none;
+					display: block;
+					margin: 20px auto;
+				}
+			}
+		}
 	}
 
 	#examples {
@@ -23,5 +64,40 @@
 		}
 	}
 
+	#specification {
+		text-align: center;
+		padding-bottom: 80px;
+	}
+
+	#faq {
+		.faq-content {
+			.faq1, .faq2, .faq3, .faq4 {
+				margin: 40px auto 80px;
+			}
+		}
+	}
+
+	#team {
+		padding-bottom: 50px;
+	}
+
+	#footer {
+		text-align: center;
+
+		input {
+		  width: 76%;
+		}
+
+		button {
+			width: 20%;
+			margin-left: 4%;
+		}
+
+		.address {
+			h3, address {
+				text-align: center;
+			}
+		}
+	}
 
 }
