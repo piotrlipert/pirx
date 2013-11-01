@@ -4,6 +4,10 @@
 		font-size: 36px;
 	}
 
+	p {
+		font-size: 18px;
+	}
+
 	.separator {
 		max-width: 100%;
 		height: 200px;
@@ -31,7 +35,9 @@
 		}
 
 		p {
+			margin-top: 40px;
 			color: #999;
+			font-size: 18px;
 		}
 
 		.btn-order {
@@ -42,14 +48,19 @@
 	}
 
 	#proof {
-		.triangle {
-			display: none;
+		.proof-text {
+			padding: 30px 8% 12px;
+
+			.triangle {
+				left: 50%;
+				margin-left: -20px;
+			}
 		}
 	}
 
 	#about {
-
 		min-height: 400px;
+		padding-bottom: 50px;
 
 		h2 {
 			margin-bottom: 40px;
@@ -58,10 +69,12 @@
 
 		span {
 			line-height: 24px;
+			text-align: left;
 		}
 
 		p {
 			margin-top: 24px;
+			text-align: left;
 		}
 
 		.printer {
@@ -73,13 +86,19 @@
 		text-align: center;
 
 		h3 {
-			margin-top: 40px; 
+			margin-top: 20px; 
+		}
+
+		p {
+			text-align: left;
 		}
 
 		.print  {
-			margin: 80px auto;
+			margin: 40px auto;
+
 			.process-1, .process-2, .process-3 {
 				span {
+					left: 0;
 					float: none;
 					display: block;
 					margin: 20px auto;
@@ -89,6 +108,11 @@
 	}
 
 	#examples {
+		p {
+			margin-top: 50px;
+			text-align: left;
+		}
+
 		a {
 			&:hover {
 				background-color: none;
@@ -98,12 +122,41 @@
 
 	#specification {
 		padding-bottom: 70px;
+
+		p {
+			font-size: 16px;
+		}
 	}
 
 	#faq {
+		ul {
+			margin-top: 30px;
+		}
+
 		.faq-content {
 			.faq1, .faq2, .faq3, .faq4 {
+				padding: 30px 8% 12px;
 				margin: 40px auto 80px;
+			}
+		}
+	}
+
+	#contact {
+		p {
+			font-size: 18px;
+		}
+
+		fieldset {
+			label {
+				margin-left: 0;
+			}
+
+			input, textarea {
+				width: 100%;
+			}
+
+			.btn-order {
+				margin-bottom: 20px;
 			}
 		}
 	}

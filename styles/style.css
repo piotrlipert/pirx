@@ -5498,6 +5498,9 @@ MAIN CONTENT
   h1 {
     font-size: 36px; }
 
+  p {
+    font-size: 18px; }
+
   .separator {
     max-width: 100%;
     height: 200px; }
@@ -5516,46 +5519,74 @@ MAIN CONTENT
       font-weight: 500;
       text-align: center; }
     #welcome p {
-      color: #999; }
+      margin-top: 40px;
+      color: #999;
+      font-size: 18px; }
     #welcome .btn-order {
       display: block;
       width: 100%;
       text-align: center; }
 
-  #proof .triangle {
-    display: none; }
+  #proof .proof-text {
+    padding: 30px 8% 12px; }
+    #proof .proof-text .triangle {
+      left: 50%;
+      margin-left: -20px; }
 
   #about {
-    min-height: 400px; }
+    min-height: 400px;
+    padding-bottom: 50px; }
     #about h2 {
       margin-bottom: 40px;
       font-size: 28px; }
     #about span {
-      line-height: 24px; }
+      line-height: 24px;
+      text-align: left; }
     #about p {
-      margin-top: 24px; }
+      margin-top: 24px;
+      text-align: left; }
     #about .printer {
       display: none; }
 
   #process {
     text-align: center; }
     #process h3 {
-      margin-top: 40px; }
+      margin-top: 20px; }
+    #process p {
+      text-align: left; }
     #process .print {
-      margin: 80px auto; }
+      margin: 40px auto; }
       #process .print .process-1 span, #process .print .process-2 span, #process .print .process-3 span {
+        left: 0;
         float: none;
         display: block;
         margin: 20px auto; }
 
+  #examples p {
+    margin-top: 50px;
+    text-align: left; }
   #examples a:hover {
     background-color: none; }
 
   #specification {
     padding-bottom: 70px; }
+    #specification p {
+      font-size: 16px; }
 
+  #faq ul {
+    margin-top: 30px; }
   #faq .faq-content .faq1, #faq .faq-content .faq2, #faq .faq-content .faq3, #faq .faq-content .faq4 {
+    padding: 30px 8% 12px;
     margin: 40px auto 80px; }
+
+  #contact p {
+    font-size: 18px; }
+  #contact fieldset label {
+    margin-left: 0; }
+  #contact fieldset input, #contact fieldset textarea {
+    width: 100%; }
+  #contact fieldset .btn-order {
+    margin-bottom: 20px; }
 
   #team {
     padding-bottom: 50px; }
