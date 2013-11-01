@@ -5,6 +5,14 @@
 		height: 240px;
 	}
 
+	#welcome {
+		.btn-order {
+			display: block;
+			width: 100%;
+			text-align: center;
+		}
+	}
+
 	#proof {
 		.proof-text {
 			.triangle {
@@ -55,6 +63,19 @@
 			}
 
 		}
+	}
+
+	#quote {
+		padding-bottom: 40px;
+	}
+
+	#sumup {
+		.btn-order {
+			display: block;
+			width: 100%;
+			text-align: center;
+		}
+		padding-bottom: 70px;
 	}
 
 }

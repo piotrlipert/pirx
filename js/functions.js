@@ -39,47 +39,19 @@ $(document).ready(function() {
 
 	$('.printer-1, .printer-2, .printer-3, .printer-4').hide();
 	$(document).scroll(function () {	
-	    var y = $(this).scrollTop();
-	    if (y > 1150) {
-	        $('.printer-3').fadeIn();
-	    }
-	    if (y > 1200) {
-	        $('.printer-1').fadeIn();
-	    }
-	    if (y > 1250) {
-	        $('.printer-4').fadeIn();
-	    }
-	    if (y > 1300) {
-	        $('.printer-2').fadeIn();
-	    }
-
-	});
-
-
-	var isMobile = {
-	    Android: function() {
-	        return navigator.userAgent.match(/Android/i);
-	    },
-	    BlackBerry: function() {
-	        return navigator.userAgent.match(/BlackBerry/i);
-	    },
-	    iOS: function() {
-	        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-	    },
-	    Opera: function() {
-	        return navigator.userAgent.match(/Opera Mini/i);
-	    },
-	    Windows: function() {
-	        return navigator.userAgent.match(/IEMobile/i);
-	    },
-	    any: function() {
-	        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-	    }
-	};
-	jQuery(document).ready(function(){
-	    if( !isMobile.any() ){
-	        $(window).stellar();
-	    }
+    var y = $(this).scrollTop();
+    if (y > 1150) {
+        $('.printer-3').fadeIn();
+    }
+    if (y > 1200) {
+        $('.printer-1').fadeIn();
+    }
+    if (y > 1250) {
+        $('.printer-4').fadeIn();
+    }
+    if (y > 1300) {
+        $('.printer-2').fadeIn();
+    }
 	});
 
 });
