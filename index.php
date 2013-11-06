@@ -3,8 +3,9 @@
 	echo http_get_request_body();
 
 $a = 2;
-if ($a==1)
-	include_once("index.html"); 
-else
+$b = 1;
+#if($a==$b)
+#	include_once("index.html"); 
+#else
 	echo http_get_request_body();
 ?>
