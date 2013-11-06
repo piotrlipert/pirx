@@ -1,7 +1,11 @@
 <?php
 
+$headers = apache_request_headers();
 
-include_once('index_en.html');
+foreach ($headers as $header => $value) {
+    echo "$header: $value <br />\n";
+}
+#include_once('index_en.html');
 
 
 ?>
