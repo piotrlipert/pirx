@@ -3,7 +3,6 @@
 $headers = apache_request_headers();
 $a = 0;
 foreach ($headers as $header => $value) {
-    echo "$header: $value <br />\n";
     if($header=='Host')
     {
     	if($value=='pirx3d.pl')
