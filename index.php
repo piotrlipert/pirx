@@ -1,11 +1,466 @@
-<?php 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pirx 3d Printer</title>
 
-	echo http_get_request_body();
+    <!-- META DATA -->
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pirx 3d Printer">
+    <meta name="keywords" content="pirx, 3d, printer, 3d printer, 3d print, community, pirx3d, hardware">  
+
+    <!-- FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <!-- STYLESHEETS -->
+		<link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/foundation.css" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/lightbox.css" rel="stylesheet">
+    
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.stellar.js"></script>
+    <script type="text/javascript" src="js/retina.js"></script>
+    <script type="text/javascript" src="js/lightbox-2.6.min.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+
+		<!-- FAVICON -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- ANALYTICS -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36761200-2']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>   
+
+    <!-- TAG -->
+    <meta name="google-site-verification" content="PRntbChrQnhUx3G6XGQzQTlC4gs5f_rVgfZ6CXrwzSk" />   
+
+  </head>
+  <body>
+  	<div id="wrapper">
+  		<header id="header">
+        <div class="row">
+          <div class="large-3 small-12 columns">
+            <div class="logo">
+            </div>
+          </div>
+          <div class="large-9 small-12 columns">
+            <ul class="nav right">
+              <li><a href="/">home</a></li>
+              <li><a href="about.html">about</a></li>
+              <li><a href="https://facebook.com/clockwork3d">blog</a></li>
+              <li><a href="contact.html">contact</a></li>
+              <li><a href="" class="btn btn-small btn-order">buy now</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <section id="welcome">
+        <div class="row">
+          <img class="image" src="images/bg-welcome.jpg">
+          <div class="large-5 small-12 columns">
+
+            <?php 
+
+  echo http_get_request_body();
 
 $a = 2;
 $b = 1;
 #if($a==$b)
-#	include_once("index.html"); 
+# include_once("index.html"); 
 #else
-	echo http_get_request_body();
+  echo http_get_request_body();
 ?>
+            <h1>Make it real</h1>
+            <p>Would you like to manufacture anything you want by yourself?<br>
+              <?php echo "ADING"?>
+            To turn abstract digital design into a solid object?<br>
+            Meet Pirx and discover the endless<br>
+            possibilities of 3d printing.</p>
+            <a href="#" class="btn btn-big btn-order">pre-order your printer for $799</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="proof">
+        <div class="row">
+          <div class="large-6 columns large-centered">
+            <div class="proof-text">
+              <p>We were lucky to test Pirx 3D in Materialination for couple of weeks. Pirx have cool 3D printer with awesome printing quality and nice design. The team behind the project is just the best! Congratulations Guys!</p>
+              <span class="triangle"></span>
+            </div>
+            <div class="proof-person">
+              <img src="images/proof-michal.png" alt="">
+              <h3>Michał Frączek</h3>
+              <p><span>CEO // </span><a href="http://materialination.com">materialination.com</a></p>
+            </div>
+            <!-- <div class="large-12 columns">
+              <ul class="proof-grid">
+                <li><img src="images/proof1.png" alt=""></li>
+                <li><img src="images/proof2.png" alt=""></li>
+                <li><img src="images/proof3.png" alt=""></li>
+                <li><img src="images/proof4.png" alt=""></li>
+                <li><img src="images/proof5.png" alt=""></li>
+              </ul>
+            </div> -->
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="row">
+          <div class="large-12 columns text-center">
+            <h2>Imagine you could create any object<br>
+            you want - right at home.</h2>
+            <span>- Need a stylish case for your electronics? - A unique toy for your child? - Maybe a cup or a cool lampshade?</span>
+            <p>Whatever you fancy - here’s the first step - a machine that transforms digital designs into real objects.<br>Pirx is a high quality 3D printer that is both affordable and reliable.<br>A perfect tool to bring your ideas into material world.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="printer">
+            <div class="printer-img"></div>
+            <div class="row">
+              <div class="large-10 columns large-offset-1">
+                <div class="printer-1">
+                  <h3>Bed</h3>
+                  <p>Is driven along the z-axis by trapezoid screw allowing 100 micron layer height.</p>
+                  <span></span>
+                </div>
+                <div class="printer-3">
+                  <h3>Hot-end</h3>
+                  <p>The nozzle and the heating block made of one piece of brass with ceramic cartridge heater.</p>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="large-10 columns large-offset-1">
+                <div class="printer-2">
+                  <h3>Wooden frame</h3>
+                  <p>Lightweight chassis made of plywood is stiff and sturdy.</p>
+                  <span></span>
+                </div>
+                <div class="printer-4">
+                  <h3>Gantry</h3>
+                  <p>Stiff xy gantry designed from scratch to fit 3D printing needs ensures high precision.</p>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="separator separator1" data-stellar-background-ratio="0.2"></div>
+
+      <section id="process">
+        <div class="row">
+          <div class="large-12 columns text-center">
+            <h2>Printing Process</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-4 large-offset-1 columns">
+            <h3>How does it work?</h3>
+            <p>3D printing is achieved using an
+              additive proces, where successive layers of plastic are laid down in different shapes.</p>
+            <p><span>See it for yourself:</span></p>
+            <a href="http://www.youtube.com/watch?v=XDvurlfkyf8&width=1280&height=720" id="yt-link" title="" class="event-video"><img src="images/video.png" alt="" class="video" style="width:210px" /></a>
+          </div>
+          <div class="large-5 large-offset-1 columns print">
+            <div class="process-1">
+              <span class="small-12 columns"></span>
+              <div>
+                <h3>Project</h3>
+                <p>A 3D model is built using CAD software. Exported to popular STL format it is preprocessed and transfered to Pirx. Voila! Ready to print!</p>
+              </div>
+            </div>
+            <div class="process-2">
+              <span></span>
+              <h3>Material</h3>
+              <p>Filament of heated thermoplastic polymer is squeezed out like toothpaste from a tube. The model is produced by extruding small beads of material to form layers.</p>
+            </div>
+            <div class="process-3">
+              <span></span>
+              <h3>Print</h3>
+              <p>The desired object is printed layer after layer until it is complete. Ta-da! You have just produced something using your own personal factory. Enjoy!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="separator separator2" data-stellar-background-ratio="0.2"></div>
+
+      <section id="examples">
+        <div class="row">
+          <div class="large-12 columns text-center">
+            <h2>Printed on Pirx</h2>
+            <p>Well, the real question is - what are you looking for? There are a lot of designs available on<wbr>various websites, and if you can create digital 3D models yourself, well then sky’s the limit!</p>
+          </div>
+          <div class="large-10 large-offset-1 small-10 small-offset-1 gallery">
+            <ul class="large-block-grid-4 small-block-grid-2">
+              <li><a href="images/img1.png" data-lightbox="printer"><img src="images/img1-th.png"></a></li>
+              <li><a href="images/img2.png" data-lightbox="printer"><img src="images/img2-th.png"></a></li>
+              <li><a href="images/img3.png" data-lightbox="printer"><img src="images/img3-th.png"></a></li>
+              <li><a href="images/img4.png" data-lightbox="printer"><img src="images/img4-th.png"></a></li>
+            </ul>
+            <ul class="large-block-grid-4 small-block-grid-2">
+              <li><a href="images/img5.png" data-lightbox="printer"><img src="images/img5-th.png"></a></li>
+              <li><a href="images/img6.png" data-lightbox="printer"><img src="images/img6-th.png"></a></li>
+              <li><a href="images/img7.png" data-lightbox="printer"><img src="images/img7-th.png"></a></li>
+              <li><a href="images/img8.png" data-lightbox="printer"><img src="images/img8-th.png"></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <div class="separator separator3" data-stellar-background-ratio="0.2"></div>
+
+      <section id="specification">
+        <div class="row">
+          <div class="large-12 columns text-center"><h2>Technical Specification</h2></div>
+        </div>
+        <div class="row">
+          <div class="large-5 large-offset-2 columns">
+            <div>
+              <span class="icon icon1"></span><h3>Physical Dimensions</h3>
+              <p>Without Spool: <span>330x420x360 mm</span></p>
+              <p>With Spool: <span>440x420x360 mm</span></p>
+              <p>Shipping Dimensions: <span>600x500x400 mm</span></p>
+              <p>Weight: <span>10 kg</span></p>
+              <p>Shipping Weight: <span>12 kg</span></p>
+            </div>
+            <div>
+              <span class="icon icon2"></span><h3>Temperature</h3>
+              <p>Ambient Operation Temperature: <span>15-30 C</span></p>
+              <p>Storage Temperature: <span>0-30 C</span></p>
+            </div>
+            <div>
+              <span class="icon icon3"></span><h3>Electrical</h3>
+              <p>AC input: <span>230V 50Hz</span></p>
+              <p>Power: <span>120W</span></p>
+              <p>Connectivity: <span>USB</span></p>
+            </div>
+          </div>
+          <div class="large-5 columns">
+            <div>
+              <span class="icon icon4"></span><h3>Mechanical</h3>
+              <p>Chassis: <span>heavy duty birch plywood</span></p>
+              <p>Build Platform: <span>acrylic</span></p>
+              <p>Linear Bearings: <span>heavy duty linear ball bearings</span></p>
+              <p>Stepper Motors: <span>nema 17</span></p>
+            </div>
+            <div>
+              <span class="icon icon5"></span><h3>Printing technology</h3>
+              <p>Method: <span>Fused Filament Fabrication - FFF</span></p>
+              <p>Build Volume: <span>160x250x150 mm</span></p>
+              <p>Nozzle Diameter: <span>0.4 mm</span></p>
+              <p>Layer height: <span>100 microns</span></p>
+              <p>Supported OS: <span>Windows, Linux, Mac OS X</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="separator separator4" data-stellar-background-ratio="0.2"></div>
+
+      <section id="faq">
+        <div class="row">
+          <div class="large-12 columns text-center"><h2>Frequently Asked Questions</h2></div>
+        </div>
+        <div class="row">
+          <div class="large-4 large-offset-1 columns">
+            <ul>
+              <li><span></span><a class="faq-1 active">What material does your printer use?</a></li>
+              <li><span></span><a class="faq-2">Oh my. How do I print anything?</a></li>
+              <li><span></span><a class="faq-3">What are your plans for the future?</a></li>
+              <li><span></span><a class="faq-4" data-id=".faq1">Why so cheap?</a></li>
+            </ul>
+            <p>Something else? Use our contact form and send us a message!</p>
+          </div>
+          <div class="large-7 columns faq-content">
+            <div class="faq1">
+              <p>
+                We use PLA plastic filament and we will be glad to help you get some.
+              </p>
+            </div>
+            <div class="faq2">
+              <p>
+                Don’t worry. We will supply you with a detailed tutorial on how to install software, download or even create digital designs. Remember that you can contact us and we are always there to point you in the right direction.
+              </p>
+            </div>
+            <div class="faq3">
+              <p>
+                That’s the best part. We have BIG plans. World peace, colonization of Mars, controlled nuclear fission, universal constructor, nanobots, you name it!
+              </p>
+              <p>
+                But we have to start small so we have already begun to work on a marketplace for digital designs integrated with our devices and our software.
+              </p>
+              <p>
+                We are also looking at the next 3D printing technology to come - projector-based stereolitography.
+              </p>
+            </div>
+            <div class="faq4">
+              <p>
+                We have put our hearts into the 3D printing movement. Sure, we want to make money but we also want to be fair to our customers. Most of the 3D printers out there are horribly overpriced and there is nothing innovative or great about them.
+              </p>
+              <p>
+                We sincerely want to build the best machine ever - and we want everyone to be able to use it. Progress is expected only when technology is widely applied. We like progress. A lot.
+              </p>
+              <p>
+                Keep in mind that improvements in manufacturing technology open many doors for future inventions. We love when imaginary technologies from sci-fi movies come true. That’s why.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="separator separator5" data-stellar-background-ratio="0.2"></div>
+
+      <section id="contact">
+        <div class="row">
+          <div class="large-12 columns text-center">
+            <h2>Any questions?</h2>
+            <p>Just send us a message. We’ll be happy to assist you.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-6 columns large-centered">
+            <form>
+              <fieldset>
+                <label>Name:</label>
+                <input type="text" placeholder="John Doe">
+                <label>Email:</label>
+                <input type="text" placeholder="johndoe@example.com">
+                <label>Message:</label>
+                <textarea type="text" placeholder="I'd like to know whether..."></textarea>
+                <a href="#" class="btn btn-small btn-order">SEND</a>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <div class="separator separator6" data-stellar-background-ratio="0.2"></div>
+
+      <section id="team">
+        <div class="row">
+          <div class="large-12 columns text-center"><h2>Team behind Pirx</h2></div>
+        </div>
+        <div class="row">
+          <div class="large-4 large-offset-2 columns">
+            <img src="images/team1.png" alt="">
+            <h3>Piotr Lipert</h3>
+            <p><span>CEO // </span>Software Engineer</p>
+          </div>
+          <div class="large-4 pull-2 columns">
+            <img src="images/team2.png" alt="">
+            <h3>Krzysztof Stanik</h3>
+            <p><span>CTO // </span>Theoretical Physicist</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-4 large-offset-2 columns">
+            <img src="images/team3.png" alt="">
+            <h3>Jan Fuerst</h3>
+            <p>Automation Engineer</p>
+          </div>
+          <div class="large-4 pull-2 columns">
+            <img src="images/team4.png" alt="">
+            <h3>Łukasz Jakubowski</h3>
+            <p>Mechanical Engineer</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="separator separator7" data-stellar-background-ratio="0.2"></div>
+
+      <section id="quote">
+        <div class="row">
+          <div class="large-7 columns large-centered text-center">
+            <img src="images/drucker.png" alt="">
+            <h3>“The best way to predict the future is to create it”</h3>
+            <h4>- Peter Drucker</h4>
+          </div>
+        </div>
+      </section>
+
+      <section id="sumup">
+        <div class="row">
+          <div class="large-6 columns large-centered text-center">
+            <h3>Be the first one to print the world in 3d.</h3>
+            <a href="#" class="btn btn-big btn-order">pre-order your printer for $799</a>
+          </div>
+        </div>
+      </section>
+
+      <footer id="footer">
+        <div class="row">
+          <div class="large-3 columns">
+            <h3>Pirx</h3>
+            <ul>
+              <li><a href="about.html">Meet the team</a></li>
+              <li><a href="contact.html">Support</a></li>
+            </ul>
+          </div>
+          <div class="large-3 columns">
+            <h3>Media</h3>
+            <ul>
+              <li><a href="https://www.facebook.com/clockwork3d">Blog</a></li>
+              <li><a href="press.html">Press kit</a></li>
+              <!-- <li>Privacy policy</li>
+              <li>Terms & Conditions</li> -->
+            </ul>
+          </div>
+          <div class="large-3 columns">
+            <h3>Newsletter</h3>
+            <p>Subscribe to the newsletter to be up to date with our stuff.</p>
+            <input type="text" placeholder="enter your email...">
+            <button class="btn btn-small btn-order">send</button>
+          </div>
+          <div class="large-3 columns address">
+            <h3>Contact</h3>
+            <address>
+              Pirx<br>  
+              Berka Joselewicza 21<br>
+              31-031 Kraków<br>
+              Małopolska, Poland
+            </address>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-6 large-centered small-12 columns social">
+            <ul class="social-icons">
+              <li><a class="fb"></a></li>
+              <li><a class="tw"></a></li>
+              <li><a class="gp"></a></li>
+              <li><a class="yt"></a></li>
+              <li><a class="vi"></a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+      <footer id="copyright">
+        <div class="row">
+          <div class="large-6 small-12 columns"><p>© 2013 Pirx</p></div>
+          <div class="large-6 small-12 columns"><p class="right">Handcrafted in Kraków</p></div>
+        </div>
+      </footer>
+  	</div>
+
+  	<!-- JS FUNCTIONS -->
+    <script>$(window).stellar();</script> 
+  	
+  </body>
+</html>
