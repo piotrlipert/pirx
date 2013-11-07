@@ -1,6 +1,6 @@
+
+
 <?php
+echo "SASASD";
 
-require("postmark.php")
-
-echo 'asdsda';
 ?>
