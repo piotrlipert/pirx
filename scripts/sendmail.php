@@ -2,35 +2,21 @@
 
 echo "HEJ!";
 
-// Pear Mail Library
-require_once "Mail/Mail.php";
+require_once 'swift/lib/swift_required.php';
 
-$from = '<support@pirx3d.com>';
-$to = '<piotr.lipert@gmail.com>';
-$subject = 'Hi!';
-$body = "Hi,\n\nHow are you?";
+$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
+  ->setUsername('support@pirx3d.com')
+  ->setPassword('uchozoid1a');
 
-$headers = array(
-    'From' => $from,
-    'To' => $to,
-    'Subject' => $subject
-);
+$mailer = Swift_Mailer::newInstance($transport);
 
-$smtp = Mail::factory('smtp', array(
-        'host' => 'ssl://smtp.gmail.com',
-        'port' => '465',
-        'auth' => true,
-        'username' => 'support@pirx3d.com',
-        'password' => 'uchozoid1a'
-    ));
+$message = Swift_Message::newInstance('Test Subject')
+  ->setFrom(array('abc@example.com' => 'ABC'))
+  ->setTo(array('piotr.lipert@gmail.com'))
+  ->setBody('This is a test mail.');
 
-$mail = $smtp->send($to, $headers, $body);
+$result = $mailer->send($message);
 
-if (PEAR::isError($mail)) {
-    echo('<p>' . $mail->getMessage() . '</p>');
-} else {
-    echo('<p>Message successfully sent!</p>');
-}
 echo "HEJ!";
 
 ?>
