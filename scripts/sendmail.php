@@ -4,6 +4,6 @@
 
 require("postmark.php")
 
-echo "SASASD";
+echo("SASASD");
 
 ?>
