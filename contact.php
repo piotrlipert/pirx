@@ -75,8 +75,28 @@
 	          <h2>Drop us a message</h2>
 
 
+           <?php
+           if($_POST["sent"]==0)
+            echo("<form action=\"scripts/sendmail.php\" method=\"POST\">
+              <fieldset>
+                <label>Name:</label>
+                <input type=\"text\" placeholder=\"John Doe\">
+                <label>Email:</label>
+                <input type=\"text\" placeholder=\"johndoe@example.com\">
+                <label>Message:</label>
+                <textarea type=\"text\" placeholder=\"I'd like to know whether...\"></textarea>
+                <input type=\"hidden\" name=\"sent\" value=\"1\">
+                <input type=\"submit\" class="btn btn-small btn-order\">SEND</a>
+              </fieldset>
+            </form>");
+            else
+            {
 
-          	<form action="scripts/sendmail.php" method="POST">
+              echo("HALO");
+            }
+           ?>
+
+          	<form method="POST">
               <fieldset>
                 <label>Name:</label>
                 <input type="text" placeholder="John Doe">
