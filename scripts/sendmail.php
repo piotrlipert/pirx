@@ -2,7 +2,7 @@
 
 <?php
 
-require("postmark.php")
+require("postmark.php");
 
 echo("SASASD");
 
