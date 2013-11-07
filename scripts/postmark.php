@@ -6,7 +6,7 @@ class Postmark {
 	private $attachment_count = 0;
 	private $data = array();
  
-	function __construct($key, $from, $reply = '')
+	function __construct($key, $from, $reply='')
 	{
 		$this->api_key = $key;
 		$this->data['From'] = $from;
@@ -85,16 +85,15 @@ class Postmark {
 	
 	function attachment($name, $content, $content_type)
 	{
-		$this->data['Attachments'][$this->attachment_count]['Name']		= $name;
-		$this->data['Attachments'][$this->attachment_count]['ContentType']	= $content_type;
+		$this->data['Attachments'][$this->attachment_count]['Name']	= $name;
+		$this->data['Attachments'][$this->attachment_count]['ContentType']=$content_type;
 		
 		// Check if our content is already base64 encoded or not
 		if( ! base64_decode($content, true))
-			$this->data['Attachments'][$this->attachment_count]['Content']	= base64_encode($content);
+			$this->data['Attachments'][$this->attachment_count]['Content']=base64_encode($content);
 		else
-			$this->data['Attachments'][$this->attachment_count]['Content']	= $content;
+			$this->data['Attachments'][$this->attachment_count]['Content']=$content;
 		
-		// Up our attachment counter
 		$this->attachment_count++;
 		
 		return $this;
