@@ -1,10 +1,5 @@
 <?php
  
-/**
-* This is a simple library for sending emails with Postmark.
-* Created by Matthew Loberg (http://mloberg.com), extended and modified by Drew Johnston (http://drewjoh.com).
-*/
- 
 class Postmark {
  
 	private $api_key;
