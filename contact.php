@@ -76,6 +76,7 @@
 
 
            <?php
+           echo($_POST["sent"]);
            if($_POST["sent"]==0)
             echo("<form action=\"scripts/sendmail.php\" method=\"POST\">
               <fieldset>
@@ -96,17 +97,6 @@
             }
            ?>
 
-          	<form method="POST">
-              <fieldset>
-                <label>Name:</label>
-                <input type="text" placeholder="John Doe">
-                <label>Email:</label>
-                <input type="text" placeholder="johndoe@example.com">
-                <label>Message:</label>
-                <textarea type="text" placeholder="I'd like to know whether..."></textarea>
-                <input type="submit" class="btn btn-small btn-order">SEND</a>
-              </fieldset>
-            </form>
           </div>
         </div>
       </section>
