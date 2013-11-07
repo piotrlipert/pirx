@@ -1,26 +1,12 @@
 <?php
 
-echo "HEJ!";
+require("postmark.php");
+	
+	$postmark = new Postmark("64229856-c00b-4086-b886-24aefc8a9ae7","pirx@pirx3d.com","optional-reply-to-address");
+	
+	if($postmark->to("piotr.lipert@gmail.com")->subject("Email Subject")->plain_message("This is a plain text message.")->send()){
+		echo "Message sent";
+	}
 
-require_once 'swift/lib/swift_required.php';
-echo "HEJ!";
-
-$transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 587, "tls")
-  $transport->setUsername('support@pirx3d.com')
-  $transport->setPassword('uchozoid1a');
-echo "HEJ!";
-
-$mailer = Swift_Mailer::newInstance($transport);
-echo "HEJ!";
-
-$message = Swift_Message::newInstance('Test Subject')
-  $message->setFrom(array('abc@example.com' => 'ABC'))
-  $message->setTo(array('piotr.lipert@gmail.com'))
-  $message->setBody('This is a test mail.');
-echo "HEJ!";
-
-$result = $mailer->send($message);
-
-echo "HEJ!";
 
 ?>
