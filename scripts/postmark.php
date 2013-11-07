@@ -102,5 +102,4 @@ class Postmark {
 }
 
 
-echo "zazol";
 ?>
