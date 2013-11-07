@@ -86,7 +86,7 @@
                 <label>Message:</label>
                 <textarea type=\"text\" placeholder=\"I'd like to know whether...\"></textarea>
                 <input type=\"hidden\" name=\"sent\" value=\"1\">
-                <input type=\"submit\" class="btn btn-small btn-order\">SEND</a>
+                <input type=\"submit\" class=\"btn btn-small btn-order\">SEND</a>
               </fieldset>
             </form>");
             else
