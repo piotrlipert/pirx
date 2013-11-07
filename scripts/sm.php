@@ -13,5 +13,5 @@ require("postmark.php")
 	if($result === true)
 		echo "Message sent";
 
-echo 'asdsda';
+echo("asdsda");
 ?>
