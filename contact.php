@@ -78,7 +78,7 @@
            <?php
            echo($_POST["sent"]);
            if($_POST["sent"]==0)
-            echo("<form action=\"scripts/sendmail.php\" method=\"POST\">
+            echo("<form method=\"POST\">
               <fieldset>
                 <label>Name:</label>
                 <input type=\"text\" placeholder=\"John Doe\">
