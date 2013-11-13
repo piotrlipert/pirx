@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>Pirx 3d Printer - About us</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>  
 
     <!-- META DATA -->
     <meta charset="utf-8">
@@ -74,29 +75,18 @@
           <div class="large-9 columns contact-us">
 	          <h2>Drop us a message</h2>
 
-
-           <?php
-           echo($_POST["sent"]);
-           if($_POST["sent"]==0)
-            echo("<form method=\"POST\">
+           
+            <form action="scripts/sm.php" method="POST">
               <fieldset>
                 <label>Name:</label>
-                <input type=\"text\" placeholder=\"John Doe\">
+                <input type="text" name='name' placeholder="John Doe">
                 <label>Email:</label>
-                <input type=\"text\" placeholder=\"johndoe@example.com\">
+                <input type="text" name='email' placeholder="johndoe@example.com">
                 <label>Message:</label>
-                <textarea type=\"text\" placeholder=\"I'd like to know whether...\"></textarea>
-                <input type=\"hidden\" name=\"sent\" value=\"1\">
-                <input type=\"submit\" class=\"btn btn-small btn-order\">SEND</a>
+                <textarea type="text" name='message' placeholder="I'd like to know whether..."></textarea>
+                <input type="submit" class="btn btn-small btn-order">
               </fieldset>
-            </form>");
-            else
-            {
-
-              echo("HALO");
-            }
-           ?>
-
+            </form>
           </div>
         </div>
       </section>

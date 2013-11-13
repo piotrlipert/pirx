@@ -3,15 +3,24 @@
 require("postmark.php");
 
 	
-	$postmark = new Postmark("64229856-c00b-4086-b886-24aefc8a9ae7","support@pirx3d.com","support@pirx3d.com");
+	if(isset($_REQUEST['email']))
+	{
+		$email = $_REQUEST['email'];
+		$name  = $_REQUEST['name'];
+		$message = $_REQUEST['message'];
 	
-	$result = $postmark->to("piotr.lipert@gmail.com")
-		->subject("Email Subject")
-		->plain_message("This is a plain text message.")
+
+
+
+	$postmark = new Postmark("64229856-c00b-4086-b886-24aefc8a9ae7",$email,$email);
+	
+	$result = $postmark->to("pirx@pirx3d.com")
+		->subject("Email from Pirx3D")
+		->plain_message($message)
 		->send();
 	
 	if($result === true)
 		echo("Message sent");
 
-echo("asdsda");
+	}
 ?>
