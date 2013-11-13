@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>Pirx 3d Printer - About us</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>  
 
     <!-- META DATA -->
     <meta charset="utf-8">
@@ -14,7 +15,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 
     <!-- STYLESHEETS -->
-		<link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/normalize.css" rel="stylesheet">
     <link href="styles/foundation.css" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet">
     <link href="styles/lightbox.css" rel="stylesheet">
@@ -26,7 +27,7 @@
     <script type="text/javascript" src="js/lightbox-2.6.min.js"></script>
     <script type="text/javascript" src="js/functions.js"></script>
 
-		<!-- FAVICON -->
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="images/favicon.ico">
 
     <!-- JS FUNCTIONS -->   
@@ -34,7 +35,7 @@
 
   </head>
   <body>
-  	<div id="wrapper">
+    <div id="wrapper">
       <header id="header">
         <div class="row">
           <div class="large-3 small-12 columns">
@@ -72,11 +73,43 @@
             </ul>
           </div>
           <div class="large-9 columns contact-us">
-	          <h2>Drop us a message</h2>
+
+<script>
+    $(function(){
+      $('form').submit(function(e){
+        var thisForm = $(this);
+        //Prevent the default form action
+        e.preventDefault();
+        //Hide the form
+        $(this).fadeOut(function(){
+          //Display the "loading" message
+          $("#loading").fadeIn(function(){
+            //Post the form to the send script
+            $.ajax({
+              type: 'POST',
+              url: thisForm.attr("action"),
+              data: thisForm.serialize(),
+              //Wait for a successful response
+              success: function(data){
+                //Hide the "loading" message
+                $("#loading").fadeOut(function(){
+                  //Display the "success" message
+                  $("#success").text(data).fadeIn();
+                  
+                });
+              }
+            });
+          });
+        });
+      })
+    });
+  </script>
+
+            <h2>Drop us a message</h2>
 
 
-
-          	<form action="" method="POST">
+           
+            <form action="scripts/sm.php" method="POST">
               <fieldset>
                 <label>Name:</label>
                 <input type="text" name='name' placeholder="John Doe">
@@ -87,7 +120,20 @@
                 <input type="submit" class="btn btn-small btn-order">
               </fieldset>
             </form>
+            <center>
+          <div id="loading" style="display: none;"> 
+    Sending your message....
+    </div>
+  <div id="success" style="display: none;">
+    Message sent.
+  </div>
+</center>
+
+
           </div>
+
+
+
         </div>
       </section>
 
