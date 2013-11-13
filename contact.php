@@ -119,7 +119,18 @@
                 <input type="submit" class="btn btn-small btn-order">
               </fieldset>
             </form>
+          <div id="loading">
+    Sending your message....
+    </div>
+  <div id="success">
+    Message sent.
+  </div>
+
+
           </div>
+
+
+
         </div>
       </section>
 
