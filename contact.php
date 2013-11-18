@@ -95,6 +95,7 @@
                 $("#loading").fadeOut(function(){
                   //Display the "success" message
                   $("#success").text(data).fadeIn();
+                  
                 });
               }
             });

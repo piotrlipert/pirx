@@ -41,6 +41,37 @@
       })();
     </script>   
 
+<script>
+    $(function(){
+      $('form').submit(function(e){
+        var thisForm = $(this);
+        //Prevent the default form action
+        e.preventDefault();
+        //Hide the form
+        $(this).fadeOut(function(){
+          //Display the "loading" message
+          $("#loading").fadeIn(function(){
+            //Post the form to the send script
+            $.ajax({
+              type: 'POST',
+              url: thisForm.attr("action"),
+              data: thisForm.serialize(),
+              //Wait for a successful response
+              success: function(data){
+                //Hide the "loading" message
+                $("#loading").fadeOut(function(){
+                  //Display the "success" message
+                  $("#success").text(data).fadeIn();
+                  
+                });
+              }
+            });
+          });
+        });
+      })
+    });
+  </script>
+
     <!-- TAG -->
     <meta name="google-site-verification" content="PRntbChrQnhUx3G6XGQzQTlC4gs5f_rVgfZ6CXrwzSk" />   
 
@@ -326,17 +357,24 @@
         </div>
         <div class="row">
           <div class="large-6 columns large-centered">
-            <form>
+            <<form action="scripts/sm.php" method="POST">
               <fieldset>
                 <label>Name:</label>
-                <input type="text" placeholder="John Doe">
+                <input type="text" name='name' placeholder="John Doe">
                 <label>Email:</label>
-                <input type="text" placeholder="johndoe@example.com">
+                <input type="text" name='email' placeholder="johndoe@example.com">
                 <label>Message:</label>
-                <textarea type="text" placeholder="I'd like to know whether..."></textarea>
-                <a href="#" class="btn btn-small btn-order">SEND</a>
+                <textarea type="text" name='message' placeholder="I'd like to know whether..."></textarea>
+                <input type="submit" class="btn btn-small btn-order">
               </fieldset>
             </form>
+            <center>
+          <div id="loading" style="display: none;"> 
+    Sending your message....
+    </div>
+  <div id="success" style="display: none;">
+    Message sent.
+  </div>
           </div>
         </div>
       </section>
