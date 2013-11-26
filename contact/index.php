@@ -22,13 +22,13 @@
     
     <!-- JAVASCRIPT -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.stellar.js"></script>
-    <script type="text/javascript" src="js/retina.js"></script>
-    <script type="text/javascript" src="js/lightbox-2.6.min.js"></script>
-    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="../js/jquery.stellar.js"></script>
+    <script type="text/javascript" src="../js/retina.js"></script>
+    <script type="text/javascript" src="../js/lightbox-2.6.min.js"></script>
+    <script type="text/javascript" src="../js/functions.js"></script>
 
 		<!-- FAVICON -->
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
 
     <!-- JS FUNCTIONS -->   
     
@@ -45,7 +45,7 @@
           <div class="large-9 small-12 columns">
             <ul class="nav right">
               <li><a href="/">home</a></li>
-              <li><a href="about.html">about</a></li>
+              <li><a href="../about/">about</a></li>
               <li><a href="https://facebook.com/clockwork3d">blog</a></li>
               <li><a id="contact-us">contact</a></li>
               <li><a href="" class="btn btn-small btn-order">buy now</a></li>
@@ -67,8 +67,8 @@
           <div class="large-3 columns">
             <ul class="nav sidebar-nav">
               <li><a href="../">Home<span></span></a></li>
-              <li><a href="about.html">About<span></span></a></li>
-              <li><a href="press.html">Press Kit<span></span></a></li>
+              <li><a href="../about/">About<span></span></a></li>
+              <li><a href="../press/">Press Kit<span></span></a></li>
               <li><a href="#" class="active">Contact<span></span></a></li>
             </ul>
           </div>
