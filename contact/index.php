@@ -109,7 +109,7 @@
 
 
            
-            <form action="scripts/sm.php" method="POST">
+            <form action="../scripts/sm.php" method="POST">
               <fieldset>
                 <label>Name:</label>
                 <input type="text" name='name' placeholder="John Doe">
