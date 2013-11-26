@@ -15,10 +15,10 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 
     <!-- STYLESHEETS -->
-		<link href="styles/normalize.css" rel="stylesheet">
-    <link href="styles/foundation.css" rel="stylesheet">
-    <link href="styles/style.css" rel="stylesheet">
-    <link href="styles/lightbox.css" rel="stylesheet">
+		<link href="../styles/normalize.css" rel="stylesheet">
+    <link href="../styles/foundation.css" rel="stylesheet">
+    <link href="../styles/style.css" rel="stylesheet">
+    <link href="../styles/lightbox.css" rel="stylesheet">
     
     <!-- JAVASCRIPT -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
