@@ -5152,9 +5152,10 @@ MAIN CONTENT
       display: block;
       width: 155px;
       font-size: 14px;
-      padding: 8px 0 6px;
+      padding: 14px 0 12px;
       text-align: center;
-      margin: 0 auto 30px; }
+      margin: 0 auto 30px;
+      font-weight: 100; }
 
 #team {
   min-height: 700px; }
@@ -5344,9 +5345,10 @@ MAIN CONTENT
       display: block;
       width: 155px;
       font-size: 14px;
-      padding: 8px 0 6px;
+      padding: 14px 0 12px;
       text-align: center;
-      margin: 0 auto 30px; }
+      margin: 0 auto 30px;
+      font-weight: 100; }
   #about-us .press h2:nth-of-type(1) {
     margin-top: 0; }
   #about-us .press .row a {
