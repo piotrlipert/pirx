@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Pirx 3d Printer - About us</title>
+    <title>Pirx 3d Printer - Contact us</title>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>  
 
     <!-- META DATA -->
@@ -73,42 +73,39 @@
             </ul>
           </div>
           <div class="large-9 columns contact-us">
-
-<script>
-    $(function(){
-      $('form').submit(function(e){
-        var thisForm = $(this);
-        //Prevent the default form action
-        e.preventDefault();
-        //Hide the form
-        $(this).fadeOut(function(){
-          //Display the "loading" message
-          $("#loading").fadeIn(function(){
-            //Post the form to the send script
-            $.ajax({
-              type: 'POST',
-              url: thisForm.attr("action"),
-              data: thisForm.serialize(),
-              //Wait for a successful response
-              success: function(data){
-                //Hide the "loading" message
-                $("#loading").fadeOut(function(){
-                  //Display the "success" message
-                  $("#success").text(data).fadeIn();
-                  
+            
+            <script>
+                $(function(){
+                  $('form').submit(function(e){
+                    var thisForm = $(this);
+                    //Prevent the default form action
+                    e.preventDefault();
+                    //Hide the form
+                    $(this).fadeOut(function(){
+                      //Display the "loading" message
+                      $("#loading").fadeIn(function(){
+                        //Post the form to the send script
+                        $.ajax({
+                          type: 'POST',
+                          url: thisForm.attr("action"),
+                          data: thisForm.serialize(),
+                          //Wait for a successful response
+                          success: function(data){
+                            //Hide the "loading" message
+                            $("#loading").fadeOut(function(){
+                              //Display the "success" message
+                              $("#success").text(data).fadeIn();
+                              
+                            });
+                          }
+                        });
+                      });
+                    });
+                  })
                 });
-              }
-            });
-          });
-        });
-      })
-    });
-  </script>
+              </script>
 
-	          <h2>Drop us a message</h2>
-
-
-           
+	          <h2>Drop us a message</h2>        
             <form action="../scripts/sm.php" method="POST">
               <fieldset>
                 <label>Name:</label>
@@ -117,7 +114,7 @@
                 <input type="text" name='email' placeholder="johndoe@example.com">
                 <label>Message:</label>
                 <textarea type="text" name='message' placeholder="I'd like to know whether..."></textarea>
-                <input type="submit" class="btn btn-small btn-order">
+                <button type="submit" class="btn btn-small btn-order">send</button>
               </fieldset>
             </form>
             <center>
