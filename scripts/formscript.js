@@ -2,6 +2,9 @@
       $('form').submit(function(e){
         var thisForm = $(this);
         //Prevent the default form action
+
+        if(thisForm.name !='contactform')
+          return;
         e.preventDefault();
         //Hide the form
         $(this).fadeOut(function(){
