@@ -2,7 +2,6 @@
       $('form').submit(function(e){
         var thisForm = $(this);
    
-        alert(thisForm.attr('name'));
         if(thisForm.attr('name') != 'contactform')
           return;
         e.preventDefault();
