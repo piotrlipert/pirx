@@ -31,7 +31,7 @@
     <link rel="shortcut icon" href="../images/favicon.ico">
 
     <!-- JS FUNCTIONS -->   
-    <script src="scripts/formscript.js"></script>
+    <script src="../scripts/formscript.js"></script>
 
 
   </head>
@@ -78,7 +78,7 @@
           
 
 	          <h2>Drop us a message</h2>        
-            <form action="../scripts/sm.php" method="POST">
+            <form action="../scripts/sm.php" method="POST" name="contactform">
               <fieldset>
                 <label>Name:</label>
                 <input type="text" name='name' placeholder="John Doe">
