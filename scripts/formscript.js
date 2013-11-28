@@ -4,6 +4,8 @@
         //Prevent the default form action
        formData = $(this).serializeArray();
        alert(formData);
+       alert(thisForm.name);
+       
         if(formData['name'] !='contactform')
           return;
         e.preventDefault();
