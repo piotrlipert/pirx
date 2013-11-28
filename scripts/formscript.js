@@ -3,7 +3,7 @@
         var thisForm = $(this);
         //Prevent the default form action
        formData = $(this).serializeArray();
-       alert(formData['name']);
+       alert(formData);
         if(formData['name'] !='contactform')
           return;
         e.preventDefault();
