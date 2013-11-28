@@ -2,9 +2,7 @@
       $('form').submit(function(e){
         var thisForm = $(this);
         //Prevent the default form action
-       formData = $(this).serializeArray();
-       alert(formData);
-       alert(thisForm.name.val());
+       alert(thisForm.val());
 
         if(formData['name'] !='contactform')
           return;
