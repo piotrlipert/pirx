@@ -3,8 +3,8 @@
         var thisForm = $(this);
         //Prevent the default form action
 
-        alert(thisForm.name);
-        if(thisForm.name !='contactform')
+        alert(this.form.FieldName.value);
+        if(this.form.FieldName.value !='contactform')
           return;
         e.preventDefault();
         //Hide the form
