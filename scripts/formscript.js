@@ -3,6 +3,7 @@
         var thisForm = $(this);
         //Prevent the default form action
 
+        alert(thisForm.name);
         if(thisForm.name !='contactform')
           return;
         e.preventDefault();
