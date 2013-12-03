@@ -1,5 +1,5 @@
 <?php
-$db_type = 'postgresql';
+$db_type = 'postgres';
 $db_host = 'ec2-54-246-104-52.eu-west-1.compute.amazonaws.com';
 $db_name = 'dcf4lkiil6nnga';
 $db_username = 'psostjwvejzayg';
