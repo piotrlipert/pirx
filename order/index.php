@@ -74,8 +74,11 @@
             </ul>
           </div>
           <div class="large-9 columns contact-us">
-
-
+<script type="text/javascript">
+function wysylka(){
+    alert("sddsa");
+    }
+    </script>
 	          <h2>Order your 3D printer:</h2>
 
 
