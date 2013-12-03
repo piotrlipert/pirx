@@ -26,7 +26,7 @@
     <script type="text/javascript" src="../js/retina.js"></script>
     <script type="text/javascript" src="../js/lightbox-2.6.min.js"></script>
     <script type="text/javascript" src="../js/functions.js"></script>
-    <script src="../scripts/formscript.js"></script>
+    <script src="../scripts/orderscript.js"></script>
 
 		<!-- FAVICON -->
     <link rel="shortcut icon" href="../images/favicon.ico">
@@ -70,7 +70,7 @@
               <li><a href="../">Home<span></span></a></li>
               <li><a href="../about/">About<span></span></a></li>
               <li><a href="../press/">Press Kit<span></span></a></li>
-              <li><a href="#" class="active">Contact<span></span></a></li>
+              <li><a href="#" class="active">Order<span></span></a></li>
             </ul>
           </div>
           <div class="large-9 columns contact-us">
@@ -80,10 +80,11 @@
 
 
            
-            <form action="../scripts/order.php" method="POST">
+            <form action="../scripts/order.php" method="POST" name="orderscript">
               <fieldset>
                 <label>Name:</label>
                 <input type="text" name='name' placeholder="John Doe">
+                <input type="checkbox" name="wysylka" onclick="wysylka()">
                 <label>Email:</label>
                 <input type="text" name='email' placeholder="johndoe@example.com">
                 <label>Additional info:</label>
