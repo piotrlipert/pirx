@@ -26,6 +26,7 @@
     <script type="text/javascript" src="../js/retina.js"></script>
     <script type="text/javascript" src="../js/lightbox-2.6.min.js"></script>
     <script type="text/javascript" src="../js/functions.js"></script>
+    <script src="../scripts/formscript.js"></script>
 
 		<!-- FAVICON -->
     <link rel="shortcut icon" href="../images/favicon.ico">
@@ -57,7 +58,7 @@
       <section id="caption">
         <div class="row caption">
           <div class="large12 columns">
-            <h2>Contact us</h2>
+            <h2>Order Pirx</h2>
           </div>
         </div>
       </section>
@@ -74,58 +75,28 @@
           </div>
           <div class="large-9 columns contact-us">
 
-<script>
-    $(function(){
-      $('form').submit(function(e){
-        var thisForm = $(this);
-        //Prevent the default form action
-        e.preventDefault();
-        //Hide the form
-        $(this).fadeOut(function(){
-          //Display the "loading" message
-          $("#loading").fadeIn(function(){
-            //Post the form to the send script
-            $.ajax({
-              type: 'POST',
-              url: thisForm.attr("action"),
-              data: thisForm.serialize(),
-              //Wait for a successful response
-              success: function(data){
-                //Hide the "loading" message
-                $("#loading").fadeOut(function(){
-                  //Display the "success" message
-                  $("#success").text(data).fadeIn();
-                  
-                });
-              }
-            });
-          });
-        });
-      })
-    });
-  </script>
 
-	          <h2>Drop us a message</h2>
+	          <h2>Order your 3D printer:</h2>
 
 
            
-            <form action="../scripts/sm.php" method="POST">
+            <form action="../scripts/order.php" method="POST">
               <fieldset>
                 <label>Name:</label>
                 <input type="text" name='name' placeholder="John Doe">
                 <label>Email:</label>
                 <input type="text" name='email' placeholder="johndoe@example.com">
-                <label>Message:</label>
+                <label>Additional info:</label>
                 <textarea type="text" name='message' placeholder="I'd like to know whether..."></textarea>
                 <input type="submit" class="btn btn-small btn-order">
               </fieldset>
             </form>
             <center>
           <div id="loading" style="display: none;"> 
-    Sending your message....
+    Sending your order....
     </div>
   <div id="success" style="display: none;">
-    Message sent.
+    Order sent. We will contact you shortly.
   </div>
 </center>
 
