@@ -73,8 +73,8 @@
             </ul>
           </div>
           <div class="large-9 columns contact-us">
-<script type="text/javascript">
-function wysylka(a){
+<script language="javascript">
+function wysylka(){
     alert("sddsa");
     }
     </script>
@@ -86,8 +86,7 @@ function wysylka(a){
               <fieldset>
                 <label>Name:</label>
                 <input type="text" name='name' placeholder="John Doe">
-                <input type="checkbox" name="wysylka" onClick="wysylka(1)">
-                <label>Email:</label>
+<input type=checkbox onClick="wysylka()">                 <label>Email:</label>
                 <input type="text" name='email' placeholder="johndoe@example.com">
                 <label>Additional info:</label>
                 <textarea type="text" name='message' placeholder="I'd like to know whether..."></textarea>
