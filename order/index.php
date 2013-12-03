@@ -26,8 +26,7 @@
     <script type="text/javascript" src="../js/retina.js"></script>
     <script type="text/javascript" src="../js/lightbox-2.6.min.js"></script>
     <script type="text/javascript" src="../js/functions.js"></script>
-    <script src="../scripts/orderscript.js"></script>
-
+    
 		<!-- FAVICON -->
     <link rel="shortcut icon" href="../images/favicon.ico">
 
