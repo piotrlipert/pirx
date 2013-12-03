@@ -86,7 +86,7 @@ function wysylka(a){
               <fieldset>
                 <label>Name:</label>
                 <input type="text" name='name' placeholder="John Doe">
-                <input type="checkbox" name="wysylka" onclick="wysylka(1)">
+                <input type="checkbox" name="wysylka" onClick="wysylka(1)">
                 <label>Email:</label>
                 <input type="text" name='email' placeholder="johndoe@example.com">
                 <label>Additional info:</label>
