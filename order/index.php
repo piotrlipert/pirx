@@ -76,7 +76,7 @@
 <script language="javascript">
 function wysylka(){
     
-    $("#shipping_adress").text(data).fadeOut();
+    $("#shipping_adress").text(data).fadeIn();
     }
 
 
