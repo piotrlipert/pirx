@@ -76,7 +76,7 @@
 <script language="javascript">
 function wysylka(){
     
-    $("#orderdata").text(data).fadeIn();
+    $("#shipping_adress").text(data).fadeOut();
     }
 
 
@@ -110,7 +110,7 @@ $(function(){
 <label>Shipping Method</label>
 </div>
 
-<div id ="shipping_adress">
+<div id ="shipping_adress" style="display: none;">
 
 <label>Shipping Address</label>
 </div>
