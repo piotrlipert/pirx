@@ -75,7 +75,8 @@
           <div class="large-9 columns contact-us">
 <script language="javascript">
 function wysylka(){
-    alert("sddsa");
+    
+    $("#orderdata").text(data).fadeIn();
     }
     </script>
 	          <h2>Order your 3D printer:</h2>
@@ -84,13 +85,20 @@ function wysylka(){
            
             <form action="../scripts/order.php" method="POST" name="orderscript">
               <fieldset>
+
+
+
                 <label>Name:</label>
                 <input type="text" name='name' placeholder="John Doe">
-<input type=checkbox onClick="wysylka()">                 <label>Email:</label>
+                <label>Personal pickup:</label>
+                <input type=checkbox onClick="wysylka()">  
+                <div id="orderdata" style="display: none">               
+                <label>Email:</label>
                 <input type="text" name='email' placeholder="johndoe@example.com">
                 <label>Additional info:</label>
                 <textarea type="text" name='message' placeholder="I'd like to know whether..."></textarea>
                 <input type="submit" class="btn btn-small btn-order">
+              </div>
               </fieldset>
             </form>
             <center>
