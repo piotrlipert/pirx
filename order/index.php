@@ -76,14 +76,14 @@
 <script language="javascript">
 function wysylka(){
     alert("DAS");
-    if($("#personal").is(':checked'))
+    if($("#personal").attr("checked")==true)
     {$("#shipping_adress").fadeIn();}
     else{$("#shipping_adress").fadeOut();}
 alert("SD");
     
     }
 function same(){
-   if($("#same").is(':checked'))
+   if($("#same").attr("checked")==true)
     {$("#shipping_adress_details").fadeIn();}
     else{$("#shipping_adress_details").fadeOut();}
 
