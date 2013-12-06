@@ -83,14 +83,8 @@ function wysylka()
 
 function same_adress()
 {
-   if($("#same").attr("checked")==true)
-    {
-      $("#shipping_adress_details").show();
-    }
-    else
-    {
-      $("#shipping_adress_details").hide();
-    }
+     $("#shipping_adress_details").fadeToggle();
+
 
 }
 
