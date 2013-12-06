@@ -88,7 +88,7 @@ function wysylka(){
 alert("SD");
     
     }
-function same(){
+function same_adress(){
    if($("#same").attr("checked")==true)
     {
       $("#shipping_adress_details").fadeIn();
@@ -148,7 +148,7 @@ $(function(){
 <label>Shipping Address</label>
 <label>Same as billing:</label>
 
-<input type=checkbox onClick="same()" id="same"> 
+<input type=checkbox onClick="same_adress()" id="same"> 
 <div id ="shiping_adress_details">
  
                 <label>City:</label>
