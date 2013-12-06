@@ -89,7 +89,8 @@ function same_adress()
     {
       $("#shipping_adress_details").fadeIn();
     }
-    else{
+    else
+    {
       $("#shipping_adress_details").fadeOut();
     }
 
@@ -145,7 +146,7 @@ $(function(){
 <label>Same as billing:</label>
 
 <input type=checkbox onClick="same_adress()" id="same"> 
-<div id ="shiping_adress_details">
+<div id ="shipping_adress_details">
  
                 <label>City:</label>
                 <input type="text" name='city'>
