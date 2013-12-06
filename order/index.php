@@ -77,15 +77,25 @@
 function wysylka(){
     alert("DAS");
     if($("#personal").attr("checked")==true)
-    {$("#shipping_adress").fadeIn();}
-    else{$("#shipping_adress").fadeOut();}
+    {
+      $("#shipping_adress").fadeIn();
+    }
+
+    else
+    {
+      $("#shipping_adress").fadeOut();
+    }
 alert("SD");
     
     }
 function same(){
    if($("#same").attr("checked")==true)
-    {$("#shipping_adress_details").fadeIn();}
-    else{$("#shipping_adress_details").fadeOut();}
+    {
+      $("#shipping_adress_details").fadeIn();
+    }
+    else{
+      $("#shipping_adress_details").fadeOut();
+    }
 
 
 
