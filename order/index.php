@@ -77,7 +77,8 @@
 function wysylka()
 {
 
-  $("#shipping_adress" ).toggle(!$("#personal").attr("checked"));
+  alert("DSAASD");
+  $("#shipping_adress").toggle(!$("#personal").attr("checked"));
 
   
   }
