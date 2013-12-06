@@ -75,8 +75,8 @@
           <div class="large-9 columns contact-us">
 <script language="javascript">
 function wysylka(){
-    
-    $("#shipping_adress").text(data).fadeIn();
+    alert("ADSSDA");
+    $("#shipping_adress").fadeIn();
     }
 
 
