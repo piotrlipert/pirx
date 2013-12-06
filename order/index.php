@@ -78,6 +78,8 @@ function wysylka(){
     
     $("#orderdata").text(data).fadeIn();
     }
+
+
     </script>
 	          <h2>Order your 3D printer:</h2>
 
@@ -86,19 +88,50 @@ function wysylka(){
             <form action="../scripts/order.php" method="POST" name="orderscript">
               <fieldset>
 
+<div id ="billing_adress">
+<label>Billing Address</label>
+<label>Name:</label>
+<input type="text" name='name' placeholder="">
+<label>Company name:</label>
+<input type="text" name='companyname' placeholder="">
+<label>Company name:</label>
+<input type="text" name='companyname' placeholder="">
+<div id="country_list"></div>
+<script type="text/javascript">
+$(function(){
+   $("#country_list").load("../scripts/countries.html");
+})
+</script>
 
+</div>
+
+<div id ="shipping">
+
+<label>Shipping Method</label>
+</div>
+
+<div id ="shipping_adress">
+
+<label>Shipping Address</label>
+</div>
+
+<div id ="payment">
+
+<label>Payment Method</label>
+</div>
 
                 <label>Name:</label>
                 <input type="text" name='name' placeholder="John Doe">
                 <label>Personal pickup:</label>
                 <input type=checkbox onClick="wysylka()">  
-                <div id="orderdata" style="display: none">               
                 <label>Email:</label>
                 <input type="text" name='email' placeholder="johndoe@example.com">
+                <input type="text" name='adress' placeholder="johndoe@example.com">
+                <input type="text" name='email' placeholder="johndoe@example.com">
+                
                 <label>Additional info:</label>
                 <textarea type="text" name='message' placeholder="I'd like to know whether..."></textarea>
                 <input type="submit" class="btn btn-small btn-order">
-              </div>
               </fieldset>
             </form>
             <center>
