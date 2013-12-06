@@ -75,13 +75,18 @@
           <div class="large-9 columns contact-us">
 <script language="javascript">
 function wysylka(){
-    alert("ADSSDA");
-    $("#shipping_adress").fadeOut();
+    
+    if($("#personal").is(':checked'))
+    {$("#shipping_adress").fadeIn();}
+    else{$("#shipping_adress").fadeOut();}
+
+    
     }
 function same(){
-    alert("ADSSDA");
-    $("#shipping_adress_details").fadeOut();
-    }
+   if($("#same").is(':checked'))
+    {$("#shipping_adress_details").fadeIn();}
+    else{$("#shipping_adress_details").fadeOut();}
+
 
 
     </script>
@@ -124,7 +129,7 @@ $(function(){
 
 <label>Shipping Method</label>
 <label>Personal pickup:</label>
-<input type=checkbox onClick="wysylka()"> 
+<input type=checkbox onClick="wysylka()" id="personal"> 
 
 </div>
 
@@ -133,7 +138,7 @@ $(function(){
 <label>Shipping Address</label>
 <label>Same as billing:</label>
 
-<input type=checkbox onClick="same()"> 
+<input type=checkbox onClick="same()" id="same"> 
 <div id ="shiping_adress_details">
  
                 <label>City:</label>
