@@ -76,7 +76,11 @@
 <script language="javascript">
 function wysylka(){
     alert("ADSSDA");
-    $("#shipping_adress").fadeIn();
+    $("#shipping_adress").fadeOut();
+    }
+function same(){
+    alert("ADSSDA");
+    $("#shipping_adress_details").fadeOut();
     }
 
 
@@ -94,8 +98,19 @@ function wysylka(){
 <input type="text" name='name' placeholder="">
 <label>Company name:</label>
 <input type="text" name='companyname' placeholder="">
-<label>Company name:</label>
-<input type="text" name='companyname' placeholder="">
+<label>City:</label>
+<input type="text" name='billingcity' placeholder="">
+<label>Street:</label>
+<input type="text" name='billingstreet' placeholder="">
+<label>Postal code:</label>
+<input type="text" name='billingcode' placeholder="">
+<label>Email adress:</label>
+<input type="text" name='email' placeholder="">
+<label>Tax identification number:</label>
+<input type="text" name='tax' placeholder="">
+
+
+
 <div id="country_list"></div>
 <script type="text/javascript">
 $(function(){
@@ -108,11 +123,27 @@ $(function(){
 <div id ="shipping">
 
 <label>Shipping Method</label>
+<label>Personal pickup:</label>
+<input type=checkbox onClick="wysylka()"> 
+
 </div>
 
-<div id ="shipping_adress" style="display: none;">
+<div id ="shipping_adress">
 
 <label>Shipping Address</label>
+<label>Same as billing:</label>
+
+<input type=checkbox onClick="same()"> 
+<div id ="shiping_adress_details">
+ 
+                <label>City:</label>
+                <input type="text" name='city'>
+                <label>Street:</label>
+                <input type="text" name='street'>
+                <label>Postal code:</label>
+                <input type="text" name='postal_code'>
+</div>
+
 </div>
 
 <div id ="payment">
@@ -120,14 +151,6 @@ $(function(){
 <label>Payment Method</label>
 </div>
 
-                <label>Name:</label>
-                <input type="text" name='name' placeholder="John Doe">
-                <label>Personal pickup:</label>
-                <input type=checkbox onClick="wysylka()">  
-                <label>Email:</label>
-                <input type="text" name='email' placeholder="johndoe@example.com">
-                <input type="text" name='adress' placeholder="johndoe@example.com">
-                <input type="text" name='email' placeholder="johndoe@example.com">
                 
                 <label>Additional info:</label>
                 <textarea type="text" name='message' placeholder="I'd like to know whether..."></textarea>
