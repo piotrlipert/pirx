@@ -74,7 +74,8 @@
           </div>
           <div class="large-9 columns contact-us">
 <script language="javascript">
-function wysylka(){
+function wysylka()
+{
     alert("DAS");
     if($("#personal").attr("checked")==true)
     {
@@ -87,8 +88,10 @@ function wysylka(){
     }
 alert("SD");
     
-    }
-function same_adress(){
+  }
+
+function same_adress()
+{
    if($("#same").attr("checked")==true)
     {
       $("#shipping_adress_details").fadeIn();
@@ -97,7 +100,7 @@ function same_adress(){
       $("#shipping_adress_details").fadeOut();
     }
 
-
+}
 
     </script>
 	          <h2>Order your 3D printer:</h2>
