@@ -87,11 +87,11 @@ function same_adress()
 {
    if($("#same").attr("checked")==true)
     {
-      $("#shipping_adress_details").fadeIn();
+      $("#shipping_adress_details").show();
     }
     else
     {
-      $("#shipping_adress_details").fadeOut();
+      $("#shipping_adress_details").hide();
     }
 
 }
