@@ -75,11 +75,11 @@
           <div class="large-9 columns contact-us">
 <script language="javascript">
 function wysylka(){
-    
+    alert("DAS");
     if($("#personal").is(':checked'))
     {$("#shipping_adress").fadeIn();}
     else{$("#shipping_adress").fadeOut();}
-
+alert("SD");
     
     }
 function same(){
