@@ -11,7 +11,7 @@
 
         e.preventDefault();
 
-        var name = thisForm["name"].value;
+        var name = $('#name').value;
 
         alert(name);
         if (name==null || name=="")
