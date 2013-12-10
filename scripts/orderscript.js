@@ -1,23 +1,30 @@
  $(function(){
       $('form').submit(function(e){
         var thisForm = $(this);
-        alert("JAZDA");
-
+        
         if(thisForm.attr('name') != 'orderform')
           return;
        
         
-
+      $.fn.goTo = function() {
+        $('html, body').animate({
+            scrollTop: $(this).offset().top + 'px'
+        }, 'fast');
+        return this; // for chaining...
+        }
 
         e.preventDefault();
-
+        var filled = true;
         var name = $('#name').value;
 
-        alert(name);
         if (name==null || name=="")
+          filled = false;
+        
+
+        if(filled == false)
         {
-        alert("First name must be filled out");
-        return false;
+          $('#error').goTo();
+          return;
         }
 
         //Hide the form

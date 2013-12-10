@@ -169,6 +169,10 @@ $(function(){
   <div id="success" style="display: none;">
     Order sent. We will contact you shortly.
   </div>
+
+  <div id="error" style="display: none;">
+    Fill in the form properly.
+  </div>
 </center>
 
 
