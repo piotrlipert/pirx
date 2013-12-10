@@ -1,4 +1,8 @@
  $(function(){
+
+            $('#error').fadeOut();
+          $('#error_email').fadeOut();
+
       $('form').submit(function(e){
         var thisForm = $(this);
         
