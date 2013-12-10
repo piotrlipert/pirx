@@ -32,6 +32,7 @@
 
     <!-- JS FUNCTIONS -->   
     
+    <script type="text/javascript" src="../scripts/orderscript.js"></script>
 
   </head>
   <body>
