@@ -16,13 +16,21 @@
         e.preventDefault();
         var filled = true;
         var email_proper = true;
-        var allInputs = $(":input");
+        
+        var required_inputs = new Array();
+        required_inputs[0] = "name";
+        required_inputs[0] = "email";
+        required_inputs[0] = "billingcity";
+        required_inputs[0] = "billingstreet";
+        required_inputs[0] = "billingcode";
+        required_inputs[0] = "country";
 
-        alert(allInputs.lenght);
-        for(var i=0;i<allInputs.lenght;i++)
+
+
+        for(var i=0;i<required_inputs.lenght;i++)
         {
 
-        var check = $('#'+allInputs[i],'#orderform').val();
+        var check = $('#'+required_inputs[i],'#orderform').val();
         if (check==null || check==""){
           filled = false;}
         }
