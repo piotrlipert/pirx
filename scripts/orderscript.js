@@ -26,7 +26,7 @@
         required_inputs[5] = "country";
 
 
-
+        alert(required_inputs.lenght);
         for(var i=0;i<required_inputs.lenght;i++)
         {
 
