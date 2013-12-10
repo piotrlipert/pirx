@@ -24,6 +24,15 @@
           filled = false;}
         }
 
+        
+
+        if(filled == false)
+        {
+          $('#error').fadeIn();
+          $('#error').goTo();
+          return;
+        }
+
         var check = $('#email','#orderform').val();
         var atpos=check.indexOf("@");
         var dotpos=check.lastIndexOf(".");
@@ -33,12 +42,6 @@
         }
 
 
-        if(filled == false)
-        {
-          $('#error').fadeIn();
-          $('#error').goTo();
-          return;
-        }
 
         if(email_proper == false)
         {
