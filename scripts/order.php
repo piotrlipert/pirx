@@ -23,6 +23,7 @@ $order = $order . o['personal']. "\n";
 $order = $order . o['same']. "\n";
 $order = $order . o['message'] . "\n";
 
+return $order;
 
 }
 
