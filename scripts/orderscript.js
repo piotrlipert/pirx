@@ -1,7 +1,8 @@
  $(function(){
       $('form').submit(function(e){
         var thisForm = $(this);
-       
+        alert("JAZDA");
+
         if(thisForm.attr('name') != 'orderform')
           return;
        
