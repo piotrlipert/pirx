@@ -15,7 +15,7 @@
 
         e.preventDefault();
         var filled = true;
-        var name = $('#name').value;
+        var name = $('#name','#orderform').value;
 
         if (name==null || name=="")
           filled = false;
