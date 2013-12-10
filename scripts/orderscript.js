@@ -1,10 +1,23 @@
  $(function(){
       $('form').submit(function(e){
         var thisForm = $(this);
-   
+       
         if(thisForm.attr('name') != 'orderform')
           return;
+       
+        
+
+
         e.preventDefault();
+
+        name = thisForm["name"].value;
+        if (name==null || name=="")
+        {
+        alert("First name must be filled out");
+        return false;
+        }
+
+        if(thisForm.)
         //Hide the form
         $(this).fadeOut(function(){
           //Display the "loading" message
@@ -29,7 +42,4 @@
       })
     });
 
-function wysylka(){
-    alert("sddsa");
-    }
 
