@@ -8,9 +8,15 @@ function createorder($o)
 $order = "Pirx ordered by :\n";
 $order = $order . o['name']. "\n";
 $order = $order . o['companyname']. "\n";
+
 $order = $order . o['billingcity']. "\n";
 $order = $order . o['billingstreet']. "\n";
 $order = $order . o['billingcode']. "\n";
+
+$order = $order . o['city']. "\n";
+$order = $order . o['street']. "\n";
+$order = $order . o['code']. "\n";
+
 $order = $order . o['email']. "\n";
 $order = $order . o['tax']. "\n";
 $order = $order . o['personal']. "\n";
