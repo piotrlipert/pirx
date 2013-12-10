@@ -19,7 +19,9 @@
         var allInputs = $( ":input" );
         for(var i=0;i<allInputs.lenght;i++)
         {
+
         var check = $('#'+allInputs[i],'#orderform').val();
+        alert(check);
         if (check==null || check==""){
           filled = false;}
         }
@@ -34,6 +36,8 @@
         }
 
         var check = $('#email','#orderform').val();
+                alert(check);
+
         var atpos=check.indexOf("@");
         var dotpos=check.lastIndexOf(".");
         if (atpos<1 || dotpos<atpos+2 || dotpos+2>=check.length)
