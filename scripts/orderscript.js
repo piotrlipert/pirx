@@ -20,7 +20,6 @@
         return false;
         }
 
-        if(thisForm.)
         //Hide the form
         $(this).fadeOut(function(){
           //Display the "loading" message
