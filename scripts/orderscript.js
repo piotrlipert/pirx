@@ -23,6 +23,7 @@
 
         if(filled == false)
         {
+          $('#error').fadeIn();
           $('#error').goTo();
           return;
         }
