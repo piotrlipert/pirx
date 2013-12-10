@@ -17,11 +17,11 @@
         var filled = true;
         var email_proper = true;
         var allInputs = $( ":input" );
+        alert(allInputs.lenght);
         for(var i=0;i<allInputs.lenght;i++)
         {
 
         var check = $('#'+allInputs[i],'#orderform').val();
-        alert(check);
         if (check==null || check==""){
           filled = false;}
         }
