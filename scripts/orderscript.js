@@ -19,11 +19,11 @@
         
         var required_inputs = new Array();
         required_inputs[0] = "name";
-        required_inputs[0] = "email";
-        required_inputs[0] = "billingcity";
-        required_inputs[0] = "billingstreet";
-        required_inputs[0] = "billingcode";
-        required_inputs[0] = "country";
+        required_inputs[1] = "email";
+        required_inputs[2] = "billingcity";
+        required_inputs[3] = "billingstreet";
+        required_inputs[4] = "billingcode";
+        required_inputs[5] = "country";
 
 
 
