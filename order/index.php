@@ -100,19 +100,19 @@ function same_adress()
 <div id ="billing_adress">
 <label>Billing Address</label>
 <label>Name:</label>
-<input type="text" name='name' placeholder="">
+<input type="text" name='name' placeholder="" id="name">
 <label>Company name:</label>
-<input type="text" name='companyname' placeholder="">
+<input type="text" name='companyname' placeholder="" id="companyname">
 <label>City:</label>
-<input type="text" name='billingcity' placeholder="">
+<input type="text" name='billingcity' placeholder="" id='billingcity'>
 <label>Street:</label>
-<input type="text" name='billingstreet' placeholder="">
+<input type="text" name='billingstreet' placeholder="" id='billingstreet'>
 <label>Postal code:</label>
-<input type="text" name='billingcode' placeholder="">
+<input type="text" name='billingcode' placeholder="" id='billingcode'>
 <label>Email adress:</label>
-<input type="text" name='email' placeholder="">
+<input type="text" name='email' placeholder="" id='email'>
 <label>Tax identification number:</label>
-<input type="text" name='tax' placeholder="">
+<input type="text" name='tax' placeholder="" id='tax'>
 
 
 
@@ -142,11 +142,11 @@ $(function(){
 <div id ="shipping_adress_details">
  
                 <label>City:</label>
-                <input type="text" name='city'>
+                <input type="text" name='city' id="city">
                 <label>Street:</label>
-                <input type="text" name='street'>
+                <input type="text" name='street' id="street">
                 <label>Postal code:</label>
-                <input type="text" name='postal_code'>
+                <input type="text" name='postal_code' id="postal_code">
 </div>
 
 </div>
