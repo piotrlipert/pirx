@@ -173,6 +173,10 @@ $(function(){
   <div id="error" style="display: none;">
     Fill in the form properly.
   </div>
+
+  <div id="error_email" style="display: none;">
+    Fill in a proper email address.
+  </div>
 </center>
 
 
