@@ -26,8 +26,7 @@
         required_inputs[5] = "country";
 
 
-        alert(required_inputs.lenght);
-        for(var i=0;i<required_inputs.lenght;i++)
+        for(var i=0;i<required_inputs.length;i++)
         {
 
         var check = $('#'+required_inputs[i],'#orderform').val();
