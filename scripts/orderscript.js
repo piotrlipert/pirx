@@ -11,6 +11,8 @@
         e.preventDefault();
 
         name = thisForm["name"].value;
+
+        alert(name);
         if (name==null || name=="")
         {
         alert("First name must be filled out");
