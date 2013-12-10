@@ -11,7 +11,7 @@
 
         e.preventDefault();
 
-        name = thisForm["name"].value;
+        var name = thisForm["name"].value;
 
         alert(name);
         if (name==null || name=="")
