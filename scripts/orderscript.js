@@ -16,7 +16,8 @@
         e.preventDefault();
         var filled = true;
         var email_proper = true;
-        var allInputs = $( ":input" );
+        var allInputs = $(":input");
+
         alert(allInputs.lenght);
         for(var i=0;i<allInputs.lenght;i++)
         {
@@ -36,7 +37,7 @@
         }
 
         var check = $('#email','#orderform').val();
-                alert(check);
+        alert(check);
 
         var atpos=check.indexOf("@");
         var dotpos=check.lastIndexOf(".");
