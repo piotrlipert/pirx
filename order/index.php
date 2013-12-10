@@ -94,7 +94,7 @@ function same_adress()
 
 
            
-            <form action="../scripts/order.php" method="POST" name="orderscript">
+            <form action="../scripts/order.php" method="POST" name="orderform">
               <fieldset>
 
 <div id ="billing_adress">
