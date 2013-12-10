@@ -45,7 +45,6 @@
         }
 
         var check = $('#email','#orderform').val();
-        alert(check);
 
         var atpos=check.indexOf("@");
         var dotpos=check.lastIndexOf(".");
