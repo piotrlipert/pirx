@@ -15,12 +15,23 @@
 
         e.preventDefault();
         var filled = true;
-        var name = $('#name','#orderform').val();
-        alert(name);
-
-        if (name==null || name==""){
+        var email_proper = true;
+        var allInputs = $( ":input" );
+        for(var i=0;i<allInputs.lenght;i++)
+        {
+        var check = $('#'+allInputs[i],'#orderform').val();
+        if (check==null || check==""){
           filled = false;}
-        
+        }
+
+        var check = $('#email','#orderform').val();
+        var atpos=check.indexOf("@");
+        var dotpos=check.lastIndexOf(".");
+        if (atpos<1 || dotpos<atpos+2 || dotpos+2>=check.length)
+        {
+          email_proper = false;
+        }
+
 
         if(filled == false)
         {
@@ -28,6 +39,14 @@
           $('#error').goTo();
           return;
         }
+
+        if(email_proper == false)
+        {
+          $('#error_email').fadeIn();
+          $('#error_email').goTo();
+          return;
+        }
+        
 
         //Hide the form
         $(this).fadeOut(function(){
