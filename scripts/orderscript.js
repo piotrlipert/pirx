@@ -31,6 +31,7 @@
         {
 
         var check = $('#'+required_inputs[i],'#orderform').val();
+        alert(check);
         if (check==null || check==""){
           filled = false;}
         }
