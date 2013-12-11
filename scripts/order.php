@@ -4,6 +4,10 @@
 session_start();
 
 
+
+$_SESSION['orderID'] = uniqid();
+
+
 require("postmark.php");
 
 function createorder($o)
@@ -56,10 +60,24 @@ return $order;
 
 
 
+/*
 $url = 'https://sandbox.przelewy24.pl/index.php';
 $data = array(
-				 'key1' => 'value1',
-				 'key2' => 'value2'
+				 'p24_session_id' => 
+				 'p24_id_sprzedawcy' => 
+				 'p24_kwota' => 
+				 'p24_klient' => 
+				 'p24_adres' => 
+				 'p24_kod' => 
+				 'p24_miasto' => 
+				 'p24_kraj' => 
+				 'p24_email' => 
+				 'p24_return_url_ok' => 
+				 'p24_return_url_error' => 
+				 'p24_opis' => 
+				 'p24_language' => 
+				 'p24_crc' => 
+
 
 
 				 );
@@ -77,7 +95,7 @@ $result = file_get_contents($url, false, $context);
 
 var_dump($result);
 
-
+*/
 
 	$postmark = new Postmark("64229856-c00b-4086-b886-24aefc8a9ae7","support@pirx3d.com",$order['email']);
 	
@@ -90,4 +108,6 @@ var_dump($result);
 		echo("Message sent");
 
 	}
+
+	
 ?>
