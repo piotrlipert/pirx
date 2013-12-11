@@ -63,7 +63,7 @@ return $order;
 $crc = $_SESSION['orderID']."|"."24150|"."2299|";
 $crc = $crc . "b1f083d192850355";
 $crc = md5($crc);
-$url = 'https://sandbox.przelewy24.pl/index.php';
+$url = 'https://secure.przelewy24.pl/index.php';
 $data = array(
 				 'p24_session_id' => $_SESSION['orderID'],
 				 'p24_id_sprzedawcy' => '24150',
