@@ -60,23 +60,25 @@ return $order;
 
 
 
-/*
+$crc = $_SESSION['orderID']."|"."24150|"."2299|";
+$crc = $crc . "b1f083d192850355";
+$crc = md5($crc);
 $url = 'https://sandbox.przelewy24.pl/index.php';
 $data = array(
-				 'p24_session_id' => 
-				 'p24_id_sprzedawcy' => 
-				 'p24_kwota' => 
-				 'p24_klient' => 
-				 'p24_adres' => 
-				 'p24_kod' => 
-				 'p24_miasto' => 
-				 'p24_kraj' => 
-				 'p24_email' => 
-				 'p24_return_url_ok' => 
-				 'p24_return_url_error' => 
-				 'p24_opis' => 
-				 'p24_language' => 
-				 'p24_crc' => 
+				 'p24_session_id' => $_SESSION['orderID']
+				 'p24_id_sprzedawcy' => '24150'
+				 'p24_kwota' => '2299'
+				 'p24_klient' => $order['name']
+				 'p24_adres' => $order['billingstreet']
+				 'p24_kod' => $order['billingcode']
+				 'p24_miasto' => $order['billingcity']
+				 'p24_kraj' => 'PL'
+				 'p24_email' => $order['email']
+				 'p24_return_url_ok' => "www.pirx3d.com/scripts/order_verification.php"
+				 'p24_return_url_error' => "www.pirx3d.com/scripts/order_verification.php"
+				 'p24_opis' => "Drukarka 3D Pirx"
+				 'p24_language' => 'PL'
+				 'p24_crc' => $crc
 
 
 
@@ -95,7 +97,7 @@ $result = file_get_contents($url, false, $context);
 
 var_dump($result);
 
-*/
+/*
 
 	$postmark = new Postmark("64229856-c00b-4086-b886-24aefc8a9ae7","support@pirx3d.com",$order['email']);
 	
@@ -108,6 +110,6 @@ var_dump($result);
 		echo("Message sent");
 
 	}
+*/
 
-	
 ?>
