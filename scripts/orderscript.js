@@ -17,7 +17,7 @@
         return this; // for chaining...
         }
 
-        e.preventDefault();
+        //e.preventDefault();
         var filled = true;
         var email_proper = true;
         
