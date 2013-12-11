@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+
+   
     <title>Pirx 3d Printer - About us</title>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>  
 
@@ -114,6 +117,10 @@ function same_adress()
 <label>Tax identification number:</label>
 <input type="text" name='tax' placeholder="" id='tax'>
 
+<!--Przelewy24.pl - wybor formy platnosci--> 
+<script src="https://secure.przelewy24.pl/external/formy.php?id=TWOJEID&sort=2" 
+type="text/javascript"></script> 
+<script type="text/javascript">m_formy();</script> 
 
 
 <div id="country_list"></div>

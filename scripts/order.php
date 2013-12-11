@@ -1,5 +1,9 @@
 <?php
 
+
+session_start();
+
+
 require("postmark.php");
 
 function createorder($o)
