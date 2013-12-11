@@ -34,7 +34,6 @@
         {
 
         var check = $('#'+required_inputs[i],'#orderform').val();
-        alert(check);
         if (check==null || check==""){
           filled = false;}
         }
@@ -45,6 +44,8 @@
         {
           $('#error').fadeIn();
           $('#error').goTo();
+          e.preventDefault();
+
           return;
         }
 
@@ -63,6 +64,8 @@
         {
           $('#error_email').fadeIn();
           $('#error_email').goTo();
+          e.preventDefault();
+
           return;
         }
         
