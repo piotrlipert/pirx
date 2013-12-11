@@ -118,7 +118,7 @@ function same_adress()
 <input type="text" name='tax' placeholder="" id='tax'>
 
 <!--Przelewy24.pl - wybor formy platnosci--> 
-<script src="https://secure.przelewy24.pl/external/formy.php?id=TWOJEID&sort=2" 
+<script src="https://secure.przelewy24.pl/external/formy.php?id=24150&sort=2" 
 type="text/javascript"></script> 
 <script type="text/javascript">m_formy();</script> 
 
