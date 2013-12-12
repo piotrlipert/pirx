@@ -99,16 +99,19 @@ function is_sane()
                 <label>What is your name?</label>
                 
                 <textarea type="text" name="question_1" id="question1">
+                </textarea>
                 <label>What is your name?</label>
                 
                 <textarea type="text" name="question_2" id="question2">
+                </textarea>
                 <label>What is your name?</label>
                 
                 <textarea type="text" name="question_3" id="question3">
+                </textarea>
                 <label>What is your name?</label>
                 
                 <textarea type="text" name="question_4" id="question4">
-
+                </textarea>
                 <label>Email address:</label>
                 <input type = "text" name="email" id="email">
                   
