@@ -61,7 +61,7 @@
       <section id="caption">
         <div class="row caption">
           <div class="large12 columns">
-            <h2>Order Pirx</h2>
+            <h2>Join our crew!</h2>
           </div>
         </div>
       </section>
@@ -73,7 +73,7 @@
               <li><a href="../">Home<span></span></a></li>
               <li><a href="../about/">About<span></span></a></li>
               <li><a href="../press/">Press Kit<span></span></a></li>
-              <li><a href="#" class="active">Order<span></span></a></li>
+              <li><a href="#" class="active">Join us!<span></span></a></li>
             </ul>
           </div>
           <div class="large-9 columns contact-us">
