@@ -5,7 +5,10 @@ session_start();
 
 
 
-$_SESSION['orderID'] = uniqid();
+//$_SESSION['orderID'] = uniqid();
+
+$_SESSION['orderID'] = 1;
+
 
 
 require("postmark.php");
