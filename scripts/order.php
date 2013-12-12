@@ -35,6 +35,8 @@ return $order;
 
 }
 
+
+extract($_POST);
 	
 	if(isset($_REQUEST['email']))
 	{
@@ -65,37 +67,39 @@ $crc = $crc . "b1f083d192850355";
 $crc = md5($crc);
 $url = 'https://secure.przelewy24.pl/index.php';
 $data = array(
-				 'p24_session_id' => $_SESSION['orderID'],
-				 'p24_id_sprzedawcy' => '24150',
-				 'p24_kwota' => '2299',
-				 'p24_klient' => $order['name'],
-				 'p24_adres' => $order['billingstreet'],
-				 'p24_kod' => $order['billingcode'],
-				 'p24_miasto' => $order['billingcity'],
-				 'p24_kraj' => 'PL',
-				 'p24_email' => $order['email'],
-				 'p24_return_url_ok' => "www.pirx3d.com/scripts/order_verification.php",
-				 'p24_return_url_error' => "www.pirx3d.com/scripts/order_verification.php",
-				 'p24_opis' => "Drukarka 3D Pirx",
-				 'p24_language' => 'PL',
-				 'p24_crc' => $crc
+				 'p24_session_id' => urlencode($_SESSION['orderID']),
+				 'p24_id_sprzedawcy' => urlencode('24150'),
+				 'p24_kwota' => urlencode('2299'),
+				 'p24_klient' => urlencode($order['name']),
+				 'p24_adres' => urlencode($order['billingstreet']),
+				 'p24_kod' => urlencode($order['billingcode']),
+				 'p24_miasto' => urlencode($order['billingcity']),
+				 'p24_kraj' => urlencode('PL'),
+				 'p24_email' => urlencode($order['email']),
+				 'p24_return_url_ok' => urlencode("www.pirx3d.com/scripts/order_verification.php"),
+				 'p24_return_url_error' => urlencode("www.pirx3d.com/scripts/order_verification.php"),
+				 'p24_opis' => urlencode("Drukarka 3D Pirx"),
+				 'p24_language' => urlencode('PL'),
+				 'p24_crc' => urlencode($crc)
 
 
 
 				 );
 
-// use key 'http' even if you send the request to https://...
-$options = array(
-    'http' => array(
-        'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
-        'method'  => 'POST',
-        'content' => http_build_query($data),
-    ),
-);
-$context  = stream_context_create($options);
-$result = file_get_contents($url, false, $context);
 
-var_dump($result);
+$form = "";
+$form = $form . "<form action = ". $url . " id="automatic_form">" . "\n";
+
+foreach ($data as $key => $value) 
+{
+$form = $form . "<input type=\"text\" name=\"".$key."\" value=\"".$value. "\">\n" 
+}
+
+$form = $form . "<input type =\"submit\" id=\"sub\">" . "\n";
+$form = $form . "</form>" . "\n";
+
+
+echo $form;
 
 /*
 
