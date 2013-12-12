@@ -102,6 +102,8 @@ $form = $form . "<input type =\"submit\" id=\"sub\">" . "\n";
 $form = $form . "</form>" . "\n";
 
 
+$form = $form . "<script>document.forms[\"automatic_form\"].submit();</script>"
+
 echo $form;
 
 /*
