@@ -65,26 +65,21 @@ extract($_POST);
 $crc = $_SESSION['orderID']."|"."24150|"."2299|";
 $crc = $crc . "b1f083d192850355";
 $crc = md5($crc);
-$url = 'https://secure.przelewy24/trnDirect';
+$url = 'https://secure.przelewy24.pl/index.php';
 $data = array(
 				 'p24_session_id' => $_SESSION['orderID'],
-				 'p24_merchant_id' => '24150',
-				 'p24_pos_id' => '24150',
-
-				 'p24_currency' => 'PLN',
-				 'p24_amount' => '229900',
-				 'p24_description' => 'Drukarka 3D Pirx',
-				 'p24_client' => $order['name'],
-				 'p24_address' => $order['billingstreet'],
-				 'p24_zip' => $order['billingcode'],
-				 'p24_city' => $order['billingcity'],
-				 'p24_country' => 'PL',
+				 'p24_id_sprzedawcy' => '24150',
+				 'p24_kwota' => '2299',
+				 'p24_klient' => $order['name'],
+				 'p24_adres' => $order['billingstreet'],
+				 'p24_kod' => $order['billingcode'],
+				 'p24_miasto' => $order['billingcity'],
+				 'p24_kraj' => 'PL',
 				 'p24_email' => $order['email'],
-				 'p24_url_return' => "www.pirx3d.com/scripts/order_verification.php",
-				 'p24_url_cancel' => "www.pirx3d.com/scripts/order_verification.php",
-				 'p24_api_version' => '3.0a',
+				 'p24_return_url_ok' => "http://www.pirx3d.com/scripts/order_verification.php",
+				 'p24_return_url_error' => "http://www.pirx3d.com/scripts/order_verification.php",
 				 'p24_opis' => "Drukarka 3D Pirx",
-				 'p24_language' => 'pl',
+				 'p24_language' => 'PL',
 				 'p24_crc' => $crc
 
 
