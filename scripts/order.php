@@ -92,7 +92,7 @@ $form = $form . "<form action = ". $url . " id="automatic_form">" . "\n";
 
 foreach ($data as $key => $value) 
 {
-$form = $form . "<input type=\"text\" name=\"".$key."\" value=\"".$value. "\">\n" 
+$form = $form . "<input type=\"text\" name=\"".$key."\" value=\"".$value. "\">\n";
 }
 
 $form = $form . "<input type =\"submit\" id=\"sub\">" . "\n";
