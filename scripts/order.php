@@ -88,7 +88,7 @@ $data = array(
 
 
 $form = "";
-$form = $form . "<form action = ". $url . " id="automatic_form">" . "\n";
+$form = $form . "<form action = ". $url . " id=\"automatic_form\">" . "\n";
 
 foreach ($data as $key => $value) 
 {
