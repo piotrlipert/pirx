@@ -36,7 +36,7 @@ require("postmark.php");
 		->send();
 	
 	if($result === true)
-		echo("Message sent");
+		echo("Application sent, we will probably contact you.");
 
 	}
 ?>
