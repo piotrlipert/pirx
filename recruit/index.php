@@ -85,12 +85,17 @@ function is_sane()
 
 
     </script>
-	          <h2>Fill out the following:</h2>
+	          <h2>We are looking for an Expension Officer. If you are a highly creative 
+              person with amazing communication and copywriting skills please fill out
+              the form below. English proficiency is a must. Experience in social media
+              is a bonus.
+
+              </h2>
 
 
             <form action="../scripts/recruit.php" method="POST" name="recruit" id="recruitform">
               <fieldset>
-                <label>Are you sane?</label>
+                <label>?</label>
                 <input type = "checkbox" name="sane" id="sane" onClick="is_sane()">
                 
               <div id="form_section">
@@ -107,31 +112,31 @@ function is_sane()
 
 
                 <label>You have a week and no budget at all. Your goal is to reach
-                      <br>as many potential Pirx customers as you can. Be creative.
-                      <br>Bonus points for scenarios that end up with sold printers.
+                      as many potential Pirx customers as you can. Be creative.
+                      Bonus points for scenarios that end up with sold printers.
                 </label>
                 
                 <textarea type="text" name="question_1" id="question1"></textarea>
                 <label>You are a prisoner of a nasty cannibal tribe. Things went very bad
-                <br> and they are just about to cook you in a large, brass cauldron.
-                <br> You are hanging upside down by the ankle, all tied up. Somehow you 
-                <br> miraculously managed to free one hand. Just by accident, there is a 
-                <br> laptop connected to a Pirx 3D printer just within your reach.
-                <br> What will you do to save yourself?
+                 and they are just about to cook you in a large, brass cauldron.
+                 You are hanging upside down by the ankle, all tied up. Somehow you 
+                 miraculously managed to free one hand. Just by accident, there is a 
+                 laptop connected to a Pirx 3D printer just within your reach.
+                What will you do to save yourself?
                 </label>
                 
                 <textarea type="text" name="question_2" id="question2"></textarea>
                 <label>What amazing thing would you print on Pirx?</label>
                 
                 <textarea type="text" name="question_3" id="question3"></textarea>
-                <label>Sell a 3D printer to an old fisherman.</label>
+                <label>How would you market our 3D printer to Bruce Wayne?</label>
                 
                 <textarea type="text" name="question_4" id="question4"></textarea>
                 <label>Email address:</label>
                 <input type = "text" name="email" id="email">
                   
-                <label>Additional info:</label>
-                <textarea type="text" name='message' placeholder="I'd like to know whether..."></textarea>
+                <label>Is there anything else we need to know?</label>
+                <textarea type="text" name='message' placeholder=""></textarea>
                 <input type="submit" class="btn btn-small btn-order">
               </fieldset>
             </form>
