@@ -94,7 +94,8 @@ function is_sane()
               </label>
 
               <label>
-
+              You will be both responsible and measured by sales growth. You will also
+              participate in the process of introducing our product to new markets.
               </label>
               
 
