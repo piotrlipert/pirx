@@ -32,7 +32,7 @@
 
         if(email_proper == false)
         {
-          $('#error_email').fadeIn();
+          $('#error_email').toggleFade();
           $('#error_email').goTo();
           e.preventDefault();
 
