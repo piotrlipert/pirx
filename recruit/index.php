@@ -108,7 +108,7 @@ function is_sane()
                  </label>
                 <input type = "checkbox" name="sane" id="sane" onClick="is_sane()">
                 
-              <div id="form_section" style="display: none">
+              <div id="form_section" style="display: none;">
 
                 <label>What is your name?</label>
                 <input type = "text" name="name" id="name">
@@ -150,8 +150,9 @@ function is_sane()
                 <input type="submit" class="btn btn-small btn-order">
               </fieldset>
             </form>
-            <center>
             </div>
+
+            <center>
           <div id="loading" style="display: none;"> 
             Sending your application.
     </div>
