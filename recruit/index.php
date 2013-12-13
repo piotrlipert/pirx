@@ -100,7 +100,7 @@ function is_sane()
               
 
 
-            <form action="../scripts/recruit.php" method="POST" name="recruit" id="recruitform">
+            <form action="../scripts/recruit.php" method="POST" name="recruitform" id="recruitform">
               <fieldset>
                 <label>Are you ready to beat unfavorable odds, carry out seemingly impossible tasks 
                   and work with us to change the world?
