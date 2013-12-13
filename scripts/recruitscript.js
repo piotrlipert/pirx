@@ -54,7 +54,7 @@
                 //Hide the "loading" message
                 $("#loading").fadeOut(function(){
                   //Display the "success" message
-                  $("#success").text(data).fadeIn();
+                  $("#success").fadeIn();
                   
                 });
               }
