@@ -88,30 +88,45 @@ function is_sane()
 	          <h2>Fill out the following:</h2>
 
 
-           <div id="form_section">
             <form action="../scripts/recruit.php" method="POST" name="recruit" id="recruitform">
               <fieldset>
                 <label>Are you sane?</label>
                 <input type = "checkbox" name="sane" id="sane" onClick="is_sane()">
-                <label>What is your name?</label>
                 
+              <div id="form_section">
+
+                <label>What is your name?</label>
                 <input type = "text" name="name" id="name">
-                <label>What is your name?</label>
+
+                <label>Have you ever dreamt of space travel?</label>
+                <input type = "checkbox" name="space" id="space" onClick="">
+
+
+                <label>Do you want to be filthy rich?</label>
+                <input type = "checkbox" name="rich" id="rich" onClick="">
+
+
+                <label>You have a week and no budget at all. Your goal is to reach
+                      <br>as many potential Pirx customers as you can. Be creative.
+                      <br>Bonus points for scenarios that end up with sold printers.
+                </label>
                 
-                <textarea type="text" name="question_1" id="question1">
-                </textarea>
-                <label>What is your name?</label>
+                <textarea type="text" name="question_1" id="question1"></textarea>
+                <label>You are a prisoner of a nasty cannibal tribe. Things went very bad
+                <br> and they are just about to cook you in a large, brass cauldron.
+                <br> You are hanging upside down by the ankle, all tied up. Somehow you 
+                <br> miraculously managed to free one hand. Just by accident, there is a 
+                <br> laptop connected to a Pirx 3D printer just within your reach.
+                <br> What will you do to save yourself?
+                </label>
                 
-                <textarea type="text" name="question_2" id="question2">
-                </textarea>
-                <label>What is your name?</label>
+                <textarea type="text" name="question_2" id="question2"></textarea>
+                <label>What amazing thing would you print on Pirx?</label>
                 
-                <textarea type="text" name="question_3" id="question3">
-                </textarea>
-                <label>What is your name?</label>
+                <textarea type="text" name="question_3" id="question3"></textarea>
+                <label>Sell a 3D printer to an old fisherman.</label>
                 
-                <textarea type="text" name="question_4" id="question4">
-                </textarea>
+                <textarea type="text" name="question_4" id="question4"></textarea>
                 <label>Email address:</label>
                 <input type = "text" name="email" id="email">
                   
