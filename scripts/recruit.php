@@ -16,14 +16,14 @@ require("postmark.php");
 		$rich = $_REQUEST['rich'];
 	
 
-	$sendmail = $name . "\n";
-	$sendmail = $sendmail . $question_1 . "\n";
-	$sendmail = $sendmail . $question_2 . "\n";
-	$sendmail = $sendmail . $question_3 . "\n";
-	$sendmail = $sendmail . $question_4 . "\n";
-	$sendmail = $sendmail . $space . "\n";
-	$sendmail = $sendmail . $rich . "\n";
-	$sendmail = $sendmail . $message . "\n";
+	$sendmail = "Name " . $name . "\n";
+	$sendmail = $sendmail . "Marketing ideas :" . $question_1 . "\n";
+	$sendmail = $sendmail . "Canibals :" .$question_2 . "\n";
+	$sendmail = $sendmail . "What to print : " .$question_3 . "\n";
+	$sendmail = $sendmail . "Bruce Wayne :" .$question_4 . "\n";
+	$sendmail = $sendmail . "Space dream on? " .$space . "\n";
+	$sendmail = $sendmail . "Rich button on?" .$rich . "\n";
+	$sendmail = $sendmail . "Additional info :" .$message . "\n";
 
 
 

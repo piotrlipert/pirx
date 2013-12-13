@@ -117,7 +117,7 @@ function same_adress()
 <label>Tax identification number:</label>
 <input type="text" name='tax' placeholder="" id='tax'>
 
-
+</div>
 
 <div id="country_list"></div>
 <script type="text/javascript">
