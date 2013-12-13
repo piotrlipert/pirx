@@ -85,17 +85,26 @@ function is_sane()
 
 
     </script>
-	          <h2>We are looking for an Expension Officer. If you are a highly creative 
+	          <h2>We are looking for an Expension Officer. </h2>
+
+              <label>If you are a highly creative 
               person with amazing communication and copywriting skills please fill out
               the form below. English proficiency is a must. Experience in social media
               is a bonus.
+              </label>
 
-              </h2>
+              <label>
+
+              </label>
+              
 
 
             <form action="../scripts/recruit.php" method="POST" name="recruit" id="recruitform">
               <fieldset>
-                <label>?</label>
+                <label>Are you ready to beat unfavorable odds, carry out seemingly impossible tasks 
+                  and work with us to change the world?
+
+                 </label>
                 <input type = "checkbox" name="sane" id="sane" onClick="is_sane()">
                 
               <div id="form_section">
