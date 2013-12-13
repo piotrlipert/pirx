@@ -17,6 +17,7 @@
         
         e.preventDefault();
 
+         var email_proper = true;
 
         var check = $('#email','#recruitform').val();
 
