@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+
+
     <title>Pirx 3d Printer - About us</title>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>  
 
@@ -26,12 +29,13 @@
     <script type="text/javascript" src="../js/retina.js"></script>
     <script type="text/javascript" src="../js/lightbox-2.6.min.js"></script>
     <script type="text/javascript" src="../js/functions.js"></script>
-
+    
 		<!-- FAVICON -->
     <link rel="shortcut icon" href="../images/favicon.ico">
 
     <!-- JS FUNCTIONS -->   
     
+    <script type="text/javascript" src="../scripts/orderscript.js"></script>
 
   </head>
   <body>
@@ -57,7 +61,7 @@
       <section id="caption">
         <div class="row caption">
           <div class="large12 columns">
-            <h2>Contact us</h2>
+            <h2>Order Pirx</h2>
           </div>
         </div>
       </section>
@@ -69,63 +73,112 @@
               <li><a href="../">Home<span></span></a></li>
               <li><a href="../about/">About<span></span></a></li>
               <li><a href="../press/">Press Kit<span></span></a></li>
-              <li><a href="#" class="active">Contact<span></span></a></li>
+              <li><a href="#" class="active">Order<span></span></a></li>
             </ul>
           </div>
           <div class="large-9 columns contact-us">
+<script language="javascript">
+function wysylka()
+{
+  $("#shipping_adress").fadeToggle();
 
-<script>
-    $(function(){
-      $('form').submit(function(e){
-        var thisForm = $(this);
-        //Prevent the default form action
-        e.preventDefault();
-        //Hide the form
-        $(this).fadeOut(function(){
-          //Display the "loading" message
-          $("#loading").fadeIn(function(){
-            //Post the form to the send script
-            $.ajax({
-              type: 'POST',
-              url: thisForm.attr("action"),
-              data: thisForm.serialize(),
-              //Wait for a successful response
-              success: function(data){
-                //Hide the "loading" message
-                $("#loading").fadeOut(function(){
-                  //Display the "success" message
-                  $("#success").text(data).fadeIn();
-                  
-                });
-              }
-            });
-          });
-        });
-      })
-    });
-  </script>
+  
+  }
 
-	          <h2>Drop us a message</h2>
+function same_adress()
+{
+     $("#shipping_adress_details").fadeToggle();
+
+
+}
+
+    </script>
+	          <h2>Order your 3D printer:</h2>
 
 
            
-            <form action="../scripts/sm.php" method="POST">
+            <form action="../scripts/order.php" method="POST" name="orderform" id="orderform">
               <fieldset>
-                <label>Name:</label>
-                <input type="text" name='name' placeholder="John Doe">
-                <label>Email:</label>
-                <input type="text" name='email' placeholder="johndoe@example.com">
-                <label>Message:</label>
+
+<div id ="billing_adress">
+<label>Billing Address</label>
+<label>Name:</label>
+<input type="text" name='name' placeholder="" id="name">
+<label>Company name:</label>
+<input type="text" name='companyname' placeholder="" id="companyname">
+<label>City:</label>
+<input type="text" name='billingcity' placeholder="" id='billingcity'>
+<label>Street:</label>
+<input type="text" name='billingstreet' placeholder="" id='billingstreet'>
+<label>Postal code:</label>
+<input type="text" name='billingcode' placeholder="" id='billingcode'>
+<label>Email adress:</label>
+<input type="text" name='email' placeholder="" id='email'>
+<label>Tax identification number:</label>
+<input type="text" name='tax' placeholder="" id='tax'>
+
+</div>
+
+<div id="country_list"></div>
+<script type="text/javascript">
+$(function(){
+   $("#country_list").load("../scripts/countries.html");
+})
+</script>
+
+</div>
+
+<div id ="shipping">
+
+<label>Shipping Method</label>
+<label>Personal pickup:</label>
+<input type=checkbox onClick="wysylka()" id="personal"> 
+
+</div>
+
+<div id ="shipping_adress">
+
+<label>Shipping Address</label>
+<label>Same as billing:</label>
+
+<input type=checkbox onClick="same_adress()" id="same"> 
+<div id ="shipping_adress_details">
+ 
+                <label>City:</label>
+                <input type="text" name='city' id="city">
+                <label>Street:</label>
+                <input type="text" name='street' id="street">
+                <label>Postal code:</label>
+                <input type="text" name='postal_code' id="postal_code">
+</div>
+
+</div>
+
+<div id ="payment">
+
+<label>Payment Method</label>
+</div>
+
+                
+                <label>Additional info:</label>
                 <textarea type="text" name='message' placeholder="I'd like to know whether..."></textarea>
                 <input type="submit" class="btn btn-small btn-order">
               </fieldset>
             </form>
             <center>
           <div id="loading" style="display: none;"> 
-    Sending your message....
+    Sending your order....
     </div>
   <div id="success" style="display: none;">
-    Message sent.
+    Order sent. We will contact you shortly.
+  </div>
+
+  <div id="error" style="display: none;">
+    Fill in the form properly.
+  </div>
+
+  <div id="error_email" style="display: none;">
+    Fill in a proper email address.
   </div>
 </center>
 

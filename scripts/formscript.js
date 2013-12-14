@@ -1,7 +1,9 @@
  $(function(){
       $('form').submit(function(e){
         var thisForm = $(this);
-        //Prevent the default form action
+   
+        if(thisForm.attr('name') != 'contactform')
+          return;
         e.preventDefault();
         //Hide the form
         $(this).fadeOut(function(){
