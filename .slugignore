@@ -1,3 +1,5 @@
 # Ignore sass files.
 .sass-cache
 scss
+images/old-bg-welcome.jpg
+images/old-bg-welcome@2x.jpg
