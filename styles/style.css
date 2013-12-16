@@ -4727,7 +4727,8 @@ a.th {
     background-attachment: fixed; }
     @media screen and (min-width: 1281px) {
       .separator .separator1 {
-        background-image: url("../images/bg1@2x.jpg") no-repeat;
+        background-image: url("../images/bg1@2x.jpg");
+        background-size: cover;
         background-attachment: fixed; } }
   .separator .separator2 {
     height: 100%;
@@ -4735,7 +4736,8 @@ a.th {
     background-attachment: fixed; }
     @media screen and (min-width: 1281px) {
       .separator .separator2 {
-        background-image: url("../images/bg2@2x.jpg") no-repeat;
+        background-image: url("../images/bg2@2x.jpg");
+        background-size: cover;
         background-attachment: fixed; } }
   .separator .separator3 {
     height: 100%;
@@ -4743,7 +4745,7 @@ a.th {
     background-attachment: fixed; }
     @media screen and (min-width: 1281px) {
       .separator .separator3 {
-        background-image: url("../images/bg3@2x.jpg") no-repeat;
+        background-image: url("../images/bg3@2x.jpg");
         background-size: cover;
         background-attachment: fixed; } }
   .separator .separator4 {
@@ -4752,7 +4754,7 @@ a.th {
     background-attachment: fixed; }
     @media screen and (min-width: 1281px) {
       .separator .separator4 {
-        background-image: url("../images/bg4@2x.jpg") no-repeat;
+        background-image: url("../images/bg4@2x.jpg");
         background-size: cover;
         background-attachment: fixed; } }
   .separator .separator5 {
@@ -4761,7 +4763,7 @@ a.th {
     background-attachment: fixed; }
     @media screen and (min-width: 1281px) {
       .separator .separator5 {
-        background-image: url("../images/bg5@2x.jpg") no-repeat;
+        background-image: url("../images/bg5@2x.jpg");
         background-size: cover;
         background-attachment: fixed; } }
   .separator .separator6 {
