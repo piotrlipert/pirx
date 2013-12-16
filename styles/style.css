@@ -5417,32 +5417,26 @@ MAIN CONTENT
 /* ?. RETINA */
 /* RETINA IMAGES */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .separator1 {
-    background: url("../../images/bg1@2x.jpg");
+  .separator .separator1 {
+    background-image: url("../../images/bg1@2x.jpg");
     background-size: 100%; }
-
-  .separator2 {
-    background: url("../../images/bg2@2x.jpg");
+  .separator .separator2 {
+    background-image: url("../../images/bg2@2x.jpg");
     background-size: 100%; }
-
-  .separator3 {
-    background: url("../../images/bg3@2x.jpg");
+  .separator .separator3 {
+    background-image: url("../../images/bg3@2x.jpg");
     background-size: 100%; }
-
-  .separator4 {
-    background: url("../../images/bg4@2x.jpg");
+  .separator .separator4 {
+    background-image: url("../../images/bg4@2x.jpg");
     background-size: 100%; }
-
-  .separator5 {
-    background: url("../../images/bg5@2x.jpg");
+  .separator .separator5 {
+    background-image: url("../../images/bg5@2x.jpg");
     background-size: 100%; }
-
-  .separator6 {
-    background: url("../../images/bg6@2x.jpg");
+  .separator .separator6 {
+    background-image: url("../../images/bg6@2x.jpg");
     background-size: 100%; }
-
-  .separator7 {
-    background: url("../../images/bg7@2x.jpg");
+  .separator .separator7 {
+    background-image: url("../../images/bg7@2x.jpg");
     background-size: 100%; }
 
   #header .logo {
