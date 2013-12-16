@@ -65,6 +65,9 @@ MAIN CONTENT
 
 /* 5. HEADER */
 
+#wrapper {
+	overflow: hidden;
+}
 
 #header {
 	height: 80px;
@@ -107,6 +110,9 @@ MAIN CONTENT
 
 #welcome {
 	background: url('../images/bg-welcome.jpg');
+	@media screen and (max-width: 1025px) {
+		margin-right: -100px;
+  }
 	background-size: auto 500px;
 	background-position: top right;
 
@@ -118,6 +124,9 @@ MAIN CONTENT
 
 	h1 {
 		margin-top: 90px;
+		@media screen and (max-width: 1025px) {
+			margin-top: 70px;
+	  }
 	}
 
 	h2 {
@@ -257,66 +266,69 @@ MAIN CONTENT
 		}
 
 		.printer-1 {
-			margin-top: 170px;
+			margin-top: 150px;
 
 			span {
-				width: 275px;
-				height: 177px;
+				width: 276px;
+				height: 154px;
 				background: url('../images/printer-1.png') no-repeat;
 				position: absolute;
-				top: 250px;
+				top: 222px;
 				left: 190px;
 			}
 		}
 
 		.printer-2 {
-			margin-top: 60px;
+			margin-top: 30px;
 
 			span {
 				width: 200px;
 				height: 129px;
 				background: url('../images/printer-2.png') no-repeat;
 				position: absolute;
-				top: 110px;
+				top: 100px;
 				left: 190px;
 			}
 		}
 
 		.printer-3 {
-			margin-top: 90px;
+			margin-top: 70px;
 
 			span {
-				width: 325px;
-				height: 166px;
+				width: 239px;
+				height: 143px;
 				background: url('../images/printer-3.png') no-repeat;
 				position: absolute;
-				top: 152px;
-				right: 190px;
+				top: 157px;
+				right: 188px;
 
 				@media screen and (max-width: 1024px) {
-					width: 250px;
-					height: 166px;
+					width: 174px;
+					height: 139px;
 					background: url('../images/printer-3b.png') no-repeat;
+					top: 162px;
+					right: 185px;
 		    }
 			}
 		}
 
 		.printer-4 {
-			margin-top: 0;
+			margin-top: -15px;
 
 			span {
-				width: 315px;
-				height: 118px;
+				width: 308px;
+				height: 101px;
 				background: url('../images/printer-4.png') no-repeat;
 				position: absolute;
-				top: 60px;
-				right: 190px;
+				top: 63px;
+				right: 188px;
 
 				@media screen and (max-width: 1024px) {
 					width: 240px;
 					height: 118px;
 					background: url('../images/printer-4b.png') no-repeat;
-			    }
+					top: 47px;
+		    }
 			}
 		}
 	}

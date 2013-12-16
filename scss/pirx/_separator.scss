@@ -9,81 +9,80 @@
 	max-width: 100%;
 	height: 470px;
 	background-size: 100%;
-}
+	z-index: 0;
 
-.separator1 {
-	height: 100%;
-	background-image: url('../images/bg1.jpg');
-	background-attachment: fixed;
-	@media screen and (min-width: 1281px) {
-		background-image: url('../images/bg1@2x.jpg') no-repeat;
-		background-size: cover;
+	.separator1 {
+		height: 100%;
+		background-image: url('../images/bg1.jpg');
 		background-attachment: fixed;
-  }
-}
+		@media screen and (min-width: 1281px) {
+			background-image: url('../images/bg1@2x.jpg') no-repeat;
+			background-attachment: fixed;
+	  }
+	}
 
-.separator2 {
-	height: 100%;
-	background-image: url('../images/bg2.jpg');
-	background-attachment: fixed;
-	@media screen and (min-width: 1281px) {
-		background-image: url('../images/bg2@2x.jpg') no-repeat;
-		background-size: cover;
+	.separator2 {
+		height: 100%;
+		background-image: url('../images/bg2.jpg');
 		background-attachment: fixed;
-  }
-}
+		@media screen and (min-width: 1281px) {
+			background-image: url('../images/bg2@2x.jpg') no-repeat;
+			background-attachment: fixed;
+	  }
+	}
 
-.separator3 {
-	height: 100%;
-	background-image: url('../images/bg3.jpg');
-	background-attachment: fixed;
-	@media screen and (min-width: 1281px) {
-		background-image: url('../images/bg3@2x.jpg') no-repeat;
-		background-size: cover;
+	.separator3 {
+		height: 100%;
+		background-image: url('../images/bg3.jpg');
 		background-attachment: fixed;
-  }
-}
+		@media screen and (min-width: 1281px) {
+			background-image: url('../images/bg3@2x.jpg') no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+	  }
+	}
 
-.separator4 {
-	height: 100%;
-	background-image: url('../images/bg4.jpg');
-	background-attachment: fixed;
-	@media screen and (min-width: 1281px) {
-		background-image: url('../images/bg4@2x.jpg') no-repeat;
-		background-size: cover;
+	.separator4 {
+		height: 100%;
+		background-image: url('../images/bg4.jpg');
 		background-attachment: fixed;
-  }
-}
+		@media screen and (min-width: 1281px) {
+			background-image: url('../images/bg4@2x.jpg') no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+	  }
+	}
 
-.separator5 {
-	height: 100%;
-	background-image: url('../images/bg5.jpg');
-	background-attachment: fixed;
-	@media screen and (min-width: 1281px) {
-		background-image: url('../images/bg5@2x.jpg') no-repeat;
-		background-size: cover;
+	.separator5 {
+		height: 100%;
+		background-image: url('../images/bg5.jpg');
 		background-attachment: fixed;
-  }
-}
+		@media screen and (min-width: 1281px) {
+			background-image: url('../images/bg5@2x.jpg') no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+	  }
+	}
 
-.separator6 {
-	height: 100%;
-	background-image: url('../images/bg6.jpg');
-	background-attachment: fixed;
-	@media screen and (min-width: 1281px) {
-		background-image: url('../images/bg6@2x.jpg');
-		background-size: cover;
+	.separator6 {
+		height: 100%;
+		background-image: url('../images/bg6.jpg');
 		background-attachment: fixed;
-  }
-}
+		@media screen and (min-width: 1281px) {
+			background-image: url('../images/bg6@2x.jpg');
+			background-size: cover;
+			background-attachment: fixed;
+	  }
+	}
 
-.separator7 {
-	height: 100%;
-	background-image: url('../images/bg7.jpg');
-	background-attachment: fixed;
-	@media screen and (min-width: 1281px) {
-		background-image: url('../images/bg7@2x.jpg');
-		background-size: cover;
+	.separator7 {
+		height: 100%;
+		background-image: url('../images/bg7.jpg');
 		background-attachment: fixed;
-  }
+		@media screen and (min-width: 1281px) {
+			background-image: url('../images/bg7@2x.jpg');
+			background-size: cover;
+			background-attachment: fixed;
+	  }
+	}
 }

@@ -4719,77 +4719,69 @@ a.th {
   position: relative;
   max-width: 100%;
   height: 470px;
-  background-size: 100%; }
-
-.separator1 {
-  height: 100%;
-  background-image: url("../images/bg1.jpg");
-  background-attachment: fixed; }
-  @media screen and (min-width: 1281px) {
-    .separator1 {
-      background-image: url("../images/bg1@2x.jpg") no-repeat;
-      background-size: cover;
-      background-attachment: fixed; } }
-
-.separator2 {
-  height: 100%;
-  background-image: url("../images/bg2.jpg");
-  background-attachment: fixed; }
-  @media screen and (min-width: 1281px) {
-    .separator2 {
-      background-image: url("../images/bg2@2x.jpg") no-repeat;
-      background-size: cover;
-      background-attachment: fixed; } }
-
-.separator3 {
-  height: 100%;
-  background-image: url("../images/bg3.jpg");
-  background-attachment: fixed; }
-  @media screen and (min-width: 1281px) {
-    .separator3 {
-      background-image: url("../images/bg3@2x.jpg") no-repeat;
-      background-size: cover;
-      background-attachment: fixed; } }
-
-.separator4 {
-  height: 100%;
-  background-image: url("../images/bg4.jpg");
-  background-attachment: fixed; }
-  @media screen and (min-width: 1281px) {
-    .separator4 {
-      background-image: url("../images/bg4@2x.jpg") no-repeat;
-      background-size: cover;
-      background-attachment: fixed; } }
-
-.separator5 {
-  height: 100%;
-  background-image: url("../images/bg5.jpg");
-  background-attachment: fixed; }
-  @media screen and (min-width: 1281px) {
-    .separator5 {
-      background-image: url("../images/bg5@2x.jpg") no-repeat;
-      background-size: cover;
-      background-attachment: fixed; } }
-
-.separator6 {
-  height: 100%;
-  background-image: url("../images/bg6.jpg");
-  background-attachment: fixed; }
-  @media screen and (min-width: 1281px) {
-    .separator6 {
-      background-image: url("../images/bg6@2x.jpg");
-      background-size: cover;
-      background-attachment: fixed; } }
-
-.separator7 {
-  height: 100%;
-  background-image: url("../images/bg7.jpg");
-  background-attachment: fixed; }
-  @media screen and (min-width: 1281px) {
-    .separator7 {
-      background-image: url("../images/bg7@2x.jpg");
-      background-size: cover;
-      background-attachment: fixed; } }
+  background-size: 100%;
+  z-index: 0; }
+  .separator .separator1 {
+    height: 100%;
+    background-image: url("../images/bg1.jpg");
+    background-attachment: fixed; }
+    @media screen and (min-width: 1281px) {
+      .separator .separator1 {
+        background-image: url("../images/bg1@2x.jpg") no-repeat;
+        background-attachment: fixed; } }
+  .separator .separator2 {
+    height: 100%;
+    background-image: url("../images/bg2.jpg");
+    background-attachment: fixed; }
+    @media screen and (min-width: 1281px) {
+      .separator .separator2 {
+        background-image: url("../images/bg2@2x.jpg") no-repeat;
+        background-attachment: fixed; } }
+  .separator .separator3 {
+    height: 100%;
+    background-image: url("../images/bg3.jpg");
+    background-attachment: fixed; }
+    @media screen and (min-width: 1281px) {
+      .separator .separator3 {
+        background-image: url("../images/bg3@2x.jpg") no-repeat;
+        background-size: cover;
+        background-attachment: fixed; } }
+  .separator .separator4 {
+    height: 100%;
+    background-image: url("../images/bg4.jpg");
+    background-attachment: fixed; }
+    @media screen and (min-width: 1281px) {
+      .separator .separator4 {
+        background-image: url("../images/bg4@2x.jpg") no-repeat;
+        background-size: cover;
+        background-attachment: fixed; } }
+  .separator .separator5 {
+    height: 100%;
+    background-image: url("../images/bg5.jpg");
+    background-attachment: fixed; }
+    @media screen and (min-width: 1281px) {
+      .separator .separator5 {
+        background-image: url("../images/bg5@2x.jpg") no-repeat;
+        background-size: cover;
+        background-attachment: fixed; } }
+  .separator .separator6 {
+    height: 100%;
+    background-image: url("../images/bg6.jpg");
+    background-attachment: fixed; }
+    @media screen and (min-width: 1281px) {
+      .separator .separator6 {
+        background-image: url("../images/bg6@2x.jpg");
+        background-size: cover;
+        background-attachment: fixed; } }
+  .separator .separator7 {
+    height: 100%;
+    background-image: url("../images/bg7.jpg");
+    background-attachment: fixed; }
+    @media screen and (min-width: 1281px) {
+      .separator .separator7 {
+        background-image: url("../images/bg7@2x.jpg");
+        background-size: cover;
+        background-attachment: fixed; } }
 
 /* 2. MIXINS */
 /* 3. GENERIC */
@@ -4826,6 +4818,9 @@ MAIN CONTENT
 ------------------
 */
 /* 5. HEADER */
+#wrapper {
+  overflow: hidden; }
+
 #header {
   height: 80px; }
   #header .logo {
@@ -4855,10 +4850,16 @@ MAIN CONTENT
   background-size: auto 500px;
   background-position: top right;
   height: 500px; }
+  @media screen and (max-width: 1025px) {
+    #welcome {
+      margin-right: -100px; } }
   #welcome .image {
     display: none; }
   #welcome h1 {
     margin-top: 90px; }
+    @media screen and (max-width: 1025px) {
+      #welcome h1 {
+        margin-top: 70px; } }
   #welcome h2 {
     margin-top: 60px; }
   #welcome p {
@@ -4970,51 +4971,54 @@ MAIN CONTENT
     width: 150px;
     float: right; }
   #about .printer .printer-1 {
-    margin-top: 170px; }
+    margin-top: 150px; }
     #about .printer .printer-1 span {
-      width: 275px;
-      height: 177px;
+      width: 276px;
+      height: 154px;
       background: url("../images/printer-1.png") no-repeat;
       position: absolute;
-      top: 250px;
+      top: 222px;
       left: 190px; }
   #about .printer .printer-2 {
-    margin-top: 60px; }
+    margin-top: 30px; }
     #about .printer .printer-2 span {
       width: 200px;
       height: 129px;
       background: url("../images/printer-2.png") no-repeat;
       position: absolute;
-      top: 110px;
+      top: 100px;
       left: 190px; }
   #about .printer .printer-3 {
-    margin-top: 90px; }
+    margin-top: 70px; }
     #about .printer .printer-3 span {
-      width: 325px;
-      height: 166px;
+      width: 239px;
+      height: 143px;
       background: url("../images/printer-3.png") no-repeat;
       position: absolute;
-      top: 152px;
-      right: 190px; }
+      top: 157px;
+      right: 188px; }
       @media screen and (max-width: 1024px) {
         #about .printer .printer-3 span {
-          width: 250px;
-          height: 166px;
-          background: url("../images/printer-3b.png") no-repeat; } }
+          width: 174px;
+          height: 139px;
+          background: url("../images/printer-3b.png") no-repeat;
+          top: 162px;
+          right: 185px; } }
   #about .printer .printer-4 {
-    margin-top: 0; }
+    margin-top: -15px; }
     #about .printer .printer-4 span {
-      width: 315px;
-      height: 118px;
+      width: 308px;
+      height: 101px;
       background: url("../images/printer-4.png") no-repeat;
       position: absolute;
-      top: 60px;
-      right: 190px; }
+      top: 63px;
+      right: 188px; }
       @media screen and (max-width: 1024px) {
         #about .printer .printer-4 span {
           width: 240px;
           height: 118px;
-          background: url("../images/printer-4b.png") no-repeat; } }
+          background: url("../images/printer-4b.png") no-repeat;
+          top: 47px; } }
 
 #process {
   min-height: 700px;
@@ -5455,16 +5459,16 @@ MAIN CONTENT
     background-size: 455px 528px; }
   #about .printer .printer-1 span {
     background: url("../images/printer-1@2x.png") no-repeat;
-    background-size: 275px 177px; }
+    background-size: 276px 154px; }
   #about .printer .printer-2 span {
     background: url("../images/printer-2@2x.png") no-repeat;
     background-size: 200px 129px; }
   #about .printer .printer-3 span {
     background: url("../images/printer-3@2x.png") no-repeat;
-    background-size: 325px 166px; }
+    background-size: 239px 143px; }
   #about .printer .printer-4 span {
     background: url("../images/printer-4@2x.png") no-repeat;
-    background-size: 315px 118px; }
+    background-size: 308px 101px; }
   #process .print .process-1 span {
     background: url("../images/process1@2x.png");
     background-size: 150px 100px; }
@@ -5501,7 +5505,7 @@ MAIN CONTENT
   @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), screen and (min-resolution: 192dpi) and (max-width: 1024px) {
     #about .printer .printer-3 span {
       background: url("../images/printer-3b@2x.png") no-repeat;
-      background-size: 250px 166px; } }
+      background-size: 174px 139px; } }
   @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), screen and (min-resolution: 192dpi) and (max-width: 1024px) {
     #about .printer .printer-4 span {
       background: url("../images/printer-4b@2x.png") no-repeat;

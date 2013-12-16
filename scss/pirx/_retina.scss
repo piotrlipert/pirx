@@ -63,7 +63,7 @@
 			.printer-1 {
 				span {
 					background: url('../images/printer-1@2x.png') no-repeat;
-					background-size: 275px 177px;
+					background-size: 276px 154px;
 				}
 			}
 
@@ -77,11 +77,11 @@
 			.printer-3 {
 				span {
 					background: url('../images/printer-3@2x.png') no-repeat;
-					background-size: 325px 166px;
+					background-size: 239px 143px;
 
 					@media screen and (max-width: 1024px) {
 						background: url('../images/printer-3b@2x.png') no-repeat;
-						background-size: 250px 166px;
+						background-size: 174px 139px;
 				    }
 				}
 			}
@@ -89,12 +89,12 @@
 			.printer-4 {
 				span {
 					background: url('../images/printer-4@2x.png') no-repeat;
-					background-size: 315px 118px;
+					background-size: 308px 101px;
 
 					@media screen and (max-width: 1024px) {
 						background: url('../images/printer-4b@2x.png') no-repeat;
 						background-size: 240px 118px;
-				    }
+			    }
 				}
 			}
 		}
