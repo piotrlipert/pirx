@@ -7,35 +7,68 @@
 .separator {
 	max-width: 100%;
 	height: 470px;
+	background-attachment: fixed;
 }
 
 .separator1 {
 	background: url('../images/bg1.jpg');
 	background-size: auto;
+	@media screen and (min-width: 1281px) {
+		background: url('../images/bg1@2x.jpg') no-repeat;
+		background-size: cover;
+  }
 }
 
 .separator2 {
 	background: url('../images/bg2.jpg');
+	background-size: auto;
+	@media screen and (min-width: 1281px) {
+		background: url('../images/bg2@2x.jpg') no-repeat;
+		background-size: cover;
+  }
 }
 
 .separator3 {
 	background: url('../images/bg3.jpg');
+	background-size: auto;
+	@media screen and (min-width: 1281px) {
+		background: url('../images/bg3@2x.jpg') no-repeat;
+		background-size: cover;
+  }
 }
 
 .separator4 {
 	background: url('../images/bg4.jpg');
+	background-size: auto;
+	@media screen and (min-width: 1281px) {
+		background: url('../images/bg4@2x.jpg') no-repeat;
+		background-size: cover;
+  }
 }
 
 .separator5 {
 	background: url('../images/bg5.jpg');
+	background-size: auto;
+	@media screen and (min-width: 1281px) {
+		background: url('../images/bg5@2x.jpg') no-repeat;
+		background-size: cover;
+  }
 }
 
 .separator6 {
 	background: url('../images/bg6.jpg');
 	background-size: auto;
+	@media screen and (min-width: 1281px) {
+		background: url('../images/bg6@2x.jpg') no-repeat;
+		background-size: cover;
+  }
 }
 
 .separator7 {
 	background: url('../images/bg7.jpg');
 	background-size: auto;
+	@media screen and (min-width: 1281px) {
+		background: url('../images/bg7@2x.jpg') no-repeat;
+		background-size: cover;
+  }
 }

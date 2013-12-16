@@ -464,7 +464,15 @@
   	</div>
 
   	<!-- JS FUNCTIONS -->
-    <script>$(window).stellar();</script> 
+    <script>
+      $(function(){
+          $(window).stellar({
+              horizontalScrolling: false,
+              verticalOffset: 0,
+              horizontalOffset: 0
+          });
+      });
+    </script> 
   	
   </body>
 </html>
