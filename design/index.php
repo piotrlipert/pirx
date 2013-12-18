@@ -81,8 +81,7 @@
             <div class="row">
               <div class="large-6 columns">
                 <img src="../images/press-3-th.png" alt="">
-                <a href="../assets/printer1.jpg">Download Pirx 3d Printer (JPG)</a>
-              </div>
+<a href="https://vimeo.com/82099458"><img src="../images/video2.png" alt="" class="video" style="width:400px" /></a>              </div>
               <div class="large-6 columns">
                 <img src="../images/press-4-th.png" alt="">
                 <a href="../assets/printer2.jpg">Download Pirx 3d Printer Interior (JPG)</a>
