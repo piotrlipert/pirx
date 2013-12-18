@@ -85,11 +85,12 @@
 
               <div class="large-6 columns">
 
-<iframe src="//player.vimeo.com/video/82099458" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/82099458">How to create a professional model with Pirx 3D printer.</a> from <a href="http://vimeo.com/user23517214">Pilot Pirx</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-              <a href="https://vimeo.com/82099458"><img src="../images/designvideo.jpg" alt="" class="video" style="width:231px" /></a>              </div>
-              <div class="large-6 columns">
-              <a href="../images/designpic.jpg"><img src="../images/designpic.jpg" alt="" style="width:231px"></a>
-              </div>
+    <iframe src="//player.vimeo.com/video/82099458" width="500" 
+    height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+     <p><a href="http://vimeo.com/82099458">
+      How to create a professional model with Pirx 3D printer.</a>
+       </p>
+        
             </div>
           </div>
         </div>
