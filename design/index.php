@@ -71,8 +71,10 @@
             </ul>
           </div>
           <div class="large-9 columns press">
-            <h2>Pirx 3d Printer</h2>
-            <p>If you'd like to write something about us, or use our branding in any different way, please use this resources.</p>
+            <h2>Professional Pirx 3D use case</h2>
+            <p>Want to make your prints look beautiful and professional? 
+            Object that will satisfy even your most demanding business needs?
+            Take a quick look at how can it be done with Pirx.</p>
 
             
 
@@ -80,11 +82,9 @@
            
             <div class="row">
               <div class="large-6 columns">
-                <img src="../images/press-3-th.png" alt="">
-<a href="https://vimeo.com/82099458"><img src="../images/designvideo.jpg" alt="" class="video" style="width:231px" /></a>              </div>
+              <a href="https://vimeo.com/82099458"><img src="../images/designvideo.jpg" alt="" class="video" style="width:231px" /></a>              </div>
               <div class="large-6 columns">
-                <img src="../images/press-4-th.png" alt="">
-                <a href="../assets/printer2.jpg">Download Pirx 3d Printer Interior (JPG)</a>
+                <img src="../images/designpic.jpg" alt="">
               </div>
             </div>
           </div>
