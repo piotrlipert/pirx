@@ -126,7 +126,7 @@ $(function(){
 })
 </script>
 
-</div>
+
 
 <div id ="shipping">
 
@@ -159,6 +159,7 @@ $(function(){
 <label>Payment Method</label>
 </div>
 
+
                 
                 <label>Additional info:</label>
                 <textarea type="text" name='message' placeholder="I'd like to know whether..."></textarea>
@@ -182,7 +183,7 @@ $(function(){
   </div>
 </center>
 
-
+</div>
           </div>
 
 
