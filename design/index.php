@@ -27,7 +27,7 @@
     <script type="text/javascript" src="../js/functions.js"></script>
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="shortcut icon" href="../images/favicon.ico">
 
     <!-- JS FUNCTIONS -->   
 
