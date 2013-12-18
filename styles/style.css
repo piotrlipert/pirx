@@ -3840,8 +3840,8 @@ form.custom .hidden-field {
   visibility: hidden; }
 form.custom .custom {
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 8px;
+  height: 8px;
   position: relative;
   top: -1px;
   /* fix centering issue */

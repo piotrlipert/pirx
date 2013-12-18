@@ -132,7 +132,7 @@ $(function(){
 
 <label>Shipping Method</label>
 <label>Personal pickup:</label>
-<input type=checkbox onClick="wysylka()" id="personal"> 
+<input type=checkbox onClick="wysylka()" id="personal" class => 
 
 </div>
 
