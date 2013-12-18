@@ -3833,7 +3833,7 @@ label.error {
       content: " ";
       margin: 0; }
 
-/* Custom Checkbox and Radio Inputs */
+/* Custom Checkbox and Radio Inputs 
 form.custom .hidden-field {
   margin-left: -99999px;
   position: absolute;
@@ -3844,7 +3844,7 @@ form.custom .custom {
   height: 8px;
   position: relative;
   top: -1px;
-  /* fix centering issue */
+  /* fix centering issue 
   vertical-align: middle;
   border: solid 1px #cccccc;
   background: white; }
@@ -3878,7 +3878,7 @@ form.custom .custom {
     left: 50%;
     margin-top: 4px;
     margin-left: -5px; }
-
+*/
 /* Custom Select Options and Dropdowns */
 form.custom {
   /* Custom input, disabled */ }
@@ -5691,3 +5691,5 @@ MAIN CONTENT
     text-align: center; }
     #copyright .right {
       display: none; } }
+
+
