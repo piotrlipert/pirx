@@ -132,7 +132,7 @@ $(function(){
 <div id ="shipping">
 
 <label>Shipping Method</label>
-Personal pickup:
+<label>Personal pickup:</label>
 <input type=checkbox onClick="wysylka()" id="personal" class ="lite-orange-check"> 
 
 </div>
@@ -140,7 +140,7 @@ Personal pickup:
 <div id ="shipping_adress">
 
 <label>Shipping Address</label>
-Same as billing:
+<label>Same as billing:</label>
 
 <input type=checkbox onClick="same_adress()" id="same" class ="lite-orange-check"> 
 <div id ="shipping_adress_details">

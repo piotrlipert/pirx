@@ -85,7 +85,7 @@
               <div class="large-6 columns">
               <a href="https://vimeo.com/82099458"><img src="../images/designvideo.jpg" alt="" class="video" style="width:231px" /></a>              </div>
               <div class="large-6 columns">
-                <img src="../images/designpic.jpg" alt="">
+              <a href="../images/designpic.jpg"><img src="../images/designpic.jpg" alt="" style="width:231px"></a>
               </div>
             </div>
           </div>
