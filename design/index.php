@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Pirx 3d Printer - Press Kit</title>
+    <title>Pirx 3d Printer - Professional models</title>
 
     <!-- META DATA -->
     <meta charset="utf-8">
@@ -55,7 +55,7 @@
       <section id="caption">
         <div class="row caption">
           <div class="large12 columns">
-            <h2>Press Kit</h2>
+            <h2>Professional models</h2>
           </div>
         </div>
       </section>
@@ -66,7 +66,7 @@
             <ul class="nav sidebar-nav">
               <li><a href="../">Home<span></span></a></li>
               <li><a href="../about/">About<span></span></a></li>
-              <li><a href="#" class="active">Press Kit<span></span></a></li>
+              <li><a href="#" class="active">Professional models<span></span></a></li>
               <li><a href="../contact/">Contact<span></span></a></li>
             </ul>
           </div>
@@ -74,11 +74,12 @@
             <h2>Professional Pirx 3D use case</h2>
             <p>Want to make your prints look beautiful and professional? 
             Object that will satisfy even your most demanding business needs?
-            Take a quick look at how can it be done with Pirx.</p>
+            Take a quick look at how can it be done with Pirx and some amount
+            of processing work. </p>
 
             
 
-            <h2>Press Materials</h2>
+           
            
             <div class="row">
               <div class="large-6 columns">
