@@ -22,7 +22,8 @@
     <link href="../styles/foundation.css" rel="stylesheet">
     <link href="../styles/style.css" rel="stylesheet">
     <link href="../styles/lightbox.css" rel="stylesheet">
-    
+    <link href="../styles/checkstyle.css" rel="stylesheet">
+
     <!-- JAVASCRIPT -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script type="text/javascript" src="../js/jquery.stellar.js"></script>
@@ -132,7 +133,7 @@ $(function(){
 
 <label>Shipping Method</label>
 <label>Personal pickup:</label>
-<input type=checkbox onClick="wysylka()" id="personal" class => 
+<input type=checkbox onClick="wysylka()" id="personal" class ="lite-orange-check"> 
 
 </div>
 
@@ -141,7 +142,7 @@ $(function(){
 <label>Shipping Address</label>
 <label>Same as billing:</label>
 
-<input type=checkbox onClick="same_adress()" id="same"> 
+<input type=checkbox onClick="same_adress()" id="same" class ="lite-orange-check"> 
 <div id ="shipping_adress_details">
  
                 <label>City:</label>
