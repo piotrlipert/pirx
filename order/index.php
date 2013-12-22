@@ -40,6 +40,20 @@
 
   </head>
   <body>
+    <script language="javascript">
+      function wysylka() {
+        $("#shipping_adress").fadeToggle();            
+      }
+      function same_adress() {
+           $("#shipping_adress_details").fadeToggle();
+      }
+    </script>
+    <script type="text/javascript">
+      $(function() {
+         $("#country_list").load("../scripts/countries.html");
+      });
+    </script>
+
   	<div id="wrapper">
       <header id="header">
         <div class="row">
@@ -78,123 +92,79 @@
             </ul>
           </div>
           <div class="large-9 columns contact-us">
-<script language="javascript">
-function wysylka()
-{
-  $("#shipping_adress").fadeToggle();
-
-  
-  }
-
-function same_adress()
-{
-     $("#shipping_adress_details").fadeToggle();
-
-
-}
-
-    </script>
-	          <h2>Order your 3D printer:</h2>
-
-
-           
+	          <h2>Order your 3D printer:</h2>           
+            
             <form action="../scripts/order.php" method="POST" name="orderform" id="orderform">
               <fieldset>
 
-<div id ="billing_adress">
-<label>Billing Address</label>
-<label>Name:</label>
-<input type="text" name='name' placeholder="" id="name">
-<label>Company name:</label>
-<input type="text" name='companyname' placeholder="" id="companyname">
-<label>City:</label>
-<input type="text" name='billingcity' placeholder="" id='billingcity'>
-<label>Street:</label>
-<input type="text" name='billingstreet' placeholder="" id='billingstreet'>
-<label>Postal code:</label>
-<input type="text" name='billingcode' placeholder="" id='billingcode'>
-<label>Email adress:</label>
-<input type="text" name='email' placeholder="" id='email'>
-<label>Tax identification number:</label>
-<input type="text" name='tax' placeholder="" id='tax'>
+                <div id ="billing_adress">
+                  <label>Billing Address</label>
+                  <label>Name:</label>
+                  <input type="text" name='name' placeholder="" id="name">
+                  <label>Company name:</label>
+                  <input type="text" name='companyname' placeholder="" id="companyname">
+                  <label>City:</label>
+                  <input type="text" name='billingcity' placeholder="" id='billingcity'>
+                  <label>Street:</label>
+                  <input type="text" name='billingstreet' placeholder="" id='billingstreet'>
+                  <label>Postal code:</label>
+                  <input type="text" name='billingcode' placeholder="" id='billingcode'>
+                  <label>Email adress:</label>
+                  <input type="text" name='email' placeholder="" id='email'>
+                  <label>Tax identification number:</label>
+                  <input type="text" name='tax' placeholder="" id='tax'>
+                </div>
 
-</div>
+                <div id ="shipping">
+                  <label>Shipping Method</label>
+                  <div>
+                    <label>Personal pickup:</label>
+                    <input type=checkbox onClick="wysylka()" id="personal" class ="lite-orange-check"> 
+                  </div>
+                </div>
 
-<div id="country_list"></div>
-<script type="text/javascript">
-$(function(){
-   $("#country_list").load("../scripts/countries.html");
-})
-</script>
+                <div id ="shipping_adress">
+                  <label>Shipping Address</label>
+                  <div>
+                    <label>Same as billing:</label>
+                    <input type=checkbox onClick="same_adress()" id="same" class ="lite-orange-check"> 
+                  </div>
+                  <div id ="shipping_adress_details">
+                    <label>City:</label>
+                    <input type="text" name='city' id="city">
+                    <label>Street:</label>
+                    <input type="text" name='street' id="street">
+                    <label>Postal code:</label>
+                    <input type="text" name='postal_code' id="postal_code">
+                  </div>
+                </div>
 
-
-
-<div id ="shipping">
-
-<label>Shipping Method</label>
-<div>
-<label>Personal pickup:</label>
-<input type=checkbox onClick="wysylka()" id="personal" class ="lite-orange-check"> 
-</div>
-</div>
-
-<div id ="shipping_adress">
-
-<label>Shipping Address</label>
-
-
-<div>
-<label>Same as billing:</label>
-
-<input type=checkbox onClick="same_adress()" id="same" class ="lite-orange-check"> 
-</div>
-<div id ="shipping_adress_details">
-
- 
-                <label>City:</label>
-                <input type="text" name='city' id="city">
-                <label>Street:</label>
-                <input type="text" name='street' id="street">
-                <label>Postal code:</label>
-                <input type="text" name='postal_code' id="postal_code">
-</div>
-
-</div>
-
-<div id ="payment">
-
-<label>Payment Method</label>
-</div>
-
-
+                <div id ="payment">
+                  <label>Payment Method</label>
+                </div>
                 
                 <label>Additional info:</label>
                 <textarea type="text" name='message' placeholder="I'd like to know whether..."></textarea>
                 <input type="submit" class="btn btn-small btn-order">
+              
               </fieldset>
             </form>
+
             <center>
-          <div id="loading" style="display: none;"> 
-    Sending your order....
-    </div>
-  <div id="success" style="display: none;">
-    Order sent. We will contact you shortly.
-  </div>
-
-  <div id="error" style="display: none;">
-    Fill in the form properly.
-  </div>
-
-  <div id="error_email" style="display: none;">
-    Fill in a proper email address.
-  </div>
-</center>
-
-</div>
+              <div id="loading" style="display: none;"> 
+                Sending your order....
+              </div>
+              <div id="success" style="display: none;">
+                Order sent. We will contact you shortly.
+              </div>
+              <div id="error" style="display: none;">
+                Fill in the form properly.
+              </div>
+              <div id="error_email" style="display: none;">
+                Fill in a proper email address.
+              </div>
+            </center>
           </div>
-
-
-
         </div>
       </section>
 
@@ -219,12 +189,10 @@ $(function(){
           <div class="large-3 columns">
             <h3>Newsletter</h3>
             <p>Subscribe to the newsletter to be up to date with our stuff.</p>
-                  <form action="http://pirx3d.us3.list-manage.com/subscribe/post?u=29dd98989c038680bd9fdbcec&amp;id=46fdd7bcd3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-  
-  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-  
-    <button class="btn btn-small btn-order"input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" >send
-    </button>
+            <form action="http://pirx3d.us3.list-manage.com/subscribe/post?u=29dd98989c038680bd9fdbcec&amp;id=46fdd7bcd3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+              <button class="btn btn-small btn-order"input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" >send
+              </button>
           </div>
           <div class="large-3 columns address">
             <h3>Contact</h3>
