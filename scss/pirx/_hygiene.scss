@@ -8,6 +8,16 @@
 		h2 {
 			margin-top: 36px;
 		}
+
+		.order-img {
+			display: inline-block;
+			float: left;
+			width: 46px;
+			height: 41px;
+			background: url('../../images/printer-icon.png');
+			margin-right: 25px;
+			margin-top: 2px;
+		}
 	}
 }
 
@@ -94,12 +104,7 @@
 		color: #999;
 	}
 
-	.contact-us {
-		h2 {
-			margin-top: 0;
-		}
-
-		fieldset {
+	fieldset {
 			background: #f5f5f5;
 			border-radius: 5px;
 			border: none;
@@ -139,6 +144,11 @@
 				margin: 0 auto 30px;
 				font-weight: 100;
 			}
+	}
+
+	.contact-us {
+		h2 {
+			margin-top: 0;
 		}
 	}
 
@@ -162,6 +172,118 @@
 				img {
 					border: 2px solid #f5f5f5;
 				}
+			}
+		}
+	}
+
+	.order {
+		fieldset {
+			background: none;
+			margin-top: 0;
+			padding-top: 0;
+
+			h2 {
+				margin-top: 50px;
+
+				&:first-child {
+					margin-top: 0;
+				}
+
+				span {
+					float: right;
+					display: inline-block;
+					border-radius: 50%;
+					height: 32px;
+					width: 32px;
+					background: #ff7200;
+					font-size: 16px;
+					text-align: center;
+					color: #fff;
+					line-height: 34px;
+				}
+			}
+
+			.address {
+				width: 60%;
+				@include clearfix();
+
+				.city {
+					width: 60%;
+					float: left;
+
+					input {
+						width: 100%;
+					}
+				}
+				.zip {
+					width: 38%;
+					float: right;
+
+					label {
+						margin-top: 12px;
+					}
+
+					input {
+						width: 100%;
+					}
+				}
+			}
+
+			#shipping, #shipping_adress_check {
+				width: 60%;
+				label {
+					border-bottom: 1px solid #f5f5f5;
+					padding-bottom: 4px;
+				}
+				input {
+					display: inline-block;
+					float: right;
+					width: auto;
+				}
+				span {
+					display: inline-block;
+					float: right;
+					margin: 8px 10px 0 30px;
+					font-size: 14px;
+					color: #999999;
+					font-family: "Avenir-Roman";
+				}
+				div {
+					width: 300px;
+					float: right;
+					position: relative;
+					top: -48px;
+				}
+			}
+
+			#payment {
+				label {
+					border-bottom: 1px solid #f5f5f5;
+					padding-bottom: 4px;
+				}
+			}
+
+			label {
+				margin-left: 0;
+			}
+
+			input, textarea {
+				width: 60%;
+				margin-left: 0;
+
+				&:focus {
+					background: none;
+				}
+			}
+
+			.btn-order {
+				display: block;
+				width: auto;
+				font-size: 14px;
+				padding: 14px 24px 12px;
+				text-align: center;
+				margin: 0 auto 30px;
+				font-weight: 100;
 			}
 		}
 	}
