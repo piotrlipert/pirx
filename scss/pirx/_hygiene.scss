@@ -86,6 +86,51 @@
 				}
 			}
 		}
+
+		.sidebar-subnav {
+			margin-top: 4px;
+			padding-left: 0;
+			margin-left: 10px;
+
+			li {
+				padding-bottom: 0;
+				text-transform: none;
+				font-size: 14px;
+				a {
+					span {
+						background: url('../images/contract-icon.png') no-repeat;
+						position: relative;
+						float: right;
+						width: 13px;
+						height: 13px;
+						top: 7px;
+						right: 15px;
+						border: none;
+						-webkit-transform: none;
+						-moz-transform: none;
+						-o-transform: none;
+						-ms-transform: none;
+						transform: none;
+					}
+					&:hover {
+						span {
+							background: url('../images/contract-icon-hover.png') no-repeat;
+						}
+					}
+				}
+
+				.active {
+					span {
+						background: url('../images/contract-icon-active.png') no-repeat;
+					}
+					&:hover {
+						span {
+							background: url('../images/contract-icon-active.png') no-repeat;
+						}
+					}
+				}
+			}
+		}
 	}
 
 	h2 {
@@ -137,9 +182,9 @@
 
 			.btn-order {
 				display: block;
-				width: 155px;
+				width: auto;
 				font-size: 14px;
-				padding: 14px 0 12px;
+				padding: 14px 24px 12px;
 				text-align: center;
 				margin: 0 auto 30px;
 				font-weight: 100;
@@ -284,6 +329,18 @@
 				text-align: center;
 				margin: 0 auto 30px;
 				font-weight: 100;
+			}
+		}
+	}
+
+	.jobs {
+		fieldset {	
+			label {
+				margin: 0;
+				padding: 0 8%;
+			}
+			p {
+				color: #4f4f4f;
 			}
 		}
 	}

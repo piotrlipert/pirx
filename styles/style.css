@@ -5387,6 +5387,34 @@ MAIN CONTENT
       color: #ff7200; }
       #about-us .sidebar-nav .active:hover span {
         border-color: #ff7200; }
+  #about-us .sidebar-nav .sidebar-subnav {
+    margin-top: 4px;
+    padding-left: 0;
+    margin-left: 10px; }
+    #about-us .sidebar-nav .sidebar-subnav li {
+      padding-bottom: 0;
+      text-transform: none;
+      font-size: 14px; }
+      #about-us .sidebar-nav .sidebar-subnav li a span {
+        background: url("../images/contract-icon.png") no-repeat;
+        position: relative;
+        float: right;
+        width: 13px;
+        height: 13px;
+        top: 7px;
+        right: 15px;
+        border: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -o-transform: none;
+        -ms-transform: none;
+        transform: none; }
+      #about-us .sidebar-nav .sidebar-subnav li a:hover span {
+        background: url("../images/contract-icon-hover.png") no-repeat; }
+      #about-us .sidebar-nav .sidebar-subnav li .active span {
+        background: url("../images/contract-icon-active.png") no-repeat; }
+      #about-us .sidebar-nav .sidebar-subnav li .active:hover span {
+        background: url("../images/contract-icon-active.png") no-repeat; }
   #about-us h2 {
     text-align: left;
     color: #4f4f4f;
@@ -5421,9 +5449,9 @@ MAIN CONTENT
       margin-bottom: 30px; }
     #about-us fieldset .btn-order {
       display: block;
-      width: 155px;
+      width: auto;
       font-size: 14px;
-      padding: 14px 0 12px;
+      padding: 14px 24px 12px;
       text-align: center;
       margin: 0 auto 30px;
       font-weight: 100; }
@@ -5517,6 +5545,11 @@ MAIN CONTENT
       text-align: center;
       margin: 0 auto 30px;
       font-weight: 100; }
+  #about-us .jobs fieldset label {
+    margin: 0;
+    padding: 0 8%; }
+  #about-us .jobs fieldset p {
+    color: #4f4f4f; }
 
 /* ?. RETINA */
 /* RETINA IMAGES */
@@ -5604,7 +5637,20 @@ MAIN CONTENT
   /* HYGIENE */
   #caption .caption .order-img {
     background: url("../../images/printer-icon@2x.png");
-    background-size: 46px 41px; } }
+    background-size: 46px 41px; }
+
+  #about-us .sidebar-nav .sidebar-subnav li a span {
+    background: url("../../images/contract-icon@2x.png");
+    background-size: 13px 13px; }
+  #about-us .sidebar-nav .sidebar-subnav li a:hover span {
+    background: url("../../images/contract-icon-hover@2x.png");
+    background-size: 13px 13px; }
+  #about-us .sidebar-nav .sidebar-subnav li .active span {
+    background: url("../../images/contract-icon-active@2x.png");
+    background-size: 13px 13px; }
+  #about-us .sidebar-nav .sidebar-subnav li .active:hover span {
+    background: url("../../images/contract-icon-active@2x.png");
+    background-size: 13px 13px; } }
   @media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), screen and (min-resolution: 192dpi) and (max-width: 1024px) {
     #about .printer .printer-3 span {
       background: url("../images/printer-3b@2x.png") no-repeat;

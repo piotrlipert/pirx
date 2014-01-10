@@ -192,6 +192,38 @@
 		}
 	}
 
+	#about-us {
+		.sidebar-nav {
+			.sidebar-subnav {
+				li {
+					a {
+						span {
+							background: url('../../images/contract-icon@2x.png');
+							background-size: 13px 13px;
+						}
+						&:hover {
+							span {
+								background: url('../../images/contract-icon-hover@2x.png');
+								background-size: 13px 13px;
+							}
+						}
+					}
+					.active {
+						span {
+							background: url('../../images/contract-icon-active@2x.png');
+							background-size: 13px 13px;
+						}
+						&:hover {
+							span {
+								background: url('../../images/contract-icon-active@2x.png');
+								background-size: 13px 13px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 
 
 }
