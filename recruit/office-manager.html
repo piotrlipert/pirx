@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
 
+
+
     <title>Pirx 3d Printer - About us</title>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>  
 
@@ -20,8 +22,7 @@
     <link href="../styles/foundation.css" rel="stylesheet">
     <link href="../styles/style.css" rel="stylesheet">
     <link href="../styles/lightbox.css" rel="stylesheet">
-    <link href="../styles/checkstyle.css" rel="stylesheet">
-
+    
     <!-- JAVASCRIPT -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script type="text/javascript" src="../js/jquery.stellar.js"></script>
@@ -34,24 +35,10 @@
 
     <!-- JS FUNCTIONS -->   
     
-    <script type="text/javascript" src="../scripts/orderscript.js"></script>
+    <script type="text/javascript" src="../scripts/recruitscript.js"></script>
 
   </head>
   <body>
-    <script language="javascript">
-      function wysylka() {
-        $("#shipping_adress").fadeToggle();            
-      }
-      function same_adress() {
-           $("#shipping_adress_details").fadeToggle();
-      }
-    </script>
-    <script type="text/javascript">
-      $(function() {
-         $("#country_list").load("../scripts/countries.html");
-      });
-    </script>
-
   	<div id="wrapper">
       <header id="header">
         <div class="row">
@@ -74,7 +61,7 @@
       <section id="caption">
         <div class="row caption">
           <div class="large12 columns">
-            <h2><span class="order-img"></span>Order your Pirx 3D printer</h2>
+            <h2>Office Manager</h2>
           </div>
         </div>
       </section>
@@ -85,101 +72,86 @@
             <ul class="nav sidebar-nav">
               <li><a href="../">Home<span></span></a></li>
               <li><a href="../about/">About<span></span></a></li>
-              <li><a href="#" class="active">Order<span></span></a></li>
-              <li><a href="../recruit/">Jobs<span></span></a></li>
+              <li><a href="../order/">Order<span></span></a></li>
+              <li><a href="../recruit/">Join us!<span></span></a>
+                <ul class="sidebar-subnav">
+                  <li><a href="expension-officer.html">Expension Officer<span></span></a></li>
+                  <li><a href="#" class="active">Office Manger<span></span></a></li>
+                </ul>
+              </li>
               <li><a href="../press/">Press Kit<span></span></a></li>
               <li><a href="../contact/">Contact<span></span></a></li>
             </ul>
           </div>
-          <div class="large-9 columns order">            
-            <form action="../scripts/order.php" method="POST" name="orderform" id="orderform">
-              <fieldset>
-                <h2>Billing information<span>1</span></h2>
-                <div id="billing_adress">
-                  <label>Name:</label>
-                  <input type="text" name='name' placeholder="" id="name">
-                  <label>Company name:</label>
-                  <input type="text" name='companyname' placeholder="" id="companyname">
-                  <label>Street:</label>
-                  <input type="text" name='billingstreet' placeholder="" id='billingstreet'>
-                  <div class="address">
-                    <div class="city">
-                      <label>City:</label>
-                      <input type="text" name='billingcity' placeholder="" id='billingcity'>
-                    </div>
-                    <div class="zip">
-                      <label>Postal code:</label>
-                      <input type="text" name='billingcode' placeholder="" id='billingcode'>
-                    </div>
-                  </div>
-                  <label>Email adress:</label>
-                  <input type="text" name='email' placeholder="" id='email'>
-                  <label>Tax identification number:</label>
-                  <input type="text" name='tax' placeholder="" id='tax'>
-                </div>
+          <div class="large-9 columns jobs">
+	          <h2>We are looking for an Office Manager.</h2>
 
-                <h2>Shipping Information<span>2</span></h2>
-                <div id="shipping">
-                  <label>Shipping method:</label>
-                  <div>
-                    <input type="radio" name="shipping" onClick="wysylka()" id="personal" class="lite-orange-check" value="2"><span>Personal pickup</span>
-                    <input type="radio" name="shipping" onClick="wysylka()" class="lite-orange-check" value="1" checked="checked"><span>Courier</span>
-                  </div>
-                </div>
+            <p>If you are a highly creative 
+            person with amazing communication and copywriting skills please fill out
+            the form below. English proficiency is a must. Experience in social media
+            is a bonus.
+            </p>
 
-                <div id="shipping_adress">
-                  <div id="shipping_adress_check">
-                    <label>Shipping address:</label>
-                    <div class="check">
-                      <input type="checkbox" onClick="same_adress()" id="same" class="lite-orange-check"><span>Same as billing</span>
-                    </div>
-                  </div>
-                  <div id="shipping_adress_details">
-                    <label>Street:</label>
-                    <input type="text" name='street' id="street">
-                    <div class="address">
-                      <div class="city">
-                        <label>City:</label>
-                        <input type="text" name='billingcity' placeholder="" id='billingcity'>
-                      </div>
-                      <div class="zip">
-                        <label>Postal code:</label>
-                        <input type="text" name='billingcode' placeholder="" id='billingcode'>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <p>
+            You will be both responsible and measured by sales growth. You will also
+            participate in the process of introducing our product to new markets.
+            </p>
 
-                <h2>Payment Information<span>3</span></h2>
-                <div id="payment">
-                  <label>Payment Method</label>
-                </div>
+            <form action="../scripts/recruit.php" method="POST" name="recruitform" id="recruitform">
+              <fieldset>    
+                <label>
+	                <p>Are you ready to beat unfavorable odds, carry out seemingly impossible tasks and work with us to change the world?</p>
+	                <input type = "checkbox" name="sane" id="sane" onClick="is_sane()">
+                </label>
 
-                <h2>Miscellaneous<span>4</span></h2>
-                <div id="miscellaneous">
-                  <label>Additional info:</label>
-                  <textarea type="text" name='message' placeholder="I'd like to know whether..."></textarea>
-                </div>
+	              <div id="form_section" style="display: none;">
+	                <label>What is your name?</label>
+	                <input type = "text" name="name" id="name">
 
-                <button type="submit" class="btn btn-small btn-order">Place your order</button>
-              
+	                <label>Have you ever dreamt of space travel?</label>
+	                <input type = "checkbox" name="space" id="space" onClick="">
+
+	                <label>Do you want to be filthy rich?</label>
+	                <input type = "checkbox" name="rich" id="rich" onClick="">
+
+	                <label>You have a week and no budget at all. Your goal is to reach as many potential Pirx customers as you can. Be creative. Bonus points for scenarios that end up with sold printers.
+	                </label>
+	                
+	                <textarea type="text" name="question_1" id="question1"></textarea>
+	                <label>You are a prisoner of a nasty cannibal tribe. Things went very bad
+	                 and they are just about to cook you in a large, brass cauldron. You are hanging upside down by the ankle, all tied up. Somehow you miraculously managed to free one hand. Just by accident, there is a 
+	                 laptop connected to a Pirx 3D printer just within your reach. What will you do to save yourself?
+	                </label>
+	                
+	                <textarea type="text" name="question_2" id="question2"></textarea>
+	                <label>What amazing thing would you print on Pirx?</label>
+	                
+	                <textarea type="text" name="question_3" id="question3"></textarea>
+	                <label>How would you market our 3D printer to Bruce Wayne?</label>
+	                
+	                <textarea type="text" name="question_4" id="question4"></textarea>
+	                <label>Email address:</label>
+	                <input type = "text" name="email" id="email">
+	                  
+	                <label>Is there anything else we need to know?</label>
+	                <textarea type="text" name='message' placeholder=""></textarea>
+	                <button type="submit" class="btn btn-small btn-order">Apply for this position</button>
+                </div>
               </fieldset>
             </form>
+            
 
             <center>
-              <div id="loading" style="display: none;"> 
-                Sending your order....
-              </div>
-              <div id="success" style="display: none;">
-                Order sent. We will contact you shortly.
-              </div>
-              <div id="error" style="display: none;">
-                Fill in the form properly.
-              </div>
-              <div id="error_email" style="display: none;">
-                Fill in a proper email address.
-              </div>
-            </center>
+		          <div id="loading" style="display: none;"> 
+		            Sending your application.
+					    </div>
+						  <div id="success" style="display: none;">
+						    Application sent, we will probably contact you.
+						  </div>
+						  <div id="error_email" style="display: none;">
+						    Fill in a proper email address.
+						  </div>
+						</center>
           </div>
         </div>
       </section>
@@ -242,5 +214,12 @@
         </div>
       </footer>
     </div>
+
+		<script language="javascript">
+			function is_sane()
+			{
+			  $("#form_section").fadeToggle();
+			  }
+    </script>
   </body>
 </html>
