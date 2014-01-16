@@ -334,6 +334,14 @@
 	}
 
 	.jobs {
+		h2 {
+			margin-top: 50px;
+
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+
 		fieldset {	
 			label {
 				margin: 0;

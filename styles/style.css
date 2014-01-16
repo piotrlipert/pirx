@@ -5545,6 +5545,10 @@ MAIN CONTENT
       text-align: center;
       margin: 0 auto 30px;
       font-weight: 100; }
+  #about-us .jobs h2 {
+    margin-top: 50px; }
+    #about-us .jobs h2:first-child {
+      margin-top: 0; }
   #about-us .jobs fieldset label {
     margin: 0;
     padding: 0 8%; }
