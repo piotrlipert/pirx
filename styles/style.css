@@ -5615,11 +5615,11 @@ MAIN CONTENT
     background: url("../../images/logo@2x.png");
     background-size: 117px 41px; }
 
-  #welcome {
-    background: url("../../images/bg-welcome@2x.jpg");
-    background-size: auto 510px;
-    background-position: bottom right; }
-
+  /* #welcome {
+  	background: url('../../images/bg-welcome@2x.jpg');
+  	background-size: auto 510px;
+  	background-position: bottom right;
+  } */
   #about .printer .printer-img {
     background: url("../../images/printer@2x.png") no-repeat;
     background-size: 455px 528px; }
