@@ -4696,14 +4696,15 @@ a.th {
   -moz-box-shadow: 0px 2px 0px #e86800;
   box-shadow: 0px 2px 0px #e86800;
   color: #fff; }
-  .btn:hover {
+  .btn:hover, .btn:focus, .btn:active {
     color: #fff;
     background: #e86800;
     -webkit-box-shadow: 0px -2px 0px #c75a01;
     -moz-box-shadow: 0px -2px 0px #c75a01;
     box-shadow: 0px -2px 0px #c75a01;
     position: relative;
-    top: 2px; }
+    top: 2px;
+    outline: none; }
 
 .btn-small {
   padding: 10px 20px 8px; }
@@ -4813,6 +4814,9 @@ p {
 ul li, address {
   font: normal normal normal 16px/27px "Avenir-Light", "Open Sans", sans-serif;
   color: #fff; }
+
+label, p, h1, h2, h3, h4 {
+  cursor: text; }
 
 /*
 ------------------
@@ -5549,11 +5553,38 @@ MAIN CONTENT
     margin-top: 50px; }
     #about-us .jobs h2:first-child {
       margin-top: 0; }
+  #about-us .jobs fieldset .question {
+    padding: 8% 10% 5%; }
   #about-us .jobs fieldset label {
-    margin: 0;
-    padding: 0 8%; }
+    margin: 20px 8% 10px; }
+    #about-us .jobs fieldset label:first-child {
+      border-top: 1px solid #e8e8e8;
+      padding-top: 10%; }
+    #about-us .jobs fieldset label span {
+      display: inline-block;
+      border-radius: 50%;
+      height: 16px;
+      width: 16px;
+      background: #ff7200;
+      font-size: 8px;
+      text-align: center;
+      color: #fff;
+      line-height: 18px;
+      position: relative;
+      top: -2px;
+      margin-right: 8px; }
   #about-us .jobs fieldset p {
-    color: #4f4f4f; }
+    color: #4f4f4f;
+    padding: 0 8%; }
+  #about-us .jobs fieldset .check {
+    float: right;
+    width: 17px;
+    position: relative;
+    top: -34px;
+    right: 63px; }
+    #about-us .jobs fieldset .check input {
+      width: 100px;
+      height: auto; }
 
 /* ?. RETINA */
 /* RETINA IMAGES */

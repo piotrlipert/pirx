@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
-
-
     <title>Pirx 3d Printer - About us</title>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>  
 
@@ -99,42 +96,46 @@
 
             <form action="../scripts/recruit.php" method="POST" name="recruitform" id="recruitform">
               <fieldset>    
-                <label>
+                <div class="question">
 	                <p>Are you ready to beat unfavorable odds, carry out seemingly impossible tasks and work with us to change the world?</p>
-	                <input type = "checkbox" name="sane" id="sane" onClick="is_sane()">
-                </label>
+                  <button type="checkbox" name="sane" id="sane" class="btn btn-small btn-order" onClick="is_sane()">Yes I am!</button>
+                </div>
 
 	              <div id="form_section" style="display: none;">
-	                <label>What is your name?</label>
+	                <label><span>1</span>What is your name?</label>
 	                <input type = "text" name="name" id="name">
 
-	                <label>Have you ever dreamt of space travel?</label>
-	                <input type = "checkbox" name="space" id="space" onClick="">
+	                <label><span>2</span>Have you ever dreamt of space travel?</label>
+                  <div class="check">
+  	                <input type="checkbox" name="space" id="space" onClick="" class="lite-orange-check">
+                  </div>
 
-	                <label>Do you want to be filthy rich?</label>
-	                <input type = "checkbox" name="rich" id="rich" onClick="">
+	                <label><span>3</span>Do you want to be filthy rich?</label>
+	                <div class="check">
+                    <input type="checkbox" name="rich" id="rich" onClick="" class="lite-orange-check">
+                  </div>
 
-	                <label>You have a week and no budget at all. Your goal is to reach as many potential Pirx customers as you can. Be creative. Bonus points for scenarios that end up with sold printers.
-	                </label>
-	                
+	                <label><span>4</span>You have a week and no budget at all. Your goal is to reach as many potential Pirx customers as you can. Be creative. Bonus points for scenarios that end up with sold printers.</label>   
 	                <textarea type="text" name="question_1" id="question1"></textarea>
-	                <label>You are a prisoner of a nasty cannibal tribe. Things went very bad
+	                
+                  <label><span>5</span>You are a prisoner of a nasty cannibal tribe. Things went very bad
 	                 and they are just about to cook you in a large, brass cauldron. You are hanging upside down by the ankle, all tied up. Somehow you miraculously managed to free one hand. Just by accident, there is a 
 	                 laptop connected to a Pirx 3D printer just within your reach. What will you do to save yourself?
 	                </label>
-	                
 	                <textarea type="text" name="question_2" id="question2"></textarea>
-	                <label>What amazing thing would you print on Pirx?</label>
 	                
+                  <label><span>6</span>What amazing thing would you print on Pirx?</label>
 	                <textarea type="text" name="question_3" id="question3"></textarea>
-	                <label>How would you market our 3D printer to Bruce Wayne?</label>
 	                
+                  <label><span>7</span>How would you market our 3D printer to Bruce Wayne?</label>
 	                <textarea type="text" name="question_4" id="question4"></textarea>
-	                <label>Email address:</label>
+
+	                <label><span>8</span>Email address:</label>
 	                <input type = "text" name="email" id="email">
 	                  
-	                <label>Is there anything else we need to know?</label>
+	                <label><span>9</span>Is there anything else we need to know?</label>
 	                <textarea type="text" name='message' placeholder=""></textarea>
+
 	                <button type="submit" class="btn btn-small btn-order">Apply for this position</button>
                 </div>
               </fieldset>

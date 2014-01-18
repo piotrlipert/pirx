@@ -7,7 +7,7 @@
 	box-shadow:         0px 2px 0px rgba(232, 104, 0, 1);
 	color: #fff;
 
-	&:hover {
+	&:hover, &:focus, &:active {
 		color: #fff;
 		background: #e86800;
 		-webkit-box-shadow: 0px -2px 0px rgba(199, 90, 1, 1);
@@ -15,6 +15,7 @@
 		box-shadow:         0px -2px 0px rgba(199, 90, 1, 1);
 		position: relative;
 		top: 2px;
+		outline: none;
 	}
 }
 

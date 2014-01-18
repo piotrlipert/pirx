@@ -343,12 +343,51 @@
 		}
 
 		fieldset {	
-			label {
-				margin: 0;
-				padding: 0 8%;
+			.question {
+				padding: 8% 10% 5%;
 			}
+
+			label {
+				margin: 20px 8% 10px;
+
+				&:first-child {
+					border-top: 1px solid #e8e8e8;
+					padding-top: 10%;
+				}
+
+				span {
+
+					display: inline-block;
+					border-radius: 50%;
+					height: 16px;
+					width: 16px;
+					background: #ff7200;
+					font-size: 8px;
+					text-align: center;
+					color: #fff;
+					line-height: 18px;
+					position: relative;
+					top: -2px;
+					margin-right: 8px;
+				}
+			}
+
 			p {
 				color: #4f4f4f;
+				padding: 0 8%;
+			}
+
+			.check {
+				float: right;
+				width: 17px;
+				position: relative;
+				top: -34px;
+				right: 63px;
+
+				input {
+					width: 100px;
+					height: auto;
+				}
 			}
 		}
 	}
