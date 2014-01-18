@@ -91,6 +91,11 @@
 
 		p {
 			text-align: left;
+
+			span {
+				display: inherit;
+				text-align: center;
+			}
 		}
 
 		.print  {

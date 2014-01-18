@@ -8,10 +8,6 @@
 	#welcome {
 		margin-right: 0;
 
-		.small-12 {
-			width: 77%;
-		}
-
 		.btn-order {
 			display: block;
 			width: 100%;
@@ -30,7 +26,9 @@
 
 		span {
 			color: #999999;
-			text-align: center
+			text-align: center;
+			display: inherit;
+			left: 0;
 		}
 	}
 

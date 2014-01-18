@@ -5702,8 +5702,6 @@ MAIN CONTENT
 
   #welcome {
     margin-right: 0; }
-    #welcome .small-12 {
-      width: 77%; }
     #welcome .btn-order {
       display: block;
       width: 100%;
@@ -5716,7 +5714,9 @@ MAIN CONTENT
         width: 210px; }
     #welcome span {
       color: #999999;
-      text-align: center; }
+      text-align: center;
+      display: inherit;
+      left: 0; }
 
   #proof .proof-text .triangle {
     left: 109px; }
@@ -5807,6 +5807,9 @@ MAIN CONTENT
       margin-top: 20px; }
     #process p {
       text-align: left; }
+      #process p span {
+        display: inherit;
+        text-align: center; }
     #process .print {
       margin: 40px auto; }
       #process .print .process-1 span, #process .print .process-2 span, #process .print .process-3 span {
