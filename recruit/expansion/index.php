@@ -100,11 +100,11 @@
 
             <p>
             We offer : 
-            - Flexible working hours and vacation policy 
-            - Base salary + piece work rate
-            - Friendly and creative work enviroment
-            - Lots of challanges
-            - Many more challanges
+            - Flexible working hours and vacation policy <br>
+            - Base salary + piece work rate<br>
+            - Friendly and creative work enviroment<br>
+            - Lots of challanges<br>
+            - Many more challanges<br>
 
 
             </p>
