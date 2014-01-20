@@ -136,11 +136,11 @@
         <div class="row">
           <div class="large-6 large-centered columns social">
             <ul class="social-icons">
-              <li><a class="fb"></a></li>
-              <li><a class="tw"></a></li>
-              <li><a class="gp"></a></li>
-              <li><a class="yt"></a></li>
-              <li><a class="vi"></a></li>
+              <li><a class="fb" href="https://www.facebook.com/clockwork3d"></a></li>
+              <li><a class="tw" href="https://twitter.com/Pirx3d"></a></li>
+              <li><a class="gp" href="#"></a></li>
+              <li><a class="yt" href="http://www.youtube.com/channel/UCxX_m_BNkDkPaL6noSeaL2A"></a></li>
+              <li><a class="vi" href="http://vimeo.com/user23517214"></a></li>
             </ul>
           </div>
         </div>

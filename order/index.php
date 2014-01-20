@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <title>Pirx 3d Printer - About us</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>  
 
     <!-- META DATA -->
     <meta charset="utf-8">
@@ -18,22 +20,38 @@
     <link href="../styles/foundation.css" rel="stylesheet">
     <link href="../styles/style.css" rel="stylesheet">
     <link href="../styles/lightbox.css" rel="stylesheet">
-    
+    <link href="../styles/checkstyle.css" rel="stylesheet">
+
     <!-- JAVASCRIPT -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script type="text/javascript" src="../js/jquery.stellar.js"></script>
     <script type="text/javascript" src="../js/retina.js"></script>
     <script type="text/javascript" src="../js/lightbox-2.6.min.js"></script>
     <script type="text/javascript" src="../js/functions.js"></script>
-
+    
 		<!-- FAVICON -->
     <link rel="shortcut icon" href="../images/favicon.ico">
 
     <!-- JS FUNCTIONS -->   
     
+    <script type="text/javascript" src="../scripts/orderscript.js"></script>
 
   </head>
   <body>
+    <script language="javascript">
+      function wysylka() {
+        $("#shipping_adress").fadeToggle();            
+      }
+      function same_adress() {
+        $("#shipping_adress_details").fadeToggle();
+      }
+    </script>
+    <script type="text/javascript">
+      $(function() {
+         $("#country_list").load("../scripts/countries.html");
+      });
+    </script>
+
   	<div id="wrapper">
       <header id="header">
         <div class="row">
@@ -56,7 +74,7 @@
       <section id="caption">
         <div class="row caption">
           <div class="large12 columns">
-            <h2>About Pirx</h2>
+            <h2><span class="order-img"></span>Order your Pirx 3D printer</h2>
           </div>
         </div>
       </section>
@@ -66,22 +84,102 @@
           <div class="large-3 columns">
             <ul class="nav sidebar-nav">
               <li><a href="../">Home<span></span></a></li>
-              <li><a href="#" class="active">About<span></span></a></li>
-              <li><a href="../order/">Order<span></span></a></li>
+              <li><a href="../about/">About<span></span></a></li>
+              <li><a href="#" class="active">Order<span></span></a></li>
               <li><a href="../recruit/">Jobs<span></span></a></li>
               <li><a href="../press/">Press Kit<span></span></a></li>
               <li><a href="../contact/">Contact<span></span></a></li>
             </ul>
           </div>
-          <div class="large-9 columns">
-            <img src="../images/team.jpg" alt="">
-            <h2>Who we are</h2>
-            <p>Pirx3d is a hardware oriented company based in Cracow. We have designed and built Pirx - the most affordable and reliable 3D printer on the market. To bring you the best product there is we assembled a diversely skilled team. We handle everything ourselves - from mechanical design to software and electronics. If you are brave enough to join us in our quest to make fantastic CNC home tools, feel free to contact us at <a href="mailto:pirx@pirx3d.com">pirx@pirx3d.com</a>!</p>
+          <div class="large-9 columns order">            
+            <form action="../scripts/order.php" method="POST" name="orderform" id="orderform">
+              <fieldset>
+                <h2>Billing information<span>1</span></h2>
+                <div id="billing_adress">
+                  <label>Name:</label>
+                  <input type="text" name='name' placeholder="" id="name">
+                  <label>Company name:</label>
+                  <input type="text" name='companyname' placeholder="" id="companyname">
+                  <label>Street:</label>
+                  <input type="text" name='billingstreet' placeholder="" id='billingstreet'>
+                  <div class="address">
+                    <div class="city">
+                      <label>City:</label>
+                      <input type="text" name='billingcity' placeholder="" id='billingcity'>
+                    </div>
+                    <div class="zip">
+                      <label>Postal code:</label>
+                      <input type="text" name='billingcode' placeholder="" id='billingcode'>
+                    </div>
+                  </div>
+                  <label>Email adress:</label>
+                  <input type="text" name='email' placeholder="" id='email'>
+                  <label>Tax identification number:</label>
+                  <input type="text" name='tax' placeholder="" id='tax'>
+                </div>
 
-            <h2>Our mission</h2>
-            <p>We love technology. We love progress. We cherish everyday human ingenuity. That’s why we want to enable everyone to participate in our vision - we would like to see a world where anyone can be both an inventor and a producer. We won’t get there without innovative, smart CNC tools - tools we want to create.</p>
+                <h2>Shipping Information<span>2</span></h2>
+                <div id="shipping">
+                  <label>Shipping method:</label>
+                  <div>
+                    <input type="radio" name="shipping" onClick="wysylka()" id="personal" class="lite-orange-check" value="2"><span>Personal pickup</span>
+                    <input type="radio" name="shipping" onClick="wysylka()" class="lite-orange-check" value="1" checked="checked"><span>Courier</span>
+                  </div>
+                </div>
 
-            <p>Someday we dream to build <a href="http://en.wikipedia.org/wiki/Universal_assembler">this</a>.</p>
+                <div id="shipping_adress">
+                  <div id="shipping_adress_check">
+                    <label>Shipping address:</label>
+                    <div class="check">
+                      <input type="checkbox" onClick="same_adress()" id="same" class="lite-orange-check"><span>Same as billing</span>
+                    </div>
+                  </div>
+                  <div id="shipping_adress_details">
+                    <label>Street:</label>
+                    <input type="text" name='street' id="street">
+                    <div class="address">
+                      <div class="city">
+                        <label>City:</label>
+                        <input type="text" name='billingcity' placeholder="" id='billingcity'>
+                      </div>
+                      <div class="zip">
+                        <label>Postal code:</label>
+                        <input type="text" name='billingcode' placeholder="" id='billingcode'>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <h2>Payment Information<span>3</span></h2>
+                <div id="payment">
+                  <label>Payment Method</label>
+                </div>
+
+                <h2>Miscellaneous<span>4</span></h2>
+                <div id="miscellaneous">
+                  <label>Additional info:</label>
+                  <textarea type="text" name='message' placeholder="I'd like to know whether..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-small btn-order">Place your order</button>
+              
+              </fieldset>
+            </form>
+
+            <center>
+              <div id="loading" style="display: none;"> 
+                Sending your order....
+              </div>
+              <div id="success" style="display: none;">
+                Order sent. We will contact you shortly.
+              </div>
+              <div id="error" style="display: none;">
+                Fill in the form properly.
+              </div>
+              <div id="error_email" style="display: none;">
+                Fill in a proper email address.
+              </div>
+            </center>
           </div>
         </div>
       </section>
