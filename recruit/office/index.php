@@ -72,8 +72,8 @@
               <li><a href="../../order/">Order<span></span></a></li>
               <li><a href="../../recruit/">Join us!<span></span></a>
                 <ul class="sidebar-subnav">
-                  <li><a href="#" class="active">Expension Officer<span></span></a></li>
-                  <li><a href="office-manager.html">Office Manger<span></span></a></li>
+                  <li><a href="/recruit/expansion/" class="active">Expension Officer<span></span></a></li>
+                  <li><a href="#" class="active">Office Manger<span></span></a></li>
                 </ul>
               </li>
               <li><a href="../../press/">Press Kit<span></span></a></li>
