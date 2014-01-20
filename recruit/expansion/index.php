@@ -83,7 +83,9 @@
           <div class="large-9 columns jobs">
 	          <h2>We are looking for an Expension Officer.</h2>
 
-            <p>If you are a highly creative 
+            <label> asddasas </label>
+            <p>
+              If you are a highly creative 
             person with amazing communication and copywriting skills please fill out
             the form below. English proficiency is a must. Experience in social media
             is a bonus.
@@ -92,6 +94,17 @@
             <p>
             You will be both responsible and measured by sales growth. You will also
             participate in the process of introducing our product to new markets.
+            </p>
+
+            <p>
+            We offer : 
+            - Flexible working hours and vacation policy 
+            - Base salary + piece work rate
+            - Friendly and creative work enviroment
+            - Lots of challanges
+            - Many more challanges
+
+
             </p>
 
             <form action="../../scripts/recruit.php" method="POST" name="recruitform" id="recruitform">

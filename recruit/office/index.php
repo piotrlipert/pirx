@@ -81,18 +81,19 @@
             </ul>
           </div>
           <div class="large-9 columns jobs">
-            <h2>We are looking for an Expension Officer.</h2>
+            <h2>We are looking for an Office Manager.</h2>
 
-            <p>If you are a highly creative 
-            person with amazing communication and copywriting skills please fill out
-            the form below. English proficiency is a must. Experience in social media
-            is a bonus.
+            <p>
+            Requirements </p>
+
+            <p>
+            Responsibilities
             </p>
 
             <p>
-            You will be both responsible and measured by sales growth. You will also
-            participate in the process of introducing our product to new markets.
+            We offer : 
             </p>
+
 
             <form action="../../scripts/recruit.php" method="POST" name="recruitform" id="recruitform">
               <fieldset>    
