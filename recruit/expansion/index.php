@@ -81,33 +81,26 @@
             </ul>
           </div>
           <div class="large-9 columns jobs">
-	          <h2>We are looking for an Expension Officer.</h2>
+	          <h2>We are looking for an Expension Officer</h2>
 
-            <label> Requirements </label>
-            <p>
-              If you are a highly creative 
+            <h3>Requirements</h3>
+            <p>If you are a highly creative 
             person with amazing communication and copywriting skills please fill out
             the form below. English proficiency is a must. Experience in social media
-            and sales is a bonus.
-                         </p>
-            <label> Responsibilities </label>
+            and sales is a bonus.</p>
 
-            <p>
-            You will be both responsible and measured by sales growth. You will also
-            participate in the process of introducing our product to new markets.
-            </p>
-            <label> Perks and benefits </label>
-
-            <p>
-            We offer : <br>
-            - Flexible working hours and vacation policy <br>
-            - Base salary + piece work rate<br>
-            - Friendly and creative work enviroment<br>
-            - Lots of challanges<br>
-            - Many more challanges<br>
-
-
-            </p>
+            <h3>Responsibilities</h3>
+            <p>You will be both responsible and measured by sales growth. You will also
+            participate in the process of introducing our product to new markets.</p>
+            
+            <h3>We offer</h3>
+            <ul class="job-offer">
+              <li>Flexible working hours and vacation policy</li>
+              <li>Base salary + piece work rate</li>
+              <li>Friendly and creative work enviroment</li>
+              <li>Lots of challenges</li>
+              <li>Many more challenges</li>
+            </ul>
 
             <form action="../../scripts/recruit.php" method="POST" name="recruitform" id="recruitform">
               <fieldset>    

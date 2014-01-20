@@ -5553,6 +5553,13 @@ MAIN CONTENT
     margin-top: 50px; }
     #about-us .jobs h2:first-child {
       margin-top: 0; }
+  #about-us .jobs h3 {
+    margin-top: 30px; }
+  #about-us .jobs ul.job-offer {
+    margin-left: 17px;
+    margin-bottom: 50px; }
+    #about-us .jobs ul.job-offer li {
+      color: #999; }
   #about-us .jobs fieldset .question {
     padding: 8% 10% 5%; }
   #about-us .jobs fieldset label {

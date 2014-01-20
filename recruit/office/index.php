@@ -58,7 +58,7 @@
       <section id="caption">
         <div class="row caption">
           <div class="large12 columns">
-            <h2>Expension Officer</h2>
+            <h2>Office Manager</h2>
           </div>
         </div>
       </section>
@@ -72,7 +72,7 @@
               <li><a href="../../order/">Order<span></span></a></li>
               <li><a href="../../recruit/">Join us!<span></span></a>
                 <ul class="sidebar-subnav">
-                  <li><a href="/recruit/expansion/" class="active">Expension Officer<span></span></a></li>
+                  <li><a href="/recruit/expansion/">Expension Officer<span></span></a></li>
                   <li><a href="#" class="active">Office Manger<span></span></a></li>
                 </ul>
               </li>
@@ -81,19 +81,16 @@
             </ul>
           </div>
           <div class="large-9 columns jobs">
-            <h2>We are looking for an Office Manager.</h2>
+            <h2>We are looking for an Office Manager</h2>
 
-            <p>
-            Requirements </p>
+            <h3>Requirements</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, reprehenderit!</p>
+            
+            <h3>Responsibilities</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, sequi.</p>
 
-            <p>
-            Responsibilities
-            </p>
-
-            <p>
-            We offer : 
-            </p>
-
+            <h3>We offer</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, error.</p>
 
             <form action="../../scripts/recruit.php" method="POST" name="recruitform" id="recruitform">
               <fieldset>    
