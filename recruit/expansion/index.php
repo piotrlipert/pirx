@@ -83,18 +83,20 @@
           <div class="large-9 columns jobs">
 	          <h2>We are looking for an Expension Officer.</h2>
 
-            <label> asddasas </label>
+            <label> Requirements </label>
             <p>
               If you are a highly creative 
             person with amazing communication and copywriting skills please fill out
             the form below. English proficiency is a must. Experience in social media
-            is a bonus.
-            </p>
+            and sales is a bonus.
+                         </p>
+            <label> Responsibilities </label>
 
             <p>
             You will be both responsible and measured by sales growth. You will also
             participate in the process of introducing our product to new markets.
             </p>
+            <label> Perks and benefits </label>
 
             <p>
             We offer : 
