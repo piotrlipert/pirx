@@ -99,7 +99,7 @@
             <label> Perks and benefits </label>
 
             <p>
-            We offer : 
+            We offer : <br>
             - Flexible working hours and vacation policy <br>
             - Base salary + piece work rate<br>
             - Friendly and creative work enviroment<br>
