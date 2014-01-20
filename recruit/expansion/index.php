@@ -83,7 +83,7 @@
           <div class="large-9 columns jobs">
 	          <h2>We are looking for an Expension Officer.</h2>
 
-            <h1> Requirements </h1>
+            <label> Requirements </label>
             <p>
               If you are a highly creative 
             person with amazing communication and copywriting skills please fill out
