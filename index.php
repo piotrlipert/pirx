@@ -11,7 +11,13 @@ foreach ($headers as $header => $value) {
     		$a = 1;
 
     	if($value=='careers.pirx3d.com')
+    	{
     		$a = 2;
+    		echo $value;
+    	}
+
+
+
     }
 }
 
@@ -21,7 +27,9 @@ if($a==0)
 if($a==1)
 	include_once('index_pl.html');
 if($a==2)
-	include_once('recruit/index.html');
+{
 
+	include_once('recruit/index.html');
+}
 
 ?>
