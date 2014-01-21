@@ -9,11 +9,19 @@ foreach ($headers as $header => $value) {
     		$a = 1;
     	if($value=='www.pirx3d.pl')
     		$a = 1;
+
+    	if($value=='careers.pirx3d.com')
+    		$a = 2;
     }
 }
+
+
 if($a==0)
 	include_once('index_en.html');
-else
+if($a==1)
 	include_once('index_pl.html');
+if($a==2)
+	include_once('recruit/index.php');
+
 
 ?>
