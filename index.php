@@ -13,7 +13,6 @@ foreach ($headers as $header => $value) {
     	if($value=='careers.pirx3d.com')
     	{
     		$a = 2;
-    		echo $value;
     	}
 
 
