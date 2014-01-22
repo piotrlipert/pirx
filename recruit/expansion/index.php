@@ -58,7 +58,7 @@
       <section id="caption">
         <div class="row caption">
           <div class="large12 columns">
-            <h2>Expension Officer</h2>
+            <h2>Expansion Officer</h2>
           </div>
         </div>
       </section>
@@ -72,7 +72,7 @@
               <li><a href="../../order/">Order<span></span></a></li>
               <li><a href="../../recruit/">Join us!<span></span></a>
                 <ul class="sidebar-subnav">
-                  <li><a href="#" class="active">Expension Officer<span></span></a></li>
+                  <li><a href="#" class="active">Expansion Officer<span></span></a></li>
                   <!-- <li><a href="/recruit/office/">Office Manger<span></span></a></li> -->
                 </ul>
               </li>
@@ -81,7 +81,7 @@
             </ul>
           </div>
           <div class="large-9 columns jobs">
-	          <h2>We are looking for an Expension Officer</h2>
+	          <h2>We are looking for an Expansion Officer</h2>
 
             <h3>Requirements</h3>
             <p>If you are a highly creative 
