@@ -97,7 +97,7 @@
             <ul class="job-offer">
               <li>Flexible working hours and vacation policy</li>
               <li>Base salary + piece work rate</li>
-              <li>Friendly and creative work enviroment</li>
+              <li>Friendly and creative work environment</li>
               <li>Lots of challenges</li>
               <li>Many more challenges</li>
             </ul>
