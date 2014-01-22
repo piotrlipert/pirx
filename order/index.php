@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
 
-    <title>Pirx 3d Printer - About us</title>
+    <title>Pirx 3d Printer - Order Pirx!</title>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>  
 
     <!-- META DATA -->
@@ -150,11 +150,11 @@
                   </div>
                 </div>
 
-                <h2>Payment Information<span>3</span></h2>
+                <!--<h2>Payment Information<span>3</span></h2>
                 <div id="payment">
                   <label>Payment Method</label>
                 </div>
-
+                  !-->
                 <h2>Miscellaneous<span>4</span></h2>
                 <div id="miscellaneous">
                   <label>Additional info:</label>
