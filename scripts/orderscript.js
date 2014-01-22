@@ -68,7 +68,8 @@
 
           return;
         }
-        
+        e.preventDefault();
+     
 
         //Hide the form
         $(this).fadeOut(function(){
