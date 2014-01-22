@@ -72,7 +72,7 @@
               <li><a href="../../order/">Order<span></span></a></li>
               <li><a href="../../recruit/">Join us!<span></span></a>
                 <ul class="sidebar-subnav">
-                  <li><a href="/recruit/expension/">Expension Officer<span></span></a></li>
+                  <li><a href="/recruit/Expansion/">Expansion Officer<span></span></a></li>
                   <li><a href="#" class="active">Office Manger<span></span></a></li>
                 </ul>
               </li>
