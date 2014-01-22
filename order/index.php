@@ -155,7 +155,7 @@
                   <label>Payment Method</label>
                 </div>
                   !-->
-                <h2>Miscellaneous<span>4</span></h2>
+                <h2>Miscellaneous<span>3</span></h2>
                 <div id="miscellaneous">
                   <label>Additional info:</label>
                   <textarea type="text" name='message' placeholder="I'd like to know whether..."></textarea>
