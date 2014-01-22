@@ -27,7 +27,7 @@
         required_inputs[2] = "billingcity";
         required_inputs[3] = "billingstreet";
         required_inputs[4] = "billingcode";
-        required_inputs[5] = "country";
+        //required_inputs[5] = "country";
 
 
         for(var i=0;i<required_inputs.length;i++)
