@@ -197,8 +197,8 @@
             <h3>Contact</h3>
             <address>
               Pirx<br>  
-              Berka Joselewicza 21<br>
-              31-031 Kraków<br>
+              Ślusarska 9<br>
+              30-710 Kraków<br>
               Małopolska, Poland
             </address>
           </div>
