@@ -137,14 +137,14 @@
                   <div id="shipping_adress_details">
                     <label>Street:</label>
                     <input type="text" name='street' id="street">
-                    <div class="address">
+                    <div class="shipaddress">
                       <div class="city">
                         <label>City:</label>
-                        <input type="text" name='billingcity' placeholder="" id='billingcity'>
+                        <input type="text" name='shipcity' placeholder="" id='shipcity'>
                       </div>
                       <div class="zip">
                         <label>Postal code:</label>
-                        <input type="text" name='billingcode' placeholder="" id='billingcode'>
+                        <input type="text" name='shipcode' placeholder="" id='shipcode'>
                       </div>
                     </div>
                   </div>

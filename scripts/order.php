@@ -50,9 +50,9 @@ extract($_POST);
         "personal" => $_REQUEST['personal'],
         "same" => $_REQUEST['same'],
         "message" => $_REQUEST['message'],
-        "city" => $_REQUEST['city'],
-        "street" => $_REQUEST['street'],
-        "postal_code" => $_REQUEST['postal_code']
+        "city" => $_REQUEST['shipcity'],
+        "street" => $_REQUEST['shipstreet'],
+        "postal_code" => $_REQUEST['shipcode']
         
         );
 
