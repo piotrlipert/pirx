@@ -11,22 +11,24 @@ function createorder($o)
 {
 
 $order = "Pirx ordered by :\n";
-$order = $order . $o["name"] . "\n";
-$order = $order . $o["companyname"]. "\n";
+$order = $order . "Name : " . $o["name"] . "\n";
+$order = $order . "Company name : " . $o["companyname"]. "\n";
 
-$order = $order . $o["billingcity"]. "\n";
-$order = $order . $o["billingstreet"]. "\n";
-$order = $order . $o["billingcode"]. "\n";
+$order = $order . "Billing street : " .  $o["billingstreet"]. "\n";
+$order = $order . "Billing city :" .  $o["billingcity"]. "\n";
+$order = $order . "Billing code :" .  $o["billingcode"]. "\n";
 
-$order = $order . $o["city"]. "\n";
-$order = $order . $o["street"]. "\n";
-$order = $order . $o["code"]. "\n";
 
-$order = $order . $o["email"]. "\n";
-$order = $order . $o["tax"]. "\n";
-$order = $order . $o["personal"]. "\n";
-$order = $order . $o["same"]. "\n";
-$order = $order . $o["message"] . "\n";
+$order = $order . "Email : " .  $o["email"]. "\n";
+$order = $order . "Tax id : " .  $o["tax"]. "\n";
+$order = $order . "Personal pickup? " .  $o["personal"]. "\n";
+$order = $order . "Shipping adress same as billing? " .  $o["same"]. "\n";
+
+$order = $order . "Shipping city " .  $o["city"]. "\n";
+$order = $order . "Shipping street" .  $o["street"]. "\n";
+$order = $order . "Shipping code " .  $o["code"]. "\n";
+
+$order = $order . "Additional message :" .  $o["message"] . "\n";
 
 return $order;
 
