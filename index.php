@@ -1,6 +1,6 @@
 <?php
 
-<?php
+
 
 if(!function_exists('apache_request_headers'))
 {
