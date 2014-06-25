@@ -67,40 +67,64 @@ if (isset($_REQUEST['email']))
             case 1:
                $merchant_id = 'pirx_cc_no3d';
                $salt = '6bf08e44';
+               $amount = '629.00';
+               $currecny = 'EUR';
+               $transaction_description = 'Pirx 3D printer + shipping';
+               $language = 'en';
                break;
             case 2:
                $merchant_id = 'pirx_cc_3ds';
                $salt = '2b4594d1';
+               $amount = '629.00';
+               $currecny = 'EUR';
+               $transaction_description = 'Pirx 3D printer + shipping';
+               $language = 'en';
                break;
             case 3:
                $merchant_id = 'pirx_diners_discover_jcb';
                $salt = 'c10c2764';
+               $amount = '2560.00';
+               $currecny = 'EUR';
+               $transaction_description = 'Pirx 3D printer + shipping';
+               $language = 'en';
                break;
             case 4:
                $merchant_id = 'pirx_pp';
                $salt = 'e2aa5c71';
+               $amount = '629.00';
+               $currecny = 'PLN';
+               $transaction_description = '[12:57:24] Piotr Lipert: Drukarka 3D Pirx + wysyłka';
+               $language = 'pl';
                break;
             case 5:
                $merchant_id = 'pirx_paypal';
                $salt = 'a076afeb';
+               $amount = '629.00';
+               $currecny = 'EUR';
+               $transaction_description = 'Pirx 3D printer + shipping';
+               $language = 'en';
                break;
             case 6:
                $merchant_id = 'pirx';
                $salt = 'vu2le8mo';
+               $amount = '629.00';
+               $currecny = 'EUR';
+               $transaction_description = 'Pirx 3D printer + shipping';
+               $language = 'en';
                break;
          }
 
-         $hash = sha1($salt . '|' . preg_replace('/\s+/', '', $order['name']) . '|629.00|EUR|S');
+         $hash = sha1($salt . '|' . preg_replace('/\s+/', '', $order['name']) . '|' . $amount . '|' . $currecny . '|S');
          ?>
          <form action="https://secure.paylane.com/order/cart.html" method="post">
-            <input type="hidden" name="amount" value="629.00">
-            <input type="hidden" name="currency" value="EUR">
+            <input type="hidden" name="amount" value="<?=$amount?>">
+            <input type="hidden" name="currency" value="<?=$currecny?>">
             <input type="hidden" name="merchant_id" value="<?=$merchant_id?>">
             <input type="hidden" name="description" value="<?=preg_replace('/\s+/', '', $order['name'])?>" />
-            <input type="hidden" name="transaction_description" value="Pirx 3D printer + shipping" />
+            <input type="hidden" name="transaction_description" value="<?=$transaction_description?>" />
             <input type="hidden" name="transaction_type" value="S">
             <input type="hidden" name="back_url" value="http://pirx3d.com/order/complete.php">
-            <input type="hidden" name="language" value="en">
+            <input type="hidden" name="language" value="<?=$language?>">
             <input type="hidden" name="hash" value="<?=$hash?>" />
             <input type="hidden" name="customer_name" value="<?=$order['name']?>" />
             <input type="hidden" name="customer_email" value="<?=$order['email']?>" />
