@@ -90,7 +90,7 @@ if (isset($_REQUEST['email']))
                break;
          }
 
-         $hash = sha1($salt . '|' . preg_replace('/\s+/', '', $order['name']) . '|599.00|EUR|S');
+         $hash = sha1($salt . '|' . preg_replace('/\s+/', '', $order['name']) . '|629.00|EUR|S');
          ?>
          <form action="https://secure.paylane.com/order/cart.html" method="post">
             <input type="hidden" name="amount" value="629.00">
