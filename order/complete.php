@@ -3,14 +3,14 @@
   <head>
 
     <title>Pirx 3d Printer - Order Pirx!</title>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>  
 
     <!-- META DATA -->
     <meta charset="utf-8">
-
+    
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta name="description" content="Pirx 3d Printer">
-    <meta name="keywords" content="pirx, 3d, printer, 3d printer, 3d print, community, pirx3d, hardware">
+    <meta name="keywords" content="pirx, 3d, printer, 3d printer, 3d print, community, pirx3d, hardware">  
 
     <!-- FONTS -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
@@ -28,19 +28,19 @@
     <script type="text/javascript" src="../js/retina.js"></script>
     <script type="text/javascript" src="../js/lightbox-2.6.min.js"></script>
     <script type="text/javascript" src="../js/functions.js"></script>
-
+    
 		<!-- FAVICON -->
     <link rel="shortcut icon" href="../images/favicon.ico">
 
-    <!-- JS FUNCTIONS -->
-
+    <!-- JS FUNCTIONS -->   
+    
     <script type="text/javascript" src="../scripts/orderscript.js"></script>
 
   </head>
   <body>
     <script language="javascript">
       function wysylka() {
-        $("#shipping_adress").fadeToggle();
+        $("#shipping_adress").fadeToggle();            
       }
       function same_adress() {
         $("#shipping_adress_details").fadeToggle();
@@ -85,109 +85,34 @@
             <ul class="nav sidebar-nav">
               <li><a href="../">Home<span></span></a></li>
               <li><a href="../about/">About<span></span></a></li>
-              <li><a href="#" class="active">Order<span></span></a></li>
+              <li><a href="../order/" class="active">Order<span></span></a></li>
               <li><a href="../recruit/">Jobs<span></span></a></li>
               <li><a href="../press/">Press Kit<span></span></a></li>
               <li><a href="../contact/">Contact<span></span></a></li>
             </ul>
           </div>
           <div class="large-9 columns order">
-            <form action="../scripts/order.php" method="POST" name="orderform" id="orderform">
-              <fieldset>
-                <h2>Billing information<span>1</span></h2>
-                <div id="billing_adress">
-                  <label>Name:</label>
-                  <input type="text" name='name' placeholder="" id="name">
-                  <label>Company name:</label>
-                  <input type="text" name='companyname' placeholder="" id="companyname">
-                  <label>Street:</label>
-                  <input type="text" name='billingstreet' placeholder="" id='billingstreet'>
-                  <div class="address">
-                    <div class="city">
-                      <label>City:</label>
-                      <input type="text" name='billingcity' placeholder="" id='billingcity'>
-                    </div>
-                    <div class="zip">
-                      <label>Postal code:</label>
-                      <input type="text" name='billingcode' placeholder="" id='billingcode'>
-                    </div>
-                  </div>
-                  <label>Email adress:</label>
-                  <input type="text" name='email' placeholder="" id='email'>
-                  <label>Tax identification number:</label>
-                  <input type="text" name='tax' placeholder="" id='tax'>
-                  <label>Type of payment:</label>
-                  <select name="type_of_payment" id="type_of_payment">
-                     <option value="0">select...</option>
-                     <option value="1">VISA, MasterCard</option>
-                     <option value="2">Maestro</option>
-                     <option value="3">Diners, Discover, JCV</option>
-                     <option value="4">Transfer</option>
-                     <option value="5">PayPal</option>
-                  </select>
-                </div>
-
-                <h2>Shipping Information<span>2</span></h2>
-                <div id="shipping">
-                  <label>Shipping method:</label>
-                  <div>
-                    <input type="radio" name="shipping" onClick="wysylka()" id="personal" class="lite-orange-check" value="2"><span>Personal pickup</span>
-                    <input type="radio" name="shipping" onClick="wysylka()" class="lite-orange-check" value="1" checked="checked"><span>Courier</span>
-                  </div>
-                </div>
-
-                <div id="shipping_adress">
-                  <div id="shipping_adress_check">
-                    <label>Shipping address:</label>
-                    <div class="check">
-                      <input type="checkbox" onClick="same_adress()" name='same' id="same" class="lite-orange-check"><span>Same as billing</span>
-                    </div>
-                  </div>
-                  <div id="shipping_adress_details">
-                    <label>Street:</label>
-                    <input type="text" name='shipstreet' id="street">
-                    <div class="shipaddress">
-                      <div class="city">
-                        <label>City:</label>
-                        <input type="text" name='shipcity' placeholder="" id='shipcity'>
-                      </div>
-                      <div class="zip">
-                        <label>Postal code:</label>
-                        <input type="text" name='shipcode' placeholder="" id='shipcode'>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!--<h2>Payment Information<span>3</span></h2>
-                <div id="payment">
-                  <label>Payment Method</label>
-                </div>
-                  !-->
-                <h2>Miscellaneous<span>3</span></h2>
-                <div id="miscellaneous">
-                  <label>Additional info:</label>
-                  <textarea type="text" name='message' placeholder="I'd like to know whether..."></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-small btn-order">Place your order</button>
-
-              </fieldset>
-            </form>
-
             <center>
-              <div id="loading" style="display: none;">
-                Sending your order....
-              </div>
-              <div id="success" style="display: none;">
-                Order sent. We will contact you shortly.
-              </div>
-              <div id="error" style="display: none;">
-                Fill in the form properly.
-              </div>
-              <div id="error_email" style="display: none;">
-                Fill in a proper email address.
-              </div>
+               <?php
+               switch ((isset($_GET['status']) ? $_GET['status'] : false))
+               {
+                  case 'PENDING';
+                     echo 'Payment is pending.<br /><br />Authorization ID of the transaction: ' . $_GET['id_authorization'] . '<br />The transaction ID: ' . $_GET['id_sale'];
+                     break;
+                  case 'PERFORMED';
+                     echo 'Payment is confirmed.<br /><br />Authorization ID of the transaction: ' . $_GET['id_authorization'] . '<br />The transaction ID: ' . $_GET['id_sale'];
+                     break;
+                  case 'CLEARED';
+                     echo 'Measures have been taken (obtained confirmation from the bank).<br /><br />Authorization ID of the transaction: ' . $_GET['id_authorization'] . '<br />The transaction ID: ' . $_GET['id_sale'];
+                     break;
+                  case 'ERROR';
+                     echo 'The payment failed.<br /><br />Error ID: ' . $_GET['id_error'];
+                     break;
+                  default:
+                     echo 'The payment failed.';
+                     break;
+               }
+               ?>
             </center>
           </div>
         </div>
@@ -224,7 +149,7 @@
           <div class="large-3 columns address">
             <h3>Contact</h3>
             <address>
-              Pirx<br>
+              Pirx<br>  
               Ślusarska 9<br>
               30-710 Kraków<br>
               Małopolska, Poland

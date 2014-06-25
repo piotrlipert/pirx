@@ -1675,6 +1675,7 @@ input[type="search"],
 input[type="tel"],
 input[type="time"],
 input[type="url"],
+select,
 textarea {
   background-color: white;
   font-family: inherit;
@@ -1707,6 +1708,7 @@ textarea {
   input[type="tel"]:focus,
   input[type="time"]:focus,
   input[type="url"]:focus,
+  select:focus,
   textarea:focus {
     -webkit-box-shadow: 0 0 5px #999999;
     -moz-box-shadow: 0 0 5px #999999;
@@ -1725,6 +1727,7 @@ textarea {
   input[type="tel"]:focus,
   input[type="time"]:focus,
   input[type="url"]:focus,
+  select:focus,
   textarea:focus {
     background: #fafafa;
     border-color: #999999;
@@ -1742,6 +1745,7 @@ textarea {
   input[type="tel"][disabled],
   input[type="time"][disabled],
   input[type="url"][disabled],
+  select[disabled],
   textarea[disabled] {
     background-color: #dddddd; }
 
@@ -5440,14 +5444,14 @@ MAIN CONTENT
       margin: 20px 0 10px 8%; }
       #about-us fieldset label:first-child {
         margin-top: 4%; }
-    #about-us fieldset input, #about-us fieldset textarea {
+    #about-us fieldset input, #about-us fieldset textarea, #about-us fieldset select {
       width: 84%;
       margin: 0 auto;
       border-radius: 3px;
       border: 1px solid #e8e8e8;
       height: 40px;
       box-shadow: none; }
-      #about-us fieldset input:focus, #about-us fieldset textarea:focus {
+      #about-us fieldset input:focus, #about-us fieldset textarea:focus, #about-us fieldset select:focus {
         border: 1px solid #ff7200; }
     #about-us fieldset textarea {
       height: 110px;
@@ -5537,10 +5541,10 @@ MAIN CONTENT
       padding-bottom: 4px; }
     #about-us .order fieldset label {
       margin-left: 0; }
-    #about-us .order fieldset input, #about-us .order fieldset textarea {
+    #about-us .order fieldset input, #about-us .order fieldset textarea, #about-us .order fieldset select {
       width: 60%;
       margin-left: 0; }
-      #about-us .order fieldset input:focus, #about-us .order fieldset textarea:focus {
+      #about-us .order fieldset input:focus, #about-us .order fieldset textarea:focus, #about-us .order fieldset select:focus {
         background: none; }
     #about-us .order fieldset .btn-order {
       display: block;
@@ -5874,3 +5878,10 @@ MAIN CONTENT
     text-align: center; }
     #copyright .right {
       display: none; } }
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}

@@ -27,6 +27,7 @@
         required_inputs[2] = "billingcity";
         required_inputs[3] = "billingstreet";
         required_inputs[4] = "billingcode";
+        required_inputs[5] = "type_of_payment";
         //required_inputs[5] = "country";
 
 
@@ -38,6 +39,10 @@
           filled = false;}
         }
 
+        if ($('#type_of_payment').val() == 0 || $('#type_of_payment').val() == null || $('#type_of_payment').val() == '')
+        {
+          filled = false;
+        }
         
 
         if(filled == false)
@@ -85,7 +90,7 @@
                 //Hide the "loading" message
                 $("#loading").fadeOut(function(){
                   //Display the "success" message
-                  $("#success").text(data).fadeIn();
+                  $("#success").html(data).fadeIn();
                   
                 });
               }
