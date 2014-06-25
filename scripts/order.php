@@ -85,7 +85,7 @@ if (isset($_REQUEST['email']))
          case 4:
             $merchant_id = 'pirx_pp';
             $salt = 'e2aa5c71';
-            if ($order['shipping'] == 2)
+            if ($order['shipping'] == 1)
             {
                $amount = '2560.00';
                $transaction_description = 'Drukarka 3D Pirx + wysyłka';
