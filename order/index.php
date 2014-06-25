@@ -122,7 +122,7 @@
                      <option value="1">VISA, MasterCard</option>
                      <option value="2">Maestro</option>
                      <option value="3">Diners, Discover, JCV</option>
-                     <option value="4">Transfer</option>
+                     <option value="4">Polish wired transfer</option>
                      <option value="5">PayPal</option>
                   </select>
                 </div>
