@@ -93,11 +93,11 @@ if (isset($_REQUEST['email']))
          $hash = sha1($salt . '|' . preg_replace('/\s+/', '', $order['name']) . '|599.00|EUR|S');
          ?>
          <form action="https://secure.paylane.com/order/cart.html" method="post">
-            <input type="hidden" name="amount" value="599.00">
+            <input type="hidden" name="amount" value="629.00">
             <input type="hidden" name="currency" value="EUR">
             <input type="hidden" name="merchant_id" value="<?=$merchant_id?>">
             <input type="hidden" name="description" value="<?=preg_replace('/\s+/', '', $order['name'])?>" />
-            <input type="hidden" name="transaction_description" value="Pirx 3D printer" />
+            <input type="hidden" name="transaction_description" value="Pirx 3D printer + shipping" />
             <input type="hidden" name="transaction_type" value="S">
             <input type="hidden" name="back_url" value="http://pirx3d.com/order/complete.php">
             <input type="hidden" name="language" value="en">
