@@ -47,7 +47,7 @@ if (isset($_REQUEST['email']))
       "type_of_payment" => $_REQUEST['type_of_payment']
    );
 
-   $postmark = new Postmark("64229856-c00b-4086-b886-24aefc8a9ae7", "support@pasdirx3d.com", $order['email']);
+   $postmark = new Postmark("64229856-c00b-4086-b886-24aefc8a9ae7", "support@pirx3d.com", $order['email']);
 
    $result = $postmark->to("pirx@pirx3d.com")
       ->subject("Order from Pirx3D")
