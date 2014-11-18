@@ -209,7 +209,7 @@
             <ul>
               <li><a href="https://www.facebook.com/clockwork3d">Blog</a></li>
               <li><a href="../press/">Press kit</a></li>
-              <li>Privacy policy</li>
+              <li><a href="http://www.pirx3d.com/pdf/PaC.pdf">Privacy policy</a></li>
               <li><a href="http://www.pirx3d.com/pdf/ToS.pdf">Terms & Conditions</a></li>
             </ul>
           </div>
