@@ -171,7 +171,7 @@
                 </div>
 
                 <button type="submit" class="btn btn-small btn-order">Place your order</button>
-					By placing an order you agree with <a href="http://www.pirx3d.com/pdf/ToS.pdf">Terms & Conditions</a>.
+					By placing an order you agree with our <a href="http://www.pirx3d.com/pdf/ToS.pdf">Terms & Conditions</a>.
               </fieldset>
             </form>
 
